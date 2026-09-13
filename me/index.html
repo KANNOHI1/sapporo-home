@@ -113,7 +113,7 @@ details.more[open] summary::before{content:"▾ ";}
    <summary>前提を変える（手取り・賃貸・既存資産・金利）</summary>
    <div class="grid">
     <label class="f">2109 の手取り（万）<input type="number" id="net" value="3000" step="10"></label>
-    <label class="f">2027 年の賃貸（万）<input type="number" id="r27" value="280" step="10"></label>
+    <label class="f">2027 年の賃貸を引く（万・既定 0）<input type="number" id="r27" value="0" step="10" min="0"></label>
     <label class="f">既存資産から頭金へ（万）<input type="number" id="have" value="0" step="50" min="0"></label>
     <label class="f">変動金利 %<input type="number" id="rv" step="0.05"></label>
     <label class="f">固定金利 %<input type="number" id="rf" step="0.05"></label>
@@ -138,7 +138,7 @@ details.more[open] summary::before{content:"▾ ";}
 <section class="panel" style="margin-top:16px">
  <h2 style="font-size:15px;font-weight:510;margin:0 0 8px">前提と限界</h2>
  <div class="foot">
-  <p><b>式</b>: 頭金の枠 = 手取り − 2027 年賃貸 − NISA 先取り + 既存から回す額。<br>
+  <p><b>式</b>: 頭金の枠 = 手取り − NISA 先取り + 既存から回す額（2027 年の賃貸は既定で引かない。引きたければ「前提を変える」で）。<br>
   頭金 = 枠 − 諸費用（価格 × 7%・売主直販は 3.5%）。借入 = 価格 − 頭金。<br>
   月々 = 借入の元利均等返済 + 管理費 + 修繕積立 + 固都税 8,333 + 駐車場。</p>
   <p><b>手取り 3,000 万</b>は菅野さんの床（「3,000 以下なら売らない」）。モデル推定は 2,941 万（2027-05 決済）。9/19 の買取価格で動く。</p>
@@ -193,8 +193,8 @@ function render(){
   $("tval").textContent=fmt(T); $("capval").textContent=capM.toFixed(1);
   const pool=net-r27+have;
   $("capline").innerHTML = MODE==="inv"
-    ? "頭金の枠 <b class='num'>"+fmt(pool-T)+" 万</b>（手取り "+fmt(net)+" − 賃貸 "+fmt(r27)+(have?" + 既存 "+fmt(have):"")+" − NISA "+fmt(T)+"）から諸費用を引いた残りが頭金"
-    : "枠 <b class='num'>"+fmt(pool)+" 万</b>（手取り "+fmt(net)+" − 賃貸 "+fmt(r27)+(have?" + 既存 "+fmt(have):"")+"）。上限に収まる借入から頭金を逆算し、残りが NISA に回る";
+    ? "頭金の枠 <b class='num'>"+fmt(pool-T)+" 万</b>（手取り "+fmt(net)+(r27?" − 賃貸 "+fmt(r27):"")+(have?" + 既存 "+fmt(have):"")+" − NISA "+fmt(T)+"）から諸費用を引いた残りが頭金"
+    : "枠 <b class='num'>"+fmt(pool)+" 万</b>（手取り "+fmt(net)+(r27?" − 賃貸 "+fmt(r27):"")+(have?" + 既存 "+fmt(have):"")+"）。上限に収まる借入から頭金を逆算し、残りが NISA に回る";
   const key={q:(a,b)=>b.q-a.q, mo:(a,b)=>(a.ok?a.mo:1e12)-(b.ok?b.mo:1e12), p:(a,b)=>a.p-b.p}[SORT];
   const rk=new Map(rows.slice().sort((a,b)=>b.q-a.q).map((r,i)=>[r.n+r.p,i+1]));
   $("cards").innerHTML=rows.sort(key).map(r=>{
