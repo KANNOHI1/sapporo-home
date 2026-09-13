@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>札幌 住み替え試算</title>
+<style>
+:root{
+  --bg:#08090a;--panel:#0f1011;--card:#191a1b;--card2:#28282c;
+  --ink:#f7f8f8;--ink2:#d0d6e0;--ink3:#8a8f98;--ink4:#62666d;
+  --acc:#7170ff;--acc2:#828fff;--brand:#5e6ad2;--ok:#27a644;--warn:#e0a03a;--bad:#c2563f;
+  --bd:rgba(255,255,255,.08);--bd2:rgba(255,255,255,.05);
+  --loan:#5e6ad2;--mg:#3f8fa0;--rf:#2e7d5b;--tax:#7a54a8;--pk:#b4762a;
+}
+@media (prefers-color-scheme:light){:root{
+  --bg:#f7f8f8;--panel:#ffffff;--card:#ffffff;--card2:#f3f4f5;
+  --ink:#0f1011;--ink2:#28282c;--ink3:#62666d;--ink4:#8a8f98;
+  --bd:#d0d6e0;--bd2:#e6e6e6;
+}}
+*{box-sizing:border-box}
+html{color-scheme:dark light}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 15px/1.5 "Inter Variable",Inter,"SF Pro Display",-apple-system,system-ui,"Segoe UI","Hiragino Sans","Noto Sans JP",sans-serif;font-feature-settings:"cv01","ss03";-webkit-font-smoothing:antialiased}
+.num{font-variant-numeric:tabular-nums;font-feature-settings:"tnum"}
+main{max-width:760px;margin:0 auto;padding:16px 14px 64px}
+h1{font-size:22px;font-weight:510;letter-spacing:-.4px;margin:6px 0 2px}
+.sub{color:var(--ink3);font-size:12.5px;margin:0 0 14px}
+.panel{background:var(--panel);border:1px solid var(--bd);border-radius:12px;padding:14px;margin-bottom:12px}
+.sticky{position:sticky;top:0;z-index:5;background:var(--bg);padding-top:8px;margin:0 -14px 12px;padding-left:14px;padding-right:14px;border-bottom:1px solid var(--bd2)}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.seg{display:inline-flex;border:1px solid var(--bd);border-radius:8px;overflow:hidden}
+.seg button{background:rgba(255,255,255,.02);color:var(--ink2);border:0;padding:8px 12px;font:inherit;font-size:13px;font-weight:510;cursor:pointer;min-width:44px}
+.seg button[aria-pressed=true]{background:var(--brand);color:#fff}
+label.f{display:flex;flex-direction:column;gap:3px;font-size:12px;color:var(--ink3);font-weight:510}
+label.f input{background:var(--card);color:var(--ink);border:1px solid var(--bd);border-radius:7px;padding:7px 9px;font:inherit;font-size:15px;width:110px}
+input[type=range]{width:100%;accent-color:var(--acc);height:32px;margin:0}
+.big{font-size:30px;font-weight:510;letter-spacing:-.6px;line-height:1.1}
+.unit{font-size:14px;color:var(--ink3);font-weight:400;margin-left:2px}
+.line{font-size:12.5px;color:var(--ink3);margin-top:6px}
+.line b{color:var(--ink2);font-weight:510}
+details.more{margin-top:10px}
+details.more summary{cursor:pointer;color:var(--acc2);font-size:13px;font-weight:510;list-style:none}
+details.more summary::before{content:"▸ ";}
+details.more[open] summary::before{content:"▾ ";}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px;margin-top:10px}
+.sort{display:flex;gap:6px;align-items:center;font-size:12.5px;color:var(--ink3);margin:6px 0 10px}
+.sort button{background:none;border:1px solid var(--bd);color:var(--ink2);border-radius:999px;padding:4px 10px;font:inherit;font-size:12.5px;cursor:pointer}
+.sort button[aria-pressed=true]{border-color:var(--acc);color:var(--acc2)}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:12px 14px;margin-bottom:8px;cursor:pointer;transition:border-color .12s}
+.card:hover{border-color:var(--acc)}
+.card.no{opacity:.45}
+.card .hd{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.card .nm{font-weight:510;font-size:15px;letter-spacing:-.2px;flex:1;min-width:0}
+.card .rk{color:var(--ink4);font-size:11.5px;margin-right:6px}
+.card .tag{display:inline-block;font-size:10.5px;color:var(--acc2);border:1px solid var(--acc);border-radius:999px;padding:0 7px;margin-left:6px;vertical-align:middle}
+.card .mo{font-size:22px;font-weight:510;letter-spacing:-.4px;white-space:nowrap}
+.card .mo small{font-size:12px;color:var(--ink3);font-weight:400;margin-left:2px}
+.card .pr{color:var(--ink3);font-size:12.5px;margin-top:2px;display:flex;justify-content:space-between;gap:8px}
+.bar{display:flex;height:6px;border-radius:3px;overflow:hidden;margin-top:8px;background:var(--card2)}
+.bar i{display:block;height:100%}
+.det{display:none;margin-top:12px;border-top:1px solid var(--bd2);padding-top:10px;font-size:13px;color:var(--ink2)}
+.card.open .det{display:block}
+.det table{border-collapse:collapse;width:100%;font-size:13px}
+.det td{padding:3px 0;border-bottom:1px solid var(--bd2)}
+.det td:last-child{text-align:right;font-variant-numeric:tabular-nums}
+.det .memo{color:var(--ink3);font-size:12.5px;margin-top:8px;line-height:1.55}
+.det a{color:var(--acc2);text-decoration:none}
+.sw{display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:6px;vertical-align:middle}
+.why{font-size:12px;color:var(--bad);margin-top:4px}
+.foot{font-size:12.5px;color:var(--ink3);line-height:1.6}
+.foot b{color:var(--ink2);font-weight:510}
+.foot code{font-family:"Berkeley Mono",ui-monospace,"SF Mono",Menlo,monospace;font-size:12px;background:var(--card2);padding:1px 5px;border-radius:4px}
+.legend{display:flex;gap:12px;flex-wrap:wrap;font-size:11.5px;color:var(--ink3);margin-top:8px}
+@media (max-width:480px){main{padding:10px 10px 64px}.sticky{margin:0 -10px 10px;padding-left:10px;padding-right:10px}.big{font-size:26px}label.f input{width:96px}}
+</style>
+</head>
+<body>
+<main>
+<h1>札幌 住み替え試算</h1>
+<p class="sub">NISA に先取りする額を決めると、物件ごとの頭金・借入・月々が決まる。<span id="asof"></span></p>
+<div class="sticky">
+ <div class="panel" style="margin-bottom:10px">
+  <div class="row" style="justify-content:space-between">
+   <div class="seg" role="group" aria-label="モード">
+    <button type="button" data-mode="inv" aria-pressed="true">NISA 先取り額から</button>
+    <button type="button" data-mode="cap" aria-pressed="false">月々の上限から</button>
+   </div>
+   <div class="seg" role="group" aria-label="金利">
+    <button type="button" data-rt="var" aria-pressed="true">変動</button>
+    <button type="button" data-rt="fix" aria-pressed="false">固定</button>
+   </div>
+   <div class="seg" role="group" aria-label="返済年数">
+    <button type="button" data-yr="15">15</button><button type="button" data-yr="20">20</button>
+    <button type="button" data-yr="25">25</button><button type="button" data-yr="30" aria-pressed="true">30</button>
+   </div>
+  </div>
+  <div id="invBox" style="margin-top:12px">
+   <div class="row" style="justify-content:space-between;align-items:baseline">
+    <span style="font-size:13px;color:var(--ink3);font-weight:510">NISA に先取りする額</span>
+    <span class="big num"><span id="tval">1,000</span><span class="unit">万</span></span>
+   </div>
+   <input type="range" id="target" min="0" max="2500" step="50" value="1000">
+  </div>
+  <div id="capBox" style="margin-top:12px;display:none">
+   <div class="row" style="justify-content:space-between;align-items:baseline">
+    <span style="font-size:13px;color:var(--ink3);font-weight:510">月々の住居費の上限</span>
+    <span class="big num"><span id="capval">12.0</span><span class="unit">万/月</span></span>
+   </div>
+   <input type="range" id="cap" min="6" max="25" step="0.5" value="12">
+  </div>
+  <div class="line" id="capline"></div>
+  <details class="more">
+   <summary>前提を変える（手取り・賃貸・既存資産・金利）</summary>
+   <div class="grid">
+    <label class="f">2109 の手取り（万）<input type="number" id="net" value="3000" step="10"></label>
+    <label class="f">2027 年の賃貸（万）<input type="number" id="r27" value="280" step="10"></label>
+    <label class="f">既存資産から頭金へ（万）<input type="number" id="have" value="0" step="50" min="0"></label>
+    <label class="f">変動金利 %<input type="number" id="rv" step="0.05"></label>
+    <label class="f">固定金利 %<input type="number" id="rf" step="0.05"></label>
+    <label class="f">諸費用 %（仲介）<input type="number" id="cst" step="0.5"></label>
+   </div>
+   <p class="line" id="ratenote"></p>
+  </details>
+ </div>
+</div>
+
+<div class="sort">並べ替え
+ <button type="button" data-sort="q" aria-pressed="true">品質順</button>
+ <button type="button" data-sort="mo">月々が安い順</button>
+ <button type="button" data-sort="p">価格順</button>
+</div>
+<div id="cards"></div>
+<div class="legend">
+ <span><i class="sw" style="background:var(--loan)"></i>ローン</span><span><i class="sw" style="background:var(--mg)"></i>管理費</span>
+ <span><i class="sw" style="background:var(--rf)"></i>積立</span><span><i class="sw" style="background:var(--tax)"></i>固都税</span><span><i class="sw" style="background:var(--pk)"></i>駐車場</span>
+</div>
+
+<section class="panel" style="margin-top:16px">
+ <h2 style="font-size:15px;font-weight:510;margin:0 0 8px">前提と限界</h2>
+ <div class="foot">
+  <p><b>式</b>: 頭金の枠 = 手取り − 2027 年賃貸 − NISA 先取り + 既存から回す額。<br>
+  頭金 = 枠 − 諸費用（価格 × 7%・売主直販は 3.5%）。借入 = 価格 − 頭金。<br>
+  月々 = 借入の元利均等返済 + 管理費 + 修繕積立 + 固都税 8,333 + 駐車場。</p>
+  <p><b>手取り 3,000 万</b>は菅野さんの床（「3,000 以下なら売らない」）。モデル推定は 2,941 万（2027-05 決済）。9/19 の買取価格で動く。</p>
+  <p><b>管理費・積立</b>は SUUMO 掲載の実額。<b>駐車場</b>は敷地内の月額が掲載されている物件だけ実額、無い物件は 8,500 円（上位 20 候補の中央値）。推定の物件はカードに「推定」と出る。</p>
+  <p><b>金利</b>: <span id="ratenote2"></span>。変動のカードには +1% 上昇時の月々を小さく併記。</p>
+  <p><b>出口（15 年後の価値）は載せていない。</b>バックテストで「順位に使う・金額に使わない」と裁定したため。上位 30 の並びには含まれている。</p>
+  <p>母集団: ゲート通過（4,000 万以下・2003 年以降・3LDK 以上・洪水/土砂/1 階/賃貸中を除外）の品質順上位 <span id="npool"></span> 件。データ: <span id="asof2"></span>。</p>
+ </div>
+</section>
+</main>
+<script>
+const D=[{"n": "ゼファー福住", "u": "https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshitoyohira/nc_20918484/", "w": "豊平区", "s": "福住", "k": 5, "p": 3980.0, "m": 104.71, "b": "2006-03", "q": 92.9, "mg": 16100.0, "rf": 33400.0, "pk": 9900, "est": [], "dt": 0, "pt": 3, "pg": "平置き(推定)", "sc": "福住小学校", "sd": "", "ldk": null, "kt": null, "tag": "", "memo": "", "pkraw": "敷地内（9900円／月）"}, {"n": "クリーンリバーフィネス山鼻南", "u": "https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshichuo/nc_21303434/", "w": "中央区", "s": "西線１６条", "k": 5, "p": 3380.0, "m": 83.0, "b": "2008-07", "q": 92.5, "mg": 12870.0, "rf": 20750.0, "pk": 11400, "est": [], "dt": 0, "pt": 4, "pg": "機械式/階層別(推定)", "sc": "山鼻小", "sd": "528→520 人", "ldk": 19.5, "kt": "壁付き一体", "tag": "三番手", "memo": "市電のみで大通まで 23 分。LDK 19.5 帖は壁付き一体キッチン込み。第 1 回大規模修繕の実施と駐車場の種別は未確認。", "pkraw": "敷地内（1万1400円～1万8000円／月）"}, {"n": "クリオ元町壱番館", "u": "https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshihigashi/nc_20984093/", "w": "東区", "s": "元町", "k": 2, "p": 2990.0, "m": 95.0, "b": "2004-03", "q": 92.3, "mg": 17000.0, "rf": 31520.0, "pk": 9000, "est": [], "dt": 0, "pt": 4, "pg": "機械式/階層別(推定)", "sc": "元町小", "sd": "1年生 4→3 学級", "ldk": 23.0, "kt": "対面", "tag": "", "memo": "LDK 23 帖・個室 8/6/5 帖で 12 件中いちばん広い間取り。ただし管理費と積立で月 4.9 万と重く、東区は将来の値下がりが大きめ。", "pkraw": "敷地内（9000円～1万2000円／月）"}, {"n": "グランファーレ札幌山鼻グランフォレスト", "u": "https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshichuo/nc_21377362/", "w": "中央区", "s": "静修学園前", "k": 6, "p": 3590.0, "m": 75.2, "b": "2012-02", "q": 91.2, "mg": 9390.0, "rf": 18780.0, "pk": 7000, "est": [], "dt": 0, "pt": 3, "pg": "平置き(推定)", "sc": "山鼻小", "sd": "528→520 人", "ldk": 16.6, "kt": "対面", "tag": "対抗", "memo": "市電の駅だが地下鉄幌平橋まで 815m で徒歩圏。築 14.6 年で最も新しい。個室が 6.5／6.2／4.5 帖と小さめで、夫婦の部屋 7 帖には届かない。", "pkraw": "敷地内（7000円／月）"}, {"n": "ロジェ北１５条サンフィール", "u": "https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshihigashi/nc_20344639/", "w": "東区", "s": "東区役所前", "k": 4, "p": 3800.0, "m": 99.96, "b": "2004-10", "q": 91.2, "mg": 16000.0, "rf": 26989.0, "pk": 9000, "est": [], "dt": 0, "pt": 3, "pg": "平置き(推定)", "sc": "美香保小学校", "sd": "", "ldk": null, "kt": null, "tag": "", "memo": "", "pkraw": "敷地内（9000円／月）"}, {"n": "ロジェ北１５条サンフィール", "u": "https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshihigashi/nc_20552660/", "w": "東区", "s": "東区役所前", "k": 4, "p": 3890.0, "m": 99.96, "b": "2004-10", "q": 91.2, "mg": 16000.0, "rf": 26989.0, "pk": 9000, "est": [], "dt": 0, "pt": 3, "pg": "平置き(推定)", "sc": "美香保小学校", "sd": "", "ldk": null, "kt": null, "tag": "", "memo": "", "pkraw": "敷地内（9000円／月）"}, {"n": "ウェルフォート宮の沢", "u": "https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshinishi/nc_21084658/", "w": "西区", "s": "宮の沢", "k": 5, "p": 3480.0, "m": 83.0, "b": "2004-01", "q": 90.7, "mg": 14600.0, "rf": 22400.0, "pk": 8500, "est": ["駐車場"], "dt": 0, "pt": "不明(要現地確認)", "pg": "", "sc": "西小", "sd": "", "ldk": 17.0, "kt": "壁付き一体", "tag": "", "memo": "西区・東西線の始発駅 宮の沢まで 5 分・83㎡・積立 270 円/㎡。点数 1 位だが、西区は将来の値下がりが中央区より大きく、大通まで約 25 分。駐車場と学区の推移は未確認。", "pkraw": "-"}, {"n": "グランファーレ円山公園南", "u": "https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshichuo/nc_78147852/", "w": "中央区", "s": "円山公園", "k": 11, "p": 3180.0, "m": 98.3, "b": "2005-07", "q": 90.6, "mg": 13676.0, "rf": 31460.0, "pk": 2250, "est": [], "dt": 0, "pt": 3, "pg": "平置き(推定)", "sc": "緑丘小", "sd": "1年生 5→4 学級", "ldk": 22.7, "kt": "壁付き一体", "tag": "", "memo": "98㎡・LDK 22.7 帖・積立 320 円/㎡ と厚く、敷地内駐車場 2,250 円（空きは要確認）。東西線 円山公園 11 分で大通まで直通。築 21 年で給排水管の更新を確認、27 戸の小規模、学区の緑丘小は 1 年生の学級が減り始めている。", "pkraw": "敷地内（2250円／月）"}, {"n": "ディーレスティア山鼻南", "u": "https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshichuo/nc_21019966/", "w": "中央区", "s": "中央図書館前", "k": 9, "p": 3080.0, "m": 90.5, "b": "2008-01", "q": 90.3, "mg": 17280.0, "rf": 24060.0, "pk": 3000, "est": [], "dt": 0, "pt": 4, "pg": "機械式/階層別(推定)", "sc": "山鼻南小", "sd": "316→330 人", "ldk": 16.4, "kt": "壁付き一体", "tag": "", "memo": "新しく上位に入った建物。3,080 万（90.5㎡・4 室・WIC）と 3,280 万（104.3㎡・LDK 24 帖）の 2 部屋。積立は厚めで敷地内駐車場あり。市電のみで地下鉄までは歩けないのが弱点。", "pkraw": "敷地内（3000円～1万円／月）"}, {"n": "ディーレスティア山鼻南", "u": "https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshichuo/nc_20925789/", "w": "中央区", "s": "中央図書館前", "k": 9, "p": 3280.0, "m": 104.3, "b": "2008-01", "q": 90.3, "mg": 19920.0, "rf": 27740.0, "pk": 8500, "est": ["駐車場"], "dt": 0, "pt": "不明(要現地確認)", "pg": "", "sc": "山鼻南小", "sd": "316→330 人", "ldk": 24.3, "kt": "対面", "tag": "", "memo": "新しく上位に入った建物。3,080 万（90.5㎡・4 室・WIC）と 3,280 万（104.3㎡・LDK 24 帖）の 2 部屋。積立は厚めで敷地内駐車場あり。市電のみで地下鉄までは歩けないのが弱点。", "pkraw": "-"}, {"n": "エクセルシオール平岸このはな通り", "u": "https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshitoyohira/nc_21461247/", "w": "豊平区", "s": "平岸", "k": 8, "p": 3380.0, "m": 83.3, "b": "2005-09", "q": 90.3, "mg": 12080.0, "rf": 21700.0, "pk": 8500, "est": ["駐車場"], "dt": 0, "pt": 1, "pg": "周辺月極・平置き（空き待ち）", "sc": "中の島小", "sd": "482→573 人", "ldk": 19.1, "kt": "壁付き一体", "tag": "", "memo": "敷地内駐車場は空き待ちのみ。学区の中の島小は増加中。", "pkraw": "空無"}, {"n": "ラピスタワー南平岸ステーションサイド", "u": "https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshitoyohira/nc_21463806/", "w": "豊平区", "s": "南平岸", "k": 7, "p": 3990.0, "m": 83.39, "b": "2004-09", "q": 89.7, "mg": 10800.0, "rf": 25900.0, "pk": 6600, "est": [], "dt": 0, "pt": 4, "pg": "機械式/階層別(推定)", "sc": "平岸小学校", "sd": "", "ldk": null, "kt": null, "tag": "", "memo": "", "pkraw": "敷地内（6600円～1万2000円／月）"}, {"n": "ライオンズひばりが丘フォレストフォート", "u": "https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshiatsubetsu/nc_20877040/", "w": "厚別区", "s": "ひばりが丘", "k": 6, "p": 3780.0, "m": 100.67, "b": "2008-04", "q": 88.7, "mg": 15300.0, "rf": 21140.0, "pk": 8500, "est": ["駐車場"], "dt": 0, "pt": 0, "pg": "記載なし(Park Direct照会も個別ページなし・要現地確認)", "sc": "共栄小学校", "sd": "", "ldk": null, "kt": null, "tag": "", "memo": "", "pkraw": "-"}, {"n": "クリーンリバーフィネス東札幌1条イースト", "u": "https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshishiroishi/nc_21077728/", "w": "白石区", "s": "東札幌", "k": 6, "p": 3680.0, "m": 96.2, "b": "2005-10", "q": 88.0, "mg": 7410.0, "rf": 25215.0, "pk": 8500, "est": [], "dt": 0, "pt": 4, "pg": "機械式/階層別(推定)", "sc": "東園小", "sd": "1年生 3→2 学級", "ldk": 24.9, "kt": "対面", "tag": "", "memo": "96㎡・LDK 25 帖・東札幌 6 分。3,680 万は上限近く、学区の東園小は児童が 10 年で 26% 減。", "pkraw": "敷地内（8500円～1万円／月）"}, {"n": "カルム宮の森ハウス", "u": "https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshichuo/nc_20577727/", "w": "中央区", "s": "西２８丁目", "k": 18, "p": 3480.0, "m": 117.0, "b": "2006-11", "q": 87.2, "mg": 18700.0, "rf": 35100.0, "pk": 16000, "est": [], "dt": 0, "pt": 3, "pg": "平置き(推定)", "sc": "大倉山小学校", "sd": "", "ldk": 27.6, "kt": "壁付き一体", "tag": "", "memo": "117㎡・LDK 27 帖と最も広く積立 300 円/㎡。ただし駅（西28丁目）まで徒歩 18 分で坂あり。学区の大倉山小は口コミ点が低い。", "pkraw": "敷地内（1万6000円／月）"}, {"n": "Ｂｒｉｌｌｉａ中央図書館前", "u": "https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshichuo/nc_20904156/", "w": "中央区", "s": "中央図書館前", "k": 2, "p": 3180.0, "m": 84.0, "b": "2004-09", "q": 87.1, "mg": 8360.0, "rf": 20400.0, "pk": 8500, "est": ["駐車場"], "dt": 0, "pt": 2, "pg": "周辺月極・屋根付き（機械式）", "sc": "伏見小", "sd": "1年生 4→3 学級", "ldk": 19.5, "kt": "壁付き一体", "tag": "", "memo": "市電のみ。駐車場の記載が無い。学区の伏見小は減少中。", "pkraw": "-"}, {"n": "Ｂｒｉｌｌｉａ真駒内公園", "u": "https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshiminami/nc_21588656/", "w": "南区", "s": "真駒内", "k": 16, "p": 2480.0, "m": 98.7, "b": "2008-02", "q": 86.7, "mg": 15730.0, "rf": 35590.0, "pk": 6000, "est": [], "dt": 0, "pt": 4, "pg": "機械式/階層別(推定)", "sc": "真駒内公園小学校", "sd": "", "ldk": 19.3, "kt": "壁付き一体", "tag": "", "memo": "98.7㎡・4LDK で 12 件中いちばん安い。積立 361 円/㎡ と最も厚い。弱点は真駒内が南北線の終点で大通まで約 26 分、駅まで徒歩 16 分で起伏あり（標高差 10m）。学区は未特定。", "pkraw": "敷地内（6000円～1万2000円／月）"}, {"n": "シティハウス澄川天神山", "u": "https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshiminami/nc_21616240/", "w": "南区", "s": "澄川", "k": 8, "p": 3870.0, "m": 96.97, "b": "2004-02", "q": 86.7, "mg": 15000, "rf": 19394, "pk": 8500, "est": ["管理費", "積立", "駐車場"], "dt": 0, "pt": 4, "pg": "機械式/階層別(推定)", "sc": null, "sd": "", "ldk": null, "kt": null, "tag": "", "memo": "100㎡・2,490 万と安く広い。南区は将来の値下がりが最も大きく、安さで見る枠。", "pkraw": ""}, {"n": "ライオンズタワー札幌山鼻", "u": "https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshichuo/nc_21336083/", "w": "中央区", "s": "ロープウェイ入口", "k": 5, "p": 3980.0, "m": 83.88, "b": "2003-01", "q": 86.6, "mg": 9955.0, "rf": 21810.0, "pk": 9500, "est": [], "dt": 0, "pt": 4, "pg": "機械式/階層別(推定)", "sc": null, "sd": "", "ldk": null, "kt": null, "tag": "", "memo": "", "pkraw": "敷地内（9500円～1万5000円／月）"}, {"n": "シティハウス澄川天神山", "u": "https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshiminami/nc_20551782/", "w": "南区", "s": "澄川", "k": 9, "p": 2490.0, "m": 100.9, "b": "2004-02", "q": 86.2, "mg": 18600.0, "rf": 26230.0, "pk": 8000, "est": [], "dt": 0, "pt": 4, "pg": "機械式/階層別(推定)", "sc": "澄川西小", "sd": "", "ldk": 20.4, "kt": "不明", "tag": "", "memo": "100㎡・2,490 万と安く広い。南区は将来の値下がりが最も大きく、安さで見る枠。", "pkraw": "敷地内（8000円～1万4000円／月）"}, {"n": "Ｄ’グランセ真駒内泉町ウエストスクエア", "u": "https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshiminami/nc_79100598/", "w": "南区", "s": "真駒内", "k": 7, "p": 2780.0, "m": 92.0, "b": "2003-02", "q": 86.1, "mg": 11960.0, "rf": 29260.0, "pk": 8000, "est": [], "dt": 0, "pt": 4, "pg": "機械式/階層別(推定)", "sc": "真駒内桜山小", "sd": "1年生 4→3 学級", "ldk": 16.5, "kt": "対面", "tag": "", "memo": "92㎡・積立 318 円/㎡・真駒内 7 分。学区の真駒内桜山小は児童が 10 年で 27% 減。南区は将来の値下がりが最も大きい。", "pkraw": "敷地内（8000円～1万2000円／月）"}, {"n": "ダイアパレス大通南アトリウムガーデン", "u": "https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshichuo/nc_21518609/", "w": "中央区", "s": "西１１丁目", "k": 10, "p": 3380.0, "m": 87.7, "b": "2005-08", "q": 85.5, "mg": 10390.0, "rf": 19030.0, "pk": 9000, "est": [], "dt": 0, "pt": 4, "pg": "機械式/階層別(推定)", "sc": "二条小", "sd": "448→659 人", "ldk": 18.1, "kt": "独立", "tag": "本命", "memo": "点数では 15 位だが本命。中央区で唯一の地下鉄駅圏で、大通まで 12 分。独立キッチン・WIC あり。3 面の個室と納戸。築 21 年で 2028 年時点 23 年、管理と積立は標準的。", "pkraw": "敷地内（9000円～1万3000円／月）"}, {"n": "エクセルシオールヒルズ平岸", "u": "https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshitoyohira/nc_21478130/", "w": "豊平区", "s": "南平岸", "k": 12, "p": 2380.0, "m": 88.0, "b": "2003-10", "q": 85.4, "mg": 14200.0, "rf": 22877.0, "pk": 9800, "est": [], "dt": 0, "pt": 3, "pg": "平置き(推定)", "sc": "東山小", "sd": "", "ldk": 18.4, "kt": "壁付き一体", "tag": "", "memo": "", "pkraw": "敷地内（9800円／月）"}, {"n": "ロジェ北２６条", "u": "https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshihigashi/nc_21182863/", "w": "東区", "s": "北２４条", "k": 13, "p": 2690.0, "m": 84.8, "b": "2003-12", "q": 85.3, "mg": 7550.0, "rf": 22100.0, "pk": 8000, "est": [], "dt": 0, "pt": 3, "pg": "平置き(推定)", "sc": "北園小", "sd": "1年生 3→2 学級", "ldk": 18, "kt": "対面", "tag": "", "memo": "築 22.8 年で 2028 年時点 25 年目前。給排水管の更新が済んでいるか要確認。学区の北園小は減少中。", "pkraw": "敷地内（8000円／月）"}, {"n": "アパガーデンパレス札幌駅西チェリーコート", "u": "https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshikita/nc_20465577/", "w": "北区", "s": "札幌", "k": 12, "p": 3880.0, "m": 96.17, "b": "2003-01", "q": 84.9, "mg": 18754.0, "rf": 25389.0, "pk": 12500, "est": [], "dt": 0, "pt": 3, "pg": "平置き(推定)", "sc": null, "sd": "", "ldk": null, "kt": null, "tag": "", "memo": "", "pkraw": "敷地内（1万2500円／月）"}, {"n": "ブランズひばりが丘", "u": "https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshiatsubetsu/nc_20643717/", "w": "厚別区", "s": "ひばりが丘", "k": 8, "p": 3780.0, "m": 83.27, "b": "2007-11", "q": 84.8, "mg": 10800.0, "rf": 16700.0, "pk": 9500, "est": [], "dt": 0, "pt": 3, "pg": "平置き(推定)", "sc": null, "sd": "", "ldk": null, "kt": null, "tag": "", "memo": "", "pkraw": "敷地内（9500円／月）"}, {"n": "ブランズひばりが丘", "u": "https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshiatsubetsu/nc_78427558/", "w": "厚別区", "s": "ひばりが丘", "k": 8, "p": 3880.0, "m": 99.0, "b": "2007-11", "q": 84.8, "mg": 12900.0, "rf": 19800.0, "pk": 6500, "est": [], "dt": 0, "pt": 3, "pg": "平置き(推定)", "sc": null, "sd": "", "ldk": null, "kt": null, "tag": "", "memo": "", "pkraw": "敷地内（6500円／月）"}, {"n": "ミリオン菊水駅前", "u": "https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshishiroishi/nc_21329045/", "w": "白石区", "s": "菊水", "k": 2, "p": 3980.0, "m": 92.81, "b": "2007-02", "q": 84.6, "mg": 9100.0, "rf": 18600.0, "pk": 8500, "est": ["駐車場"], "dt": 0, "pt": null, "pg": null, "sc": null, "sd": "", "ldk": null, "kt": null, "tag": "", "memo": "", "pkraw": "空無"}, {"n": "クレアホームズ旭ヶ丘ハイライズ", "u": "https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshichuo/nc_21664631/", "w": "中央区", "s": "西線１４条", "k": 10, "p": 3890.0, "m": 83.94, "b": "2005-09", "q": 84.3, "mg": 15000, "rf": 16788, "pk": 8500, "est": ["管理費", "積立", "駐車場"], "dt": 0, "pt": 3, "pg": "平置き(推定)", "sc": null, "sd": "", "ldk": null, "kt": null, "tag": "", "memo": "", "pkraw": ""}, {"n": "クレアホームズ旭ヶ丘ハイライズ", "u": "https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshichuo/nc_20811784/", "w": "中央区", "s": "西線１４条", "k": 10, "p": 3990.0, "m": 83.94, "b": "2005-09", "q": 84.3, "mg": 15000, "rf": 16788, "pk": 8500, "est": ["管理費", "積立", "駐車場"], "dt": 0, "pt": 3, "pg": "平置き(推定)", "sc": null, "sd": "", "ldk": null, "kt": null, "tag": "", "memo": "", "pkraw": ""}], M={"as_of": "2026-09-13", "n": 30, "pool": 53, "rate_var": 1.3, "rate_fix": 2.3, "rate_note": "変動は 2026-09 モゲチェック指数 1.23〜1.29%（market.json）を切り上げ。固定は全期間固定の固め置き（実勢は未裏取り）", "parking_default": 8500, "cost": 0.07, "tax_month": 8333};
+const $=id=>document.getElementById(id);
+const fmt=n=>Math.round(n).toLocaleString("ja-JP");
+const man=n=>(n/1e4).toFixed(1);
+let MODE="inv", RT="var", YRS=30, SORT="q";
+$("rv").value=M.rate_var; $("rf").value=M.rate_fix; $("cst").value=(M.cost*100).toFixed(1);
+$("asof").textContent="データ "+M.as_of; $("asof2").textContent=M.as_of; $("npool").textContent=M.n;
+$("ratenote").textContent=M.rate_note; $("ratenote2").textContent="変動 "+M.rate_var+"%・固定 "+M.rate_fix+"%。"+M.rate_note;
+
+function af(rate,yrs){const r=rate/100/12,n=yrs*12;return r>0? r/(1-Math.pow(1+r,-n)) : 1/n;}
+function fixed(x){return x.mg+x.rf+M.tax_month+x.pk;}
+function rate(){return RT==="var"? +$("rv").value : +$("rf").value;}
+function calc(){
+  const net=+$("net").value, r27=+$("r27").value, have=+$("have").value, T=+$("target").value, capM=+$("cap").value;
+  const pool=net-r27+have;                 // 頭金に使える上限（NISA 先取り前）
+  const a=af(rate(),YRS), a1=af(rate()+1,YRS);
+  return D.map(x=>{
+    const costR = x.dt===1? 0.035 : +$("cst").value/100;
+    const cost=x.p*costR, fx=fixed(x);
+    let down, inv, ok=true, why="";
+    if(MODE==="inv"){
+      down=pool-T-cost;
+      if(down<0){ok=false; why="NISA "+fmt(T)+" 万を先取りすると諸費用 "+fmt(cost)+" 万に届かない"; down=0;}
+      inv=T;
+    }else{
+      const pay=capM*1e4-fx;
+      if(pay<=0){ok=false; why="固定費だけで月 "+man(fx)+" 万。上限に収まらない";}
+      const loanMax=pay>0? pay/a/1e4 : 0;
+      down=Math.max(0,x.p-loanMax);
+      inv=pool-cost-down;
+      if(ok && inv<0){ok=false; why="頭金 "+fmt(down)+" 万が枠（"+fmt(pool-cost)+" 万）を超える"; inv=0;}
+    }
+    const d=Math.min(down,x.p), loan=Math.max(0,x.p-d);
+    const lm=loan*1e4*a, lm1=loan*1e4*a1;
+    return {...x, cost, down:d, loan, inv, ok, why, fx, lm, lm1, mo:lm+fx, mo1:lm1+fx};
+  });
+}
+function render(){
+  const rows=calc();
+  const T=+$("target").value, capM=+$("cap").value, net=+$("net").value, r27=+$("r27").value, have=+$("have").value;
+  $("tval").textContent=fmt(T); $("capval").textContent=capM.toFixed(1);
+  const pool=net-r27+have;
+  $("capline").innerHTML = MODE==="inv"
+    ? "頭金の枠 <b class='num'>"+fmt(pool-T)+" 万</b>（手取り "+fmt(net)+" − 賃貸 "+fmt(r27)+(have?" + 既存 "+fmt(have):"")+" − NISA "+fmt(T)+"）から諸費用を引いた残りが頭金"
+    : "枠 <b class='num'>"+fmt(pool)+" 万</b>（手取り "+fmt(net)+" − 賃貸 "+fmt(r27)+(have?" + 既存 "+fmt(have):"")+"）。上限に収まる借入から頭金を逆算し、残りが NISA に回る";
+  const key={q:(a,b)=>b.q-a.q, mo:(a,b)=>(a.ok?a.mo:1e12)-(b.ok?b.mo:1e12), p:(a,b)=>a.p-b.p}[SORT];
+  const rk=new Map(rows.slice().sort((a,b)=>b.q-a.q).map((r,i)=>[r.n+r.p,i+1]));
+  $("cards").innerHTML=rows.sort(key).map(r=>{
+    const segs=[["--loan",r.lm],["--mg",r.mg],["--rf",r.rf],["--tax",M.tax_month],["--pk",r.pk]];
+    const bar=segs.map(([c,v])=>`<i style="width:${(100*v/r.mo).toFixed(1)}%;background:var(${c})"></i>`).join("");
+    const est=r.est.length? `<span style="color:var(--warn)">・${r.est.join("/")}は推定</span>`:"";
+    const sub = MODE==="inv"
+      ? `頭金 ${fmt(r.down)} 万・借入 ${fmt(r.loan)} 万`
+      : `頭金 ${fmt(r.down)} 万・NISA に残る <b>${fmt(r.inv)}</b> 万`;
+    const alt = RT==="var" && r.ok ? `<small>+1% → ${man(r.mo1)} 万</small>` : "";
+    return `<div class="card ${r.ok?"":"no"}" data-id="${r.n}${r.p}">
+  <div class="hd"><div class="nm"><span class="rk num">${rk.get(r.n+r.p)}</span>${r.n}${r.tag?`<span class="tag">${r.tag}</span>`:""}</div>
+   <div class="mo num">${r.ok? man(r.mo) : "—"}<small>万/月</small></div></div>
+  <div class="pr num"><span>${fmt(r.p)} 万・${r.m}㎡・${r.w} ${r.s||""}${r.k!=null?" 徒歩"+r.k+"分":""}</span><span>${r.ok?sub:""} ${alt}</span></div>
+  ${r.ok? `<div class="bar">${bar}</div>` : `<div class="why">買えない: ${r.why}</div>`}
+  <div class="det">
+   <table>
+    <tr><td><i class="sw" style="background:var(--loan)"></i>ローン返済（借入 ${fmt(r.loan)} 万・${rate()}%・${YRS} 年）</td><td>${fmt(r.lm)} 円</td></tr>
+    <tr><td><i class="sw" style="background:var(--mg)"></i>管理費</td><td>${fmt(r.mg)} 円</td></tr>
+    <tr><td><i class="sw" style="background:var(--rf)"></i>修繕積立（${Math.round(r.rf/r.m)} 円/㎡）</td><td>${fmt(r.rf)} 円</td></tr>
+    <tr><td><i class="sw" style="background:var(--tax)"></i>固都税（月割）</td><td>${fmt(M.tax_month)} 円</td></tr>
+    <tr><td><i class="sw" style="background:var(--pk)"></i>駐車場 ${r.pkraw? "（"+r.pkraw+"）":""}</td><td>${fmt(r.pk)} 円</td></tr>
+    <tr><td><b>月々の合計</b></td><td><b>${fmt(r.mo)} 円</b></td></tr>
+    <tr><td>諸費用（${r.dt===1?"売主直販 3.5%":"仲介 "+$("cst").value+"%"}）</td><td>${fmt(r.cost)} 万</td></tr>
+    <tr><td>頭金 / 借入</td><td>${fmt(r.down)} / ${fmt(r.loan)} 万</td></tr>
+    <tr><td>NISA に残る</td><td>${fmt(r.inv)} 万</td></tr>
+   </table>
+   <div class="memo">築 ${r.b}・Q ${r.q}${r.ldk?"・LDK "+r.ldk+" 帖"+(r.kt?"（"+r.kt+"）":""):""}${r.sc?"・"+r.sc+(r.sd?"（"+r.sd+"）":""):""}${r.pg?"・駐車場: "+r.pg:""}${est}<br>
+   ${r.memo?r.memo+"<br>":""}<a href="${r.u}" target="_blank" rel="noopener">SUUMO で見る ↗</a></div>
+  </div></div>`;
+  }).join("");
+}
+document.querySelectorAll("[data-mode]").forEach(b=>b.onclick=()=>{MODE=b.dataset.mode;document.querySelectorAll("[data-mode]").forEach(x=>x.setAttribute("aria-pressed",x===b));$("invBox").style.display=MODE==="inv"?"":"none";$("capBox").style.display=MODE==="cap"?"":"none";render();});
+document.querySelectorAll("[data-rt]").forEach(b=>b.onclick=()=>{RT=b.dataset.rt;document.querySelectorAll("[data-rt]").forEach(x=>x.setAttribute("aria-pressed",x===b));render();});
+document.querySelectorAll("[data-yr]").forEach(b=>b.onclick=()=>{YRS=+b.dataset.yr;document.querySelectorAll("[data-yr]").forEach(x=>x.setAttribute("aria-pressed",x===b));render();});
+document.querySelectorAll("[data-sort]").forEach(b=>b.onclick=()=>{SORT=b.dataset.sort;document.querySelectorAll("[data-sort]").forEach(x=>x.setAttribute("aria-pressed",x===b));render();});
+["target","cap","net","r27","have","rv","rf","cst"].forEach(id=>$(id).addEventListener("input",render));
+$("cards").addEventListener("click",e=>{if(e.target.closest("a"))return;const c=e.target.closest(".card");if(c)c.classList.toggle("open");});
+render();
+</script>
+</body>
+</html>
