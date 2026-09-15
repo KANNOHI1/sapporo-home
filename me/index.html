@@ -43,9 +43,15 @@ details.more summary{cursor:pointer;color:var(--acc2);font-size:13px;font-weight
 details.more summary::before{content:"▸ ";}
 details.more[open] summary::before{content:"▾ ";}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px;margin-top:10px}
-.sort{display:flex;gap:6px;align-items:center;font-size:12.5px;color:var(--ink3);margin:6px 0 10px}
-.sort button{background:none;border:1px solid var(--bd);color:var(--ink2);border-radius:999px;padding:4px 10px;font:inherit;font-size:12.5px;cursor:pointer}
-.sort button[aria-pressed=true]{border-color:var(--acc);color:var(--acc2)}
+.top{display:flex;justify-content:space-between;align-items:baseline;gap:8px;font-size:11.5px;color:var(--ink4);margin:0 0 6px}
+.top b{color:var(--ink3);font-weight:510}
+.bar2{display:flex;gap:6px;align-items:center;padding-bottom:8px}
+.sum{flex:1;min-width:0;text-align:left;background:var(--panel);border:1px solid var(--bd);border-radius:10px;padding:8px 10px;font:inherit;font-size:12.5px;color:var(--ink2);cursor:pointer;line-height:1.35}
+.sum b{color:var(--ink);font-weight:510}
+.sum .to{color:var(--acc2);font-weight:510;white-space:nowrap}
+.sum[aria-expanded=true]{border-color:var(--acc)}
+.bar2 select{background:var(--panel);color:var(--ink2);border:1px solid var(--bd);border-radius:10px;padding:8px 6px;font:inherit;font-size:12.5px;max-width:42%}
+#setPanel[hidden]{display:none}
 .card{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:12px 14px;margin-bottom:8px;cursor:pointer;transition:border-color .12s}
 .card:hover{border-color:var(--acc)}
 .card.no{opacity:.45}
@@ -76,10 +82,15 @@ details.more[open] summary::before{content:"▾ ";}
 </head>
 <body>
 <main>
-<h1>札幌 住み替え試算</h1>
-<p class="sub">NISA に先取りする額を決めると、物件ごとの頭金・借入・月々が決まる。<span id="asof"></span></p>
+<div class="top"><b>札幌 住み替え試算</b><span id="asof"></span></div>
 <div class="sticky">
- <div class="panel" style="margin-bottom:10px">
+ <div class="bar2">
+  <button type="button" class="sum" id="sumBtn" aria-expanded="false" aria-controls="setPanel"></button>
+  <select id="sortSel" aria-label="並べ替え">
+   <option value="q">品質順</option><option value="mo">月々が安い順</option><option value="c15">15年実質が安い順</option><option value="p">価格順</option>
+  </select>
+ </div>
+ <div class="panel" id="setPanel" hidden style="margin-bottom:10px">
   <div class="row" style="justify-content:space-between">
    <div class="seg" role="group" aria-label="モード">
     <button type="button" data-mode="inv" aria-pressed="true">NISA 先取り額から</button>
@@ -124,12 +135,6 @@ details.more[open] summary::before{content:"▾ ";}
  </div>
 </div>
 
-<div class="sort">並べ替え
- <button type="button" data-sort="q" aria-pressed="true">品質順</button>
- <button type="button" data-sort="mo">月々が安い順</button>
- <button type="button" data-sort="c15">15年実質コストが安い順</button>
- <button type="button" data-sort="p">価格順</button>
-</div>
 <div id="cards"></div>
 <div class="legend">
  <span><i class="sw" style="background:var(--loan)"></i>ローン</span><span><i class="sw" style="background:var(--mg)"></i>管理費</span>
@@ -157,6 +162,17 @@ const fmt=n=>Math.round(n).toLocaleString("ja-JP");
 const man=n=>(n/1e4).toFixed(1);
 let MODE="inv", RT="var", YRS=30, SORT="q";
 $("rv").value=M.rate_var; $("rf").value=M.rate_fix; $("cst").value=(M.cost*100).toFixed(1);
+// 設定はこの端末に保存（localStorage）。読めない環境では既定値で動く
+const FIELDS=["target","cap","net","r27","have","rv","rf","cst"];
+function save(){try{localStorage.setItem("me_set",JSON.stringify({MODE,RT,YRS,SORT,...Object.fromEntries(FIELDS.map(id=>[id,$(id).value]))}));}catch(e){}}
+function load(){try{const s=JSON.parse(localStorage.getItem("me_set")||"null");if(!s)return;
+  MODE=s.MODE||MODE;RT=s.RT||RT;YRS=s.YRS||YRS;SORT=s.SORT||SORT;FIELDS.forEach(id=>{if(s[id]!=null&&s[id]!=="")$(id).value=s[id];});
+  document.querySelectorAll("[data-mode]").forEach(x=>x.setAttribute("aria-pressed",x.dataset.mode===MODE));
+  document.querySelectorAll("[data-rt]").forEach(x=>x.setAttribute("aria-pressed",x.dataset.rt===RT));
+  document.querySelectorAll("[data-yr]").forEach(x=>x.setAttribute("aria-pressed",+x.dataset.yr===YRS));
+  $("invBox").style.display=MODE==="inv"?"":"none";$("capBox").style.display=MODE==="cap"?"":"none";
+}catch(e){}}
+load(); $("sortSel").value=SORT;
 $("asof").textContent="データ "+M.as_of; $("asof2").textContent=M.as_of; $("npool").textContent=M.n;
 $("ratenote").textContent=M.rate_note; $("ratenote2").textContent="変動 "+M.rate_var+"%・固定 "+M.rate_fix+"%。"+M.rate_note;
 
@@ -193,6 +209,11 @@ function render(){
   const T=+$("target").value, capM=+$("cap").value, net=+$("net").value, r27=+$("r27").value, have=+$("have").value;
   $("tval").textContent=fmt(T); $("capval").textContent=capM.toFixed(1);
   const pool=net-r27+have;
+  $("sumBtn").innerHTML=(MODE==="inv"?"NISA <b class='num'>"+fmt(T)+"</b> 万":"月々 <b class='num'>"+capM.toFixed(1)+"</b> 万まで")
+    +" · "+(RT==="var"?"変動 "+$("rv").value:"固定 "+$("rf").value)+"% · "+YRS+" 年"
+    +(MODE==="inv"?" <span class='to'>→ 頭金枠 "+fmt(pool-T)+" 万</span>":" <span class='to'>→ 枠 "+fmt(pool)+" 万</span>")
+    +"<span style='float:right;color:var(--ink4)'>"+($("setPanel").hidden?"設定 ▾":"閉じる ▴")+"</span>";
+  save();
   $("capline").innerHTML = MODE==="inv"
     ? "頭金の枠 <b class='num'>"+fmt(pool-T)+" 万</b>（手取り "+fmt(net)+(r27?" − 賃貸 "+fmt(r27):"")+(have?" + 既存 "+fmt(have):"")+" − NISA "+fmt(T)+"）から諸費用を引いた残りが頭金"
     : "枠 <b class='num'>"+fmt(pool)+" 万</b>（手取り "+fmt(net)+(r27?" − 賃貸 "+fmt(r27):"")+(have?" + 既存 "+fmt(have):"")+"）。上限に収まる借入から頭金を逆算し、残りが NISA に回る";
@@ -232,7 +253,8 @@ function render(){
 document.querySelectorAll("[data-mode]").forEach(b=>b.onclick=()=>{MODE=b.dataset.mode;document.querySelectorAll("[data-mode]").forEach(x=>x.setAttribute("aria-pressed",x===b));$("invBox").style.display=MODE==="inv"?"":"none";$("capBox").style.display=MODE==="cap"?"":"none";render();});
 document.querySelectorAll("[data-rt]").forEach(b=>b.onclick=()=>{RT=b.dataset.rt;document.querySelectorAll("[data-rt]").forEach(x=>x.setAttribute("aria-pressed",x===b));render();});
 document.querySelectorAll("[data-yr]").forEach(b=>b.onclick=()=>{YRS=+b.dataset.yr;document.querySelectorAll("[data-yr]").forEach(x=>x.setAttribute("aria-pressed",x===b));render();});
-document.querySelectorAll("[data-sort]").forEach(b=>b.onclick=()=>{SORT=b.dataset.sort;document.querySelectorAll("[data-sort]").forEach(x=>x.setAttribute("aria-pressed",x===b));render();});
+$("sortSel").onchange=()=>{SORT=$("sortSel").value;render();};
+$("sumBtn").onclick=()=>{const p=$("setPanel");p.hidden=!p.hidden;$("sumBtn").setAttribute("aria-expanded",String(!p.hidden));render();};
 ["target","cap","net","r27","have","rv","rf","cst"].forEach(id=>$(id).addEventListener("input",render));
 $("cards").addEventListener("click",e=>{if(e.target.closest("a"))return;const c=e.target.closest(".card");if(c)c.classList.toggle("open");});
 render();
