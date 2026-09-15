@@ -46,11 +46,9 @@ details.more[open] summary::before{content:"▾ ";}
 .top{display:flex;justify-content:space-between;align-items:baseline;gap:8px;font-size:11.5px;color:var(--ink4);margin:0 0 6px}
 .top b{color:var(--ink3);font-weight:510}
 .bar2{display:flex;gap:6px;align-items:center;padding-bottom:8px}
-.sum{flex:1;min-width:0;text-align:left;background:var(--panel);border:1px solid var(--bd);border-radius:10px;padding:8px 10px;font:inherit;font-size:12.5px;color:var(--ink2);cursor:pointer;line-height:1.35}
-.sum b{color:var(--ink);font-weight:510}
-.sum .to{color:var(--acc2);font-weight:510;white-space:nowrap}
-.sum[aria-expanded=true]{border-color:var(--acc)}
-.bar2 select{background:var(--panel);color:var(--ink2);border:1px solid var(--bd);border-radius:10px;padding:8px 6px;font:inherit;font-size:12.5px;max-width:42%}
+.sum{background:var(--panel);border:1px solid var(--bd);border-radius:10px;padding:7px 12px;font:inherit;font-size:12.5px;color:var(--ink3);cursor:pointer;white-space:nowrap}
+.sum[aria-expanded=true]{border-color:var(--acc);color:var(--acc2)}
+.bar2 select{flex:1;min-width:0;background:var(--panel);color:var(--ink2);border:1px solid var(--bd);border-radius:10px;padding:7px 6px;font:inherit;font-size:12.5px}
 #setPanel[hidden]{display:none}
 .card{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:12px 14px;margin-bottom:8px;cursor:pointer;transition:border-color .12s}
 .card:hover{border-color:var(--acc)}
@@ -85,10 +83,10 @@ details.more[open] summary::before{content:"▾ ";}
 <div class="top"><b>札幌 住み替え試算</b><span id="asof"></span></div>
 <div class="sticky">
  <div class="bar2">
-  <button type="button" class="sum" id="sumBtn" aria-expanded="false" aria-controls="setPanel"></button>
   <select id="sortSel" aria-label="並べ替え">
    <option value="q">品質順</option><option value="mo">月々が安い順</option><option value="c15">15年実質が安い順</option><option value="p">価格順</option>
   </select>
+  <button type="button" class="sum" id="sumBtn" aria-expanded="false" aria-controls="setPanel">設定 ▾</button>
  </div>
  <div class="panel" id="setPanel" hidden style="margin-bottom:10px">
   <div class="row" style="justify-content:space-between">
@@ -209,10 +207,7 @@ function render(){
   const T=+$("target").value, capM=+$("cap").value, net=+$("net").value, r27=+$("r27").value, have=+$("have").value;
   $("tval").textContent=fmt(T); $("capval").textContent=capM.toFixed(1);
   const pool=net-r27+have;
-  $("sumBtn").innerHTML=(MODE==="inv"?"NISA <b class='num'>"+fmt(T)+"</b> 万":"月々 <b class='num'>"+capM.toFixed(1)+"</b> 万まで")
-    +" · "+(RT==="var"?"変動 "+$("rv").value:"固定 "+$("rf").value)+"% · "+YRS+" 年"
-    +(MODE==="inv"?" <span class='to'>→ 頭金枠 "+fmt(pool-T)+" 万</span>":" <span class='to'>→ 枠 "+fmt(pool)+" 万</span>")
-    +"<span style='float:right;color:var(--ink4)'>"+($("setPanel").hidden?"設定 ▾":"閉じる ▴")+"</span>";
+  $("sumBtn").textContent=$("setPanel").hidden?"設定 ▾":"閉じる ▴";
   save();
   $("capline").innerHTML = MODE==="inv"
     ? "頭金の枠 <b class='num'>"+fmt(pool-T)+" 万</b>（手取り "+fmt(net)+(r27?" − 賃貸 "+fmt(r27):"")+(have?" + 既存 "+fmt(have):"")+" − NISA "+fmt(T)+"）から諸費用を引いた残りが頭金"
