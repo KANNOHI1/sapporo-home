@@ -246,7 +246,6 @@ function render(){
     <tr><td><b>月々の合計</b></td><td><b>${fmt(r.mo)} 円</b></td></tr>
     <tr><td>諸費用（${r.dt===1?"売主直販 3.5%":"仲介 "+$("cst").value+"%"}）</td><td>${fmt(r.cost)} 万</td></tr>
     <tr><td>頭金 / 借入</td><td>${fmt(r.down)} / ${fmt(r.loan)} 万</td></tr>
-    <tr><td>NISA に残る</td><td>${fmt(r.inv)} 万</td></tr>
     <tr><td>15 年実質コスト（値下がり ${r.c15dep!=null?fmt(r.c15dep):"—"} ＋ 維持費 15 年分・金利除く）</td><td>${r.c15!=null?fmt(r.c15)+" 万":"未算出"}</td></tr>
    </table>
    <div class="memo">築 ${r.b}・Q ${r.q}${r.ldk?"・LDK "+r.ldk+" 帖"+(r.kt?"（"+r.kt+"）":""):""}${r.sc?"・"+r.sc+(r.sd?"（"+r.sd+"）":""):""}${r.pg?"・駐車場: "+r.pg:""}${est}<br>リフォーム: ${r.rfm}<br>
