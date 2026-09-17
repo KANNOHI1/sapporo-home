@@ -65,6 +65,7 @@ dd small { color:var(--muted); }
 .note { margin:14px 0 0; padding:10px 14px; border-left:3px solid var(--accent); background:var(--accent-soft); font-size:14px; }
 .links { margin-top:12px; display:flex; gap:16px; }
 .links a { color:var(--accent); font-weight:700; text-decoration:none; border-bottom:1px solid currentColor; }
+.lnk { display:inline-block; margin-top:6px; padding:4px 10px; border:1px solid var(--accent); border-radius:999px; color:var(--accent); font-size:12px; font-weight:700; text-decoration:none; }
 .links a:focus-visible, a:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
 .foot { color:var(--muted); font-size:12px; margin-top:32px; }
 .term { all:unset; cursor:pointer; border-bottom:1px dotted var(--accent); color:inherit; }
@@ -124,7 +125,7 @@ dd small { color:var(--muted); }
       <dl>
         <dt>駅</dt><dd>元町 徒歩 2 分</dd>
         <dt>小学校</dt><dd>元町小 <span class="warn"><button type="button" class="term" data-key="先行減少">先行減少</button></span><br><small>1年生 4→3 学級</small></dd>
-        <dt>中学校</dt><dd>明園中学校 <span class="rank-badge rank-b">B</span><br><small>文字 5.1 ＋ 口コミ 2.0 ＝ 7.1/12</small><br><small>明るい生徒多いが指導者差、進学先は中位校中心</small><br><small>総合 3.52（25）／保護者 3.58（19）／在校生・卒業生 3.33（6）／2018 年以降入学 3.5（12）</small><br><a href="https://www.minkou.jp/junior/school/review/5756/" target="_blank" rel="noopener">みんなの中学校情報で見る</a></dd>
+        <dt>中学校</dt><dd>明園中学校 <span class="rank-badge rank-b">B</span><br><small>文字 5.1 ＋ 口コミ 2.0 ＝ 7.1/12</small><br><small>明るい生徒多いが指導者差、進学先は中位校中心</small><br><small>総合 3.52（25）／保護者 3.58（19）／在校生・卒業生 3.33（6）／2018 年以降入学 3.5（12）</small><br><a class="lnk" href="https://www.minkou.jp/junior/school/review/5756/" target="_blank" rel="noopener">口コミを読む（みんなの中学校情報）↗</a></dd>
         <dt><button type="button" class="term" data-key="災害">災害</button></dt><dd>洪水: 区域外・土砂災害: 区域外・<button type="button" class="term" data-key="大規模盛土">大規模盛土</button>: 区域外</dd>
         <dt>治安</dt><dd>強盗 0 件・侵入窃盗 0 件・全種 42 件<br><small>半径 400m・2025-09〜2026-08（北海道警察 犯罪発生マップ）。全種は自転車盗を含む</small></dd>
       </dl>
@@ -178,7 +179,7 @@ dd small { color:var(--muted); }
       <dl>
         <dt>駅</dt><dd>西１１丁目 徒歩 10 分</dd>
         <dt>小学校</dt><dd>二条小 <span class="good"><button type="button" class="term" data-key="増加">増加</button></span><br><small>448→659 人</small></dd>
-        <dt>中学校</dt><dd>啓明中学校 <span class="rank-badge rank-a">A</span><br><small>文字 8.6 ＋ 口コミ 2.4 ＝ 11.0/12</small><br><small>南北西東へ多数進学（南高 22 人）、和気あいあい</small><br><small>総合 3.8（20）／保護者 4.27（11）／在校生・卒業生 3.22（9）／2018 年以降入学 3.71（17）</small><br><a href="https://www.minkou.jp/junior/school/review/94354/" target="_blank" rel="noopener">みんなの中学校情報で見る</a></dd>
+        <dt>中学校</dt><dd>啓明中学校 <span class="rank-badge rank-a">A</span><br><small>文字 8.6 ＋ 口コミ 2.4 ＝ 11.0/12</small><br><small>南北西東へ多数進学（南高 22 人）、和気あいあい</small><br><small>総合 3.8（20）／保護者 4.27（11）／在校生・卒業生 3.22（9）／2018 年以降入学 3.71（17）</small><br><a class="lnk" href="https://www.minkou.jp/junior/school/review/94354/" target="_blank" rel="noopener">口コミを読む（みんなの中学校情報）↗</a></dd>
         <dt><button type="button" class="term" data-key="災害">災害</button></dt><dd>洪水: 区域外・土砂災害: 区域外・<button type="button" class="term" data-key="大規模盛土">大規模盛土</button>: 区域外</dd>
         <dt>治安</dt><dd><span class="warn">強盗 1 件</span>・侵入窃盗 2 件・全種 20 件<br><small>半径 400m・2025-09〜2026-08（北海道警察 犯罪発生マップ）。全種は自転車盗を含む</small></dd>
       </dl>
@@ -232,7 +233,7 @@ dd small { color:var(--muted); }
       <dl>
         <dt>駅</dt><dd>東区役所前 徒歩 4 分</dd>
         <dt>小学校</dt><dd>美香保小学校 <span class=""></span><br><small></small></dd>
-        <dt>中学校</dt><dd>明園中学校 <span class="rank-badge rank-b">B</span><br><small>文字 5.1 ＋ 口コミ 2.0 ＝ 7.1/12</small><br><small>明るい生徒多いが指導者差、進学先は中位校中心</small><br><small>総合 3.52（25）／保護者 3.58（19）／在校生・卒業生 3.33（6）／2018 年以降入学 3.5（12）</small><br><a href="https://www.minkou.jp/junior/school/review/5756/" target="_blank" rel="noopener">みんなの中学校情報で見る</a></dd>
+        <dt>中学校</dt><dd>明園中学校 <span class="rank-badge rank-b">B</span><br><small>文字 5.1 ＋ 口コミ 2.0 ＝ 7.1/12</small><br><small>明るい生徒多いが指導者差、進学先は中位校中心</small><br><small>総合 3.52（25）／保護者 3.58（19）／在校生・卒業生 3.33（6）／2018 年以降入学 3.5（12）</small><br><a class="lnk" href="https://www.minkou.jp/junior/school/review/5756/" target="_blank" rel="noopener">口コミを読む（みんなの中学校情報）↗</a></dd>
         <dt><button type="button" class="term" data-key="災害">災害</button></dt><dd>洪水: 区域外・土砂災害: 区域外・<button type="button" class="term" data-key="大規模盛土">大規模盛土</button>: 区域外</dd>
         <dt>治安</dt><dd>強盗 0 件・侵入窃盗 1 件・全種 13 件<br><small>半径 400m・2025-09〜2026-08（北海道警察 犯罪発生マップ）。全種は自転車盗を含む</small></dd>
       </dl>
@@ -286,7 +287,7 @@ dd small { color:var(--muted); }
       <dl>
         <dt>駅</dt><dd>東区役所前 徒歩 4 分</dd>
         <dt>小学校</dt><dd>美香保小学校 <span class=""></span><br><small></small></dd>
-        <dt>中学校</dt><dd>明園中学校 <span class="rank-badge rank-b">B</span><br><small>文字 5.1 ＋ 口コミ 2.0 ＝ 7.1/12</small><br><small>明るい生徒多いが指導者差、進学先は中位校中心</small><br><small>総合 3.52（25）／保護者 3.58（19）／在校生・卒業生 3.33（6）／2018 年以降入学 3.5（12）</small><br><a href="https://www.minkou.jp/junior/school/review/5756/" target="_blank" rel="noopener">みんなの中学校情報で見る</a></dd>
+        <dt>中学校</dt><dd>明園中学校 <span class="rank-badge rank-b">B</span><br><small>文字 5.1 ＋ 口コミ 2.0 ＝ 7.1/12</small><br><small>明るい生徒多いが指導者差、進学先は中位校中心</small><br><small>総合 3.52（25）／保護者 3.58（19）／在校生・卒業生 3.33（6）／2018 年以降入学 3.5（12）</small><br><a class="lnk" href="https://www.minkou.jp/junior/school/review/5756/" target="_blank" rel="noopener">口コミを読む（みんなの中学校情報）↗</a></dd>
         <dt><button type="button" class="term" data-key="災害">災害</button></dt><dd>洪水: 区域外・土砂災害: 区域外・<button type="button" class="term" data-key="大規模盛土">大規模盛土</button>: 区域外</dd>
         <dt>治安</dt><dd>強盗 0 件・侵入窃盗 1 件・全種 13 件<br><small>半径 400m・2025-09〜2026-08（北海道警察 犯罪発生マップ）。全種は自転車盗を含む</small></dd>
       </dl>
@@ -340,7 +341,7 @@ dd small { color:var(--muted); }
       <dl>
         <dt>駅</dt><dd>円山公園 徒歩 11 分</dd>
         <dt>小学校</dt><dd>緑丘小 <span class="warn"><button type="button" class="term" data-key="先行減少">先行減少</button></span><br><small>1年生 5→4 学級</small></dd>
-        <dt>中学校</dt><dd>啓明中学校 <span class="rank-badge rank-a">A</span><br><small>文字 8.6 ＋ 口コミ 2.4 ＝ 11.0/12</small><br><small>南北西東へ多数進学（南高 22 人）、和気あいあい</small><br><small>総合 3.8（20）／保護者 4.27（11）／在校生・卒業生 3.22（9）／2018 年以降入学 3.71（17）</small><br><a href="https://www.minkou.jp/junior/school/review/94354/" target="_blank" rel="noopener">みんなの中学校情報で見る</a></dd>
+        <dt>中学校</dt><dd>啓明中学校 <span class="rank-badge rank-a">A</span><br><small>文字 8.6 ＋ 口コミ 2.4 ＝ 11.0/12</small><br><small>南北西東へ多数進学（南高 22 人）、和気あいあい</small><br><small>総合 3.8（20）／保護者 4.27（11）／在校生・卒業生 3.22（9）／2018 年以降入学 3.71（17）</small><br><a class="lnk" href="https://www.minkou.jp/junior/school/review/94354/" target="_blank" rel="noopener">口コミを読む（みんなの中学校情報）↗</a></dd>
         <dt><button type="button" class="term" data-key="災害">災害</button></dt><dd>洪水: 区域外・土砂災害: 区域外・<button type="button" class="term" data-key="大規模盛土">大規模盛土</button>: 区域外</dd>
         <dt>治安</dt><dd>強盗 0 件・侵入窃盗 0 件・全種 3 件<br><small>半径 400m・2025-09〜2026-08（北海道警察 犯罪発生マップ）。全種は自転車盗を含む</small></dd>
       </dl>
@@ -394,7 +395,7 @@ dd small { color:var(--muted); }
       <dl>
         <dt>駅</dt><dd>西線１６条 徒歩 5 分</dd>
         <dt>小学校</dt><dd>山鼻小 <span class="good"><button type="button" class="term" data-key="安定">安定</button></span><br><small>528→520 人</small></dd>
-        <dt>中学校</dt><dd>伏見中学校 <span class="rank-badge rank-a">A</span><br><small>文字 8.6 ＋ 口コミ 1.9 ＝ 10.5/12</small><br><small>学力・進学は良好、いじめ少なさの評価が低い</small><br><small>総合 3.53（58）／保護者 3.88（42）／在校生・卒業生 2.62（16）／2018 年以降入学 3.46（24）</small><br><a href="https://www.minkou.jp/junior/school/review/5731/" target="_blank" rel="noopener">みんなの中学校情報で見る</a></dd>
+        <dt>中学校</dt><dd>伏見中学校 <span class="rank-badge rank-a">A</span><br><small>文字 8.6 ＋ 口コミ 1.9 ＝ 10.5/12</small><br><small>学力・進学は良好、いじめ少なさの評価が低い</small><br><small>総合 3.53（58）／保護者 3.88（42）／在校生・卒業生 2.62（16）／2018 年以降入学 3.46（24）</small><br><a class="lnk" href="https://www.minkou.jp/junior/school/review/5731/" target="_blank" rel="noopener">口コミを読む（みんなの中学校情報）↗</a></dd>
         <dt><button type="button" class="term" data-key="災害">災害</button></dt><dd>洪水: 区域外・土砂災害: 区域外・<button type="button" class="term" data-key="大規模盛土">大規模盛土</button>: 区域外</dd>
         <dt>治安</dt><dd>強盗 0 件・侵入窃盗 0 件・全種 2 件<br><small>半径 400m・2025-09〜2026-08（北海道警察 犯罪発生マップ）。全種は自転車盗を含む</small></dd>
       </dl>
@@ -448,7 +449,7 @@ dd small { color:var(--muted); }
       <dl>
         <dt>駅</dt><dd>東札幌 徒歩 6 分</dd>
         <dt>小学校</dt><dd>東園小 <span class="warn"><button type="button" class="term" data-key="先行減少">先行減少</button></span><br><small>1年生 3→2 学級</small></dd>
-        <dt>中学校</dt><dd>日章中学校 <span class="rank-badge rank-c">C</span><br><small>文字 1.7 ＋ 口コミ 1.8 ＝ 3.5/12</small><br><small>不良生徒多い・いじめ黙認が複数ソースで一致</small><br><small>総合 3.44（32）／保護者 3.56（18）／在校生・卒業生 3.29（14）／2018 年以降入学 3.36（11）</small><br><a href="https://www.minkou.jp/junior/school/review/5769/" target="_blank" rel="noopener">みんなの中学校情報で見る</a></dd>
+        <dt>中学校</dt><dd>日章中学校 <span class="rank-badge rank-c">C</span><br><small>文字 1.7 ＋ 口コミ 1.8 ＝ 3.5/12</small><br><small>不良生徒多い・いじめ黙認が複数ソースで一致</small><br><small>総合 3.44（32）／保護者 3.56（18）／在校生・卒業生 3.29（14）／2018 年以降入学 3.36（11）</small><br><a class="lnk" href="https://www.minkou.jp/junior/school/review/5769/" target="_blank" rel="noopener">口コミを読む（みんなの中学校情報）↗</a></dd>
         <dt><button type="button" class="term" data-key="災害">災害</button></dt><dd>洪水: 区域外・土砂災害: 区域外・<button type="button" class="term" data-key="大規模盛土">大規模盛土</button>: 区域外</dd>
         <dt>治安</dt><dd>強盗 0 件・侵入窃盗 0 件・全種 6 件<br><small>半径 400m・2025-09〜2026-08（北海道警察 犯罪発生マップ）。全種は自転車盗を含む</small></dd>
       </dl>
@@ -502,7 +503,7 @@ dd small { color:var(--muted); }
       <dl>
         <dt>駅</dt><dd>真駒内 徒歩 7 分</dd>
         <dt>小学校</dt><dd>真駒内桜山小 <span class="warn"><button type="button" class="term" data-key="先行減少">先行減少</button></span><br><small>1年生 4→3 学級</small></dd>
-        <dt>中学校</dt><dd>真駒内中学校 <span class="rank-badge rank-b">B</span><br><small>文字 5.1 ＋ 口コミ 2.8 ＝ 7.9/12</small><br><small>進学実績は良好、いじめ黙認・陰湿の指摘</small><br><small>総合 4.0（24）／保護者 3.93（15）／在校生・卒業生 4.11（9）／2018 年以降入学 3.92（12）</small><br><a href="https://www.minkou.jp/junior/school/review/5788/" target="_blank" rel="noopener">みんなの中学校情報で見る</a></dd>
+        <dt>中学校</dt><dd>真駒内中学校 <span class="rank-badge rank-b">B</span><br><small>文字 5.1 ＋ 口コミ 2.8 ＝ 7.9/12</small><br><small>進学実績は良好、いじめ黙認・陰湿の指摘</small><br><small>総合 4.0（24）／保護者 3.93（15）／在校生・卒業生 4.11（9）／2018 年以降入学 3.92（12）</small><br><a class="lnk" href="https://www.minkou.jp/junior/school/review/5788/" target="_blank" rel="noopener">口コミを読む（みんなの中学校情報）↗</a></dd>
         <dt><button type="button" class="term" data-key="災害">災害</button></dt><dd>洪水: 区域外・土砂災害: 区域外・<button type="button" class="term" data-key="大規模盛土">大規模盛土</button>: 区域外</dd>
         <dt>治安</dt><dd>強盗 0 件・侵入窃盗 0 件・全種 24 件<br><small>半径 400m・2025-09〜2026-08（北海道警察 犯罪発生マップ）。全種は自転車盗を含む</small></dd>
       </dl>
@@ -556,7 +557,7 @@ dd small { color:var(--muted); }
       <dl>
         <dt>駅</dt><dd>中央図書館前 徒歩 9 分</dd>
         <dt>小学校</dt><dd>山鼻南小 <span class="good"><button type="button" class="term" data-key="安定">安定</button></span><br><small>316→330 人</small></dd>
-        <dt>中学校</dt><dd>山鼻中学校 <span class="rank-badge rank-a">A</span><br><small>文字 8.6 ＋ 口コミ 2.6 ＝ 11.2/12</small><br><small>市内屈指の進学校、教育実践表彰</small><br><small>総合 3.91（34）／保護者 3.77（22）／在校生・卒業生 4.17（12）／2018 年以降入学 4.06（16）</small><br><a href="https://www.minkou.jp/junior/school/review/5733/" target="_blank" rel="noopener">みんなの中学校情報で見る</a></dd>
+        <dt>中学校</dt><dd>山鼻中学校 <span class="rank-badge rank-a">A</span><br><small>文字 8.6 ＋ 口コミ 2.6 ＝ 11.2/12</small><br><small>市内屈指の進学校、教育実践表彰</small><br><small>総合 3.91（34）／保護者 3.77（22）／在校生・卒業生 4.17（12）／2018 年以降入学 4.06（16）</small><br><a class="lnk" href="https://www.minkou.jp/junior/school/review/5733/" target="_blank" rel="noopener">口コミを読む（みんなの中学校情報）↗</a></dd>
         <dt><button type="button" class="term" data-key="災害">災害</button></dt><dd>洪水: 区域外・土砂災害: 区域外・<button type="button" class="term" data-key="大規模盛土">大規模盛土</button>: 区域外</dd>
         <dt>治安</dt><dd>強盗 0 件・侵入窃盗 0 件・全種 2 件<br><small>半径 400m・2025-09〜2026-08（北海道警察 犯罪発生マップ）。全種は自転車盗を含む</small></dd>
       </dl>
@@ -610,7 +611,7 @@ dd small { color:var(--muted); }
       <dl>
         <dt>駅</dt><dd>静修学園前 徒歩 6 分</dd>
         <dt>小学校</dt><dd>山鼻小 <span class="good"><button type="button" class="term" data-key="安定">安定</button></span><br><small>528→520 人</small></dd>
-        <dt>中学校</dt><dd>柏中学校 <span class="rank-badge rank-a">A</span><br><small>文字 8.6 ＋ 口コミ 2.6 ＝ 11.2/12</small><br><small>市内屈指の学力、真面目で礼儀正しいと一致</small><br><small>総合 3.92（12）／保護者 4.38（8）／在校生・卒業生 3.0（4）／2018 年以降入学 3.33（6）</small><br><a href="https://www.minkou.jp/junior/school/review/94356/" target="_blank" rel="noopener">みんなの中学校情報で見る</a></dd>
+        <dt>中学校</dt><dd>柏中学校 <span class="rank-badge rank-a">A</span><br><small>文字 8.6 ＋ 口コミ 2.6 ＝ 11.2/12</small><br><small>市内屈指の学力、真面目で礼儀正しいと一致</small><br><small>総合 3.92（12）／保護者 4.38（8）／在校生・卒業生 3.0（4）／2018 年以降入学 3.33（6）</small><br><a class="lnk" href="https://www.minkou.jp/junior/school/review/94356/" target="_blank" rel="noopener">口コミを読む（みんなの中学校情報）↗</a></dd>
         <dt><button type="button" class="term" data-key="災害">災害</button></dt><dd>洪水: 区域外・土砂災害: 区域外・<button type="button" class="term" data-key="大規模盛土">大規模盛土</button>: 区域外</dd>
         <dt>治安</dt><dd>強盗 0 件・侵入窃盗 0 件・全種 1 件<br><small>半径 400m・2025-09〜2026-08（北海道警察 犯罪発生マップ）。全種は自転車盗を含む</small></dd>
       </dl>
@@ -664,7 +665,7 @@ dd small { color:var(--muted); }
       <dl>
         <dt>駅</dt><dd>澄川 徒歩 9 分</dd>
         <dt>小学校</dt><dd>澄川西小 <span class=""></span><br><small></small></dd>
-        <dt>中学校</dt><dd>澄川中学校 <span class="rank-badge rank-c">C</span><br><small>文字 1.7 ＋ 口コミ 1.2 ＝ 2.9/12</small><br><small>生徒の質・停学者数の指摘、評価 3.1</small><br><small>総合 3.07（28）／保護者 3.79（14）／在校生・卒業生 2.36（14）／2018 年以降入学 2.93（15）</small><br><a href="https://www.minkou.jp/junior/school/review/5791/" target="_blank" rel="noopener">みんなの中学校情報で見る</a></dd>
+        <dt>中学校</dt><dd>澄川中学校 <span class="rank-badge rank-c">C</span><br><small>文字 1.7 ＋ 口コミ 1.2 ＝ 2.9/12</small><br><small>生徒の質・停学者数の指摘、評価 3.1</small><br><small>総合 3.07（28）／保護者 3.79（14）／在校生・卒業生 2.36（14）／2018 年以降入学 2.93（15）</small><br><a class="lnk" href="https://www.minkou.jp/junior/school/review/5791/" target="_blank" rel="noopener">口コミを読む（みんなの中学校情報）↗</a></dd>
         <dt><button type="button" class="term" data-key="災害">災害</button></dt><dd>洪水: 区域外・土砂災害: 区域外・<button type="button" class="term" data-key="大規模盛土">大規模盛土</button>: 区域外</dd>
         <dt>治安</dt><dd>強盗 0 件・侵入窃盗 0 件・全種 2 件<br><small>半径 400m・2025-09〜2026-08（北海道警察 犯罪発生マップ）。全種は自転車盗を含む</small></dd>
       </dl>
@@ -718,7 +719,7 @@ dd small { color:var(--muted); }
       <dl>
         <dt>駅</dt><dd>北２４条 徒歩 13 分</dd>
         <dt>小学校</dt><dd>北園小 <span class="warn"><button type="button" class="term" data-key="先行減少">先行減少</button></span><br><small>1年生 3→2 学級</small></dd>
-        <dt>中学校</dt><dd>北栄中学校 <span class="rank-badge rank-b">B</span><br><small>文字 5.1 ＋ 口コミ 1.8 ＝ 6.9/12</small><br><small>学力やや低めの指摘、荒れの言及なし</small><br><small>総合 3.42（26）／保護者 3.65（17）／在校生・卒業生 3.0（9）／2018 年以降入学 3.36（11）</small><br><a href="https://www.minkou.jp/junior/school/review/5757/" target="_blank" rel="noopener">みんなの中学校情報で見る</a></dd>
+        <dt>中学校</dt><dd>北栄中学校 <span class="rank-badge rank-b">B</span><br><small>文字 5.1 ＋ 口コミ 1.8 ＝ 6.9/12</small><br><small>学力やや低めの指摘、荒れの言及なし</small><br><small>総合 3.42（26）／保護者 3.65（17）／在校生・卒業生 3.0（9）／2018 年以降入学 3.36（11）</small><br><a class="lnk" href="https://www.minkou.jp/junior/school/review/5757/" target="_blank" rel="noopener">口コミを読む（みんなの中学校情報）↗</a></dd>
         <dt><button type="button" class="term" data-key="災害">災害</button></dt><dd>洪水: 区域外・土砂災害: 区域外・<button type="button" class="term" data-key="大規模盛土">大規模盛土</button>: 区域外</dd>
         <dt>治安</dt><dd>強盗 0 件・侵入窃盗 0 件・全種 4 件<br><small>半径 400m・2025-09〜2026-08（北海道警察 犯罪発生マップ）。全種は自転車盗を含む</small></dd>
       </dl>
@@ -776,7 +777,7 @@ dd small { color:var(--muted); }
       <dl>
         <dt>駅</dt><dd>ロープウェイ入口 徒歩 5 分</dd>
         <dt>小学校</dt><dd>伏見小 <span class=""></span><br><small>school_boundaries_chuo_toyohira.json 伏見小学校area『南19条西11丁目～16丁目』に一致。中学は伏見中/山鼻中の両JSON候補が南19条で重複したため公式 https://www.city.sapp</small></dd>
-        <dt>中学校</dt><dd>山鼻中学校 <span class="rank-badge rank-a">A</span><br><small>文字 8.6 ＋ 口コミ 2.6 ＝ 11.2/12</small><br><small>市内屈指の進学校、教育実践表彰</small><br><small>総合 3.91（34）／保護者 3.77（22）／在校生・卒業生 4.17（12）／2018 年以降入学 4.06（16）</small><br><a href="https://www.minkou.jp/junior/school/review/5733/" target="_blank" rel="noopener">みんなの中学校情報で見る</a></dd>
+        <dt>中学校</dt><dd>山鼻中学校 <span class="rank-badge rank-a">A</span><br><small>文字 8.6 ＋ 口コミ 2.6 ＝ 11.2/12</small><br><small>市内屈指の進学校、教育実践表彰</small><br><small>総合 3.91（34）／保護者 3.77（22）／在校生・卒業生 4.17（12）／2018 年以降入学 4.06（16）</small><br><a class="lnk" href="https://www.minkou.jp/junior/school/review/5733/" target="_blank" rel="noopener">口コミを読む（みんなの中学校情報）↗</a></dd>
         <dt><button type="button" class="term" data-key="災害">災害</button></dt><dd>洪水: 区域外・土砂災害: 区域外・<button type="button" class="term" data-key="大規模盛土">大規模盛土</button>: 区域外</dd>
         <dt>治安</dt><dd>強盗 0 件・侵入窃盗 0 件・全種 0 件<br><small>半径 400m・2025-09〜2026-08（北海道警察 犯罪発生マップ）。全種は自転車盗を含む</small></dd>
       </dl>
