@@ -58,6 +58,10 @@ dd { margin:0; }
 dd small { color:var(--muted); }
 .warn { color:var(--warn); font-weight:700; }
 .good { color:var(--good); font-weight:700; }
+.rank-badge { display:inline-block; font-size:11px; font-weight:700; color:#fff; border-radius:4px; padding:0 6px; margin-left:4px; vertical-align:middle; }
+.rank-a { background:var(--good); }
+.rank-b { background:var(--muted); }
+.rank-c { background:#C23B3B; }
 .note { margin:14px 0 0; padding:10px 14px; border-left:3px solid var(--accent); background:var(--accent-soft); font-size:14px; }
 .links { margin-top:12px; display:flex; gap:16px; }
 .links a { color:var(--accent); font-weight:700; text-decoration:none; border-bottom:1px solid currentColor; }
@@ -92,7 +96,7 @@ dd small { color:var(--muted); }
       <h2>クリオ元町壱番館</h2>
       <p class="addr">北海道札幌市東区北二十四条東１４｜地下鉄東豊線「元町」徒歩2分</p>
     </div>
-    <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">77.6</span></div>
+    <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">87.6</span></div>
   </header>
   <div class="keyrow">
     <div class="facts">
@@ -100,7 +104,7 @@ dd small { color:var(--muted); }
       <div><span class="k">広さ・間取り</span><span class="v">95.0<small>㎡</small></span><span class="sub">3LDK</span></div>
       <div><span class="k">築年</span><span class="v">22<small>年</small></span><span class="sub">2004-03 築・2階・南向き</span></div>
     </div>
-    <svg class="radar" viewBox="0 0 120 120" role="img" aria-label="コスパ 43%・管理 78%・駅徒歩 100%・間取り 100%・広さ 100%・通勤 88%・駐車場 100%・学区 56%"><title>コスパ 43%・管理 78%・駅徒歩 100%・間取り 100%・広さ 100%・通勤 88%・駐車場 100%・学区 56%</title><polygon points="60.0,38.0 75.6,44.4 82.0,60.0 75.6,75.6 60.0,82.0 44.4,75.6 38.0,60.0 44.4,44.4" class="ring"/><polygon points="60.0,16.0 91.1,28.9 104.0,60.0 91.1,91.1 60.0,104.0 28.9,91.1 16.0,60.0 28.9,28.9" class="ring"/><line x1="60" y1="60" x2="60.0" y2="16.0" class="ring"/><line x1="60" y1="60" x2="91.1" y2="28.9" class="ring"/><line x1="60" y1="60" x2="104.0" y2="60.0" class="ring"/><line x1="60" y1="60" x2="91.1" y2="91.1" class="ring"/><line x1="60" y1="60" x2="60.0" y2="104.0" class="ring"/><line x1="60" y1="60" x2="28.9" y2="91.1" class="ring"/><line x1="60" y1="60" x2="16.0" y2="60.0" class="ring"/><line x1="60" y1="60" x2="28.9" y2="28.9" class="ring"/><polygon points="60.0,41.2 84.2,35.8 104.0,60.0 91.1,91.1 60.0,104.0 32.8,87.2 16.0,60.0 42.7,42.7" class="area"/><text x="60.0" y="8.5" text-anchor="middle">コスパ</text><text x="98.9" y="24.6" text-anchor="middle">管理</text><text x="115.0" y="63.5" text-anchor="middle">駅徒歩</text><text x="98.9" y="102.4" text-anchor="middle">間取り</text><text x="60.0" y="118.5" text-anchor="middle">広さ</text><text x="21.1" y="102.4" text-anchor="middle">通勤</text><text x="5.0" y="63.5" text-anchor="middle">駐車場</text><text x="21.1" y="24.6" text-anchor="middle">学区</text></svg>
+    <svg class="radar" viewBox="0 0 120 120" role="img" aria-label="管理 78%・駅徒歩 100%・間取り 100%・広さ 100%・通勤 88%・駐車場 100%・学区 59%"><title>管理 78%・駅徒歩 100%・間取り 100%・広さ 100%・通勤 88%・駐車場 100%・学区 59%</title><polygon points="60.0,38.0 77.2,46.3 81.4,64.9 69.5,79.8 50.5,79.8 38.6,64.9 42.8,46.3" class="ring"/><polygon points="60.0,16.0 94.4,32.6 102.9,69.8 79.1,99.6 40.9,99.6 17.1,69.8 25.6,32.6" class="ring"/><line x1="60" y1="60" x2="60.0" y2="16.0" class="ring"/><line x1="60" y1="60" x2="94.4" y2="32.6" class="ring"/><line x1="60" y1="60" x2="102.9" y2="69.8" class="ring"/><line x1="60" y1="60" x2="79.1" y2="99.6" class="ring"/><line x1="60" y1="60" x2="40.9" y2="99.6" class="ring"/><line x1="60" y1="60" x2="17.1" y2="69.8" class="ring"/><line x1="60" y1="60" x2="25.6" y2="32.6" class="ring"/><polygon points="60.0,25.8 94.4,32.6 102.9,69.8 79.1,99.6 43.3,94.7 17.1,69.8 39.6,43.8" class="area"/><text x="60.0" y="8.5" text-anchor="middle">管理</text><text x="103.0" y="29.2" text-anchor="middle">駅徒歩</text><text x="113.6" y="75.7" text-anchor="middle">間取り</text><text x="83.9" y="113.1" text-anchor="middle">広さ</text><text x="36.1" y="113.1" text-anchor="middle">通勤</text><text x="6.4" y="75.7" text-anchor="middle">駐車場</text><text x="17.0" y="29.2" text-anchor="middle">学区</text></svg>
   </div>
   <span class="more">くわしく見る</span>
   </summary>
@@ -120,7 +124,7 @@ dd small { color:var(--muted); }
       <dl>
         <dt>駅</dt><dd>元町 徒歩 2 分</dd>
         <dt>小学校</dt><dd>元町小 <span class="warn"><button type="button" class="term" data-key="先行減少">先行減少</button></span><br><small>1年生 4→3 学級</small></dd>
-        <dt>中学校</dt><dd>明園中学校</dd>
+        <dt>中学校</dt><dd>明園中学校 <span class="rank-badge rank-b">B</span><br><small>文字 5.1 ＋ 口コミ 2.0 ＝ 7.1/12</small><br><small>明るい生徒多いが指導者差、進学先は中位校中心</small><br><small>総合 3.52（25）／保護者 3.58（19）／在校生・卒業生 3.33（6）／2018 年以降入学 3.5（12）</small><br><a href="https://www.minkou.jp/junior/school/review/5756/" target="_blank" rel="noopener">みんなの中学校情報で見る</a></dd>
         <dt><button type="button" class="term" data-key="災害">災害</button></dt><dd>洪水: 区域外・土砂災害: 区域外・<button type="button" class="term" data-key="大規模盛土">大規模盛土</button>: 区域外</dd>
         <dt>治安</dt><dd>強盗 0 件・侵入窃盗 0 件・全種 42 件<br><small>半径 400m・2025-09〜2026-08（北海道警察 犯罪発生マップ）。全種は自転車盗を含む</small></dd>
       </dl>
@@ -143,64 +147,10 @@ dd small { color:var(--muted); }
   <header class="card-head">
     <span class="rank">2</span>
     <div class="title-block">
-      <h2>ロジェ北２６条</h2>
-      <p class="addr">北海道札幌市東区北二十六条東３｜地下鉄南北線「北２４条」徒歩13分</p>
-    </div>
-    <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">75.7</span></div>
-  </header>
-  <div class="keyrow">
-    <div class="facts">
-      <div><span class="k">価格</span><span class="v">2,690<small>万円</small></span></div>
-      <div><span class="k">広さ・間取り</span><span class="v">84.8<small>㎡</small></span><span class="sub">3LDK+S（納戸）</span></div>
-      <div><span class="k">築年</span><span class="v">23<small>年</small></span><span class="sub">2003-12 築・8階・西向き</span></div>
-    </div>
-    <svg class="radar" viewBox="0 0 120 120" role="img" aria-label="コスパ 61%・管理 78%・駅徒歩 67%・間取り 100%・広さ 99%・通勤 88%・駐車場 75%・学区 51%"><title>コスパ 61%・管理 78%・駅徒歩 67%・間取り 100%・広さ 99%・通勤 88%・駐車場 75%・学区 51%</title><polygon points="60.0,38.0 75.6,44.4 82.0,60.0 75.6,75.6 60.0,82.0 44.4,75.6 38.0,60.0 44.4,44.4" class="ring"/><polygon points="60.0,16.0 91.1,28.9 104.0,60.0 91.1,91.1 60.0,104.0 28.9,91.1 16.0,60.0 28.9,28.9" class="ring"/><line x1="60" y1="60" x2="60.0" y2="16.0" class="ring"/><line x1="60" y1="60" x2="91.1" y2="28.9" class="ring"/><line x1="60" y1="60" x2="104.0" y2="60.0" class="ring"/><line x1="60" y1="60" x2="91.1" y2="91.1" class="ring"/><line x1="60" y1="60" x2="60.0" y2="104.0" class="ring"/><line x1="60" y1="60" x2="28.9" y2="91.1" class="ring"/><line x1="60" y1="60" x2="16.0" y2="60.0" class="ring"/><line x1="60" y1="60" x2="28.9" y2="28.9" class="ring"/><polygon points="60.0,33.2 84.2,35.8 89.3,60.0 91.1,91.1 60.0,103.7 32.8,87.2 27.0,60.0 44.0,44.0" class="area"/><text x="60.0" y="8.5" text-anchor="middle">コスパ</text><text x="98.9" y="24.6" text-anchor="middle">管理</text><text x="115.0" y="63.5" text-anchor="middle">駅徒歩</text><text x="98.9" y="102.4" text-anchor="middle">間取り</text><text x="60.0" y="118.5" text-anchor="middle">広さ</text><text x="21.1" y="102.4" text-anchor="middle">通勤</text><text x="5.0" y="63.5" text-anchor="middle">駐車場</text><text x="21.1" y="24.6" text-anchor="middle">学区</text></svg>
-  </div>
-  <span class="more">くわしく見る</span>
-  </summary>
-  <div class="grid">
-    <section>
-      <h3>住まい</h3>
-      <dl>
-        <dt><button type="button" class="term" data-key="LDK">LDK</button></dt><dd>18 帖（<button type="button" class="term" data-key="キッチン">キッチン</button>: 対面）</dd>
-        <dt>個室</dt><dd>7.8 / 6 / 6 帖</dd>
-        <dt><button type="button" class="term" data-key="WIC">WIC</button></dt><dd>なし</dd>
-        <dt><button type="button" class="term" data-key="総戸数">総戸数</button></dt><dd>51 戸・RC11階建</dd>
-        <dt>リフォーム</dt><dd>記載なし（現状渡しの可能性）</dd>
-      </dl>
-    </section>
-    <section>
-      <h3>場所</h3>
-      <dl>
-        <dt>駅</dt><dd>北２４条 徒歩 13 分</dd>
-        <dt>小学校</dt><dd>北園小 <span class="warn"><button type="button" class="term" data-key="先行減少">先行減少</button></span><br><small>1年生 3→2 学級</small></dd>
-        <dt>中学校</dt><dd>北栄中学校</dd>
-        <dt><button type="button" class="term" data-key="災害">災害</button></dt><dd>洪水: 区域外・土砂災害: 区域外・<button type="button" class="term" data-key="大規模盛土">大規模盛土</button>: 区域外</dd>
-        <dt>治安</dt><dd>強盗 0 件・侵入窃盗 0 件・全種 4 件<br><small>半径 400m・2025-09〜2026-08（北海道警察 犯罪発生マップ）。全種は自転車盗を含む</small></dd>
-      </dl>
-    </section>
-    <section>
-      <h3>月々の費用</h3>
-      <dl>
-        <dt><button type="button" class="term" data-key="管理費">管理費</button></dt><dd>7,550 円/月</dd>
-        <dt><button type="button" class="term" data-key="修繕積立">修繕積立</button></dt><dd>22,100 円/月（261 円/㎡）</dd>
-        <dt><button type="button" class="term" data-key="駐車場">駐車場</button></dt><dd>敷地内あり<br><small>敷地内（8000円／月）</small></dd>
-        <dt>15 年実質</dt><dd>1,528 万<br><small>値下がり 850 ＋ 管理費・積立・駐車場 15 年分 678・値下がりの幅 675〜1,041</small></dd>
-      </dl>
-    </section>
-  </div>
-  <p class="note">築 22.8 年で 2028 年時点 25 年目前。<button type="button" class="term" data-key="給排水管">給排水管</button>の更新が済んでいるか要確認。学区の北園小は減少中。</p>
-  <footer class="links"><a href="https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshihigashi/nc_21182863/" target="_blank" rel="noopener">SUUMO で見る</a> <a href="https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F010%2FN010000%2Fimg%2F863%2F21182863%2F21182863_0040.jpg&amp;w=1000&amp;h=750" target="_blank" rel="noopener">間取り図</a></footer>
-</details>
-<details class="card">
-  <summary>
-  <header class="card-head">
-    <span class="rank">3</span>
-    <div class="title-block">
       <h2>ダイアパレス大通南アトリウムガーデン<span class="role"><button type="button" class="term" data-key="本命">本命</button></span></h2>
       <p class="addr">北海道札幌市中央区南五条西１３｜地下鉄東西線「西１１丁目」徒歩10分</p>
     </div>
-    <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">74.3</span></div>
+    <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">86.6</span></div>
   </header>
   <div class="keyrow">
     <div class="facts">
@@ -208,7 +158,7 @@ dd small { color:var(--muted); }
       <div><span class="k">広さ・間取り</span><span class="v">87.7<small>㎡</small></span><span class="sub">3LDK+S（納戸）</span></div>
       <div><span class="k">築年</span><span class="v">21<small>年</small></span><span class="sub">2005-08 築・4階・西向き</span></div>
     </div>
-    <svg class="radar" viewBox="0 0 120 120" role="img" aria-label="コスパ 41%・管理 66%・駅徒歩 79%・間取り 100%・広さ 100%・通勤 88%・駐車場 100%・学区 83%"><title>コスパ 41%・管理 66%・駅徒歩 79%・間取り 100%・広さ 100%・通勤 88%・駐車場 100%・学区 83%</title><polygon points="60.0,38.0 75.6,44.4 82.0,60.0 75.6,75.6 60.0,82.0 44.4,75.6 38.0,60.0 44.4,44.4" class="ring"/><polygon points="60.0,16.0 91.1,28.9 104.0,60.0 91.1,91.1 60.0,104.0 28.9,91.1 16.0,60.0 28.9,28.9" class="ring"/><line x1="60" y1="60" x2="60.0" y2="16.0" class="ring"/><line x1="60" y1="60" x2="91.1" y2="28.9" class="ring"/><line x1="60" y1="60" x2="104.0" y2="60.0" class="ring"/><line x1="60" y1="60" x2="91.1" y2="91.1" class="ring"/><line x1="60" y1="60" x2="60.0" y2="104.0" class="ring"/><line x1="60" y1="60" x2="28.9" y2="91.1" class="ring"/><line x1="60" y1="60" x2="16.0" y2="60.0" class="ring"/><line x1="60" y1="60" x2="28.9" y2="28.9" class="ring"/><polygon points="60.0,42.0 80.4,39.6 94.8,60.0 91.1,91.1 60.0,104.0 32.8,87.2 16.0,60.0 34.2,34.2" class="area"/><text x="60.0" y="8.5" text-anchor="middle">コスパ</text><text x="98.9" y="24.6" text-anchor="middle">管理</text><text x="115.0" y="63.5" text-anchor="middle">駅徒歩</text><text x="98.9" y="102.4" text-anchor="middle">間取り</text><text x="60.0" y="118.5" text-anchor="middle">広さ</text><text x="21.1" y="102.4" text-anchor="middle">通勤</text><text x="5.0" y="63.5" text-anchor="middle">駐車場</text><text x="21.1" y="24.6" text-anchor="middle">学区</text></svg>
+    <svg class="radar" viewBox="0 0 120 120" role="img" aria-label="管理 66%・駅徒歩 79%・間取り 100%・広さ 100%・通勤 88%・駐車場 100%・学区 92%"><title>管理 66%・駅徒歩 79%・間取り 100%・広さ 100%・通勤 88%・駐車場 100%・学区 92%</title><polygon points="60.0,38.0 77.2,46.3 81.4,64.9 69.5,79.8 50.5,79.8 38.6,64.9 42.8,46.3" class="ring"/><polygon points="60.0,16.0 94.4,32.6 102.9,69.8 79.1,99.6 40.9,99.6 17.1,69.8 25.6,32.6" class="ring"/><line x1="60" y1="60" x2="60.0" y2="16.0" class="ring"/><line x1="60" y1="60" x2="94.4" y2="32.6" class="ring"/><line x1="60" y1="60" x2="102.9" y2="69.8" class="ring"/><line x1="60" y1="60" x2="79.1" y2="99.6" class="ring"/><line x1="60" y1="60" x2="40.9" y2="99.6" class="ring"/><line x1="60" y1="60" x2="17.1" y2="69.8" class="ring"/><line x1="60" y1="60" x2="25.6" y2="32.6" class="ring"/><polygon points="60.0,31.2 87.2,38.3 102.9,69.8 79.1,99.6 43.3,94.7 17.1,69.8 28.5,34.9" class="area"/><text x="60.0" y="8.5" text-anchor="middle">管理</text><text x="103.0" y="29.2" text-anchor="middle">駅徒歩</text><text x="113.6" y="75.7" text-anchor="middle">間取り</text><text x="83.9" y="113.1" text-anchor="middle">広さ</text><text x="36.1" y="113.1" text-anchor="middle">通勤</text><text x="6.4" y="75.7" text-anchor="middle">駐車場</text><text x="17.0" y="29.2" text-anchor="middle">学区</text></svg>
   </div>
   <span class="more">くわしく見る</span>
   </summary>
@@ -228,7 +178,7 @@ dd small { color:var(--muted); }
       <dl>
         <dt>駅</dt><dd>西１１丁目 徒歩 10 分</dd>
         <dt>小学校</dt><dd>二条小 <span class="good"><button type="button" class="term" data-key="増加">増加</button></span><br><small>448→659 人</small></dd>
-        <dt>中学校</dt><dd>啓明中学校</dd>
+        <dt>中学校</dt><dd>啓明中学校 <span class="rank-badge rank-a">A</span><br><small>文字 8.6 ＋ 口コミ 2.4 ＝ 11.0/12</small><br><small>南北西東へ多数進学（南高 22 人）、和気あいあい</small><br><small>総合 3.8（20）／保護者 4.27（11）／在校生・卒業生 3.22（9）／2018 年以降入学 3.71（17）</small><br><a href="https://www.minkou.jp/junior/school/review/94354/" target="_blank" rel="noopener">みんなの中学校情報で見る</a></dd>
         <dt><button type="button" class="term" data-key="災害">災害</button></dt><dd>洪水: 区域外・土砂災害: 区域外・<button type="button" class="term" data-key="大規模盛土">大規模盛土</button>: 区域外</dd>
         <dt>治安</dt><dd><span class="warn">強盗 1 件</span>・侵入窃盗 2 件・全種 20 件<br><small>半径 400m・2025-09〜2026-08（北海道警察 犯罪発生マップ）。全種は自転車盗を含む</small></dd>
       </dl>
@@ -243,72 +193,18 @@ dd small { color:var(--muted); }
       </dl>
     </section>
   </div>
-  <p class="note">コスパを入れた点数（9/14）で 4 位に上がった本命。中央区で唯一の地下鉄駅圏で、大通まで 12 分。独立キッチン・<button type="button" class="term" data-key="WIC">WIC</button> あり。3 面の個室と納戸。築 21 年で 2028 年時点 23 年、管理と積立は標準的。</p>
+  <p class="note">コスパをQから外した後（9/17）も 2 位を維持する本命。中央区で唯一の地下鉄駅圏で、大通まで 12 分。独立キッチン・<button type="button" class="term" data-key="WIC">WIC</button> あり。3 面の個室と納戸。築 21 年で 2028 年時点 23 年、管理と積立は標準的。学区は啓明中 A（南高 R5 22 人・口コミ 3.80）。</p>
   <footer class="links"><a href="https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshichuo/nc_21518609/" target="_blank" rel="noopener">SUUMO で見る</a> <a href="https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F010%2FN010000%2Fimg%2F609%2F21518609%2F21518609_0004.jpg&amp;w=1000&amp;h=750" target="_blank" rel="noopener">間取り図</a></footer>
 </details>
 <details class="card">
   <summary>
   <header class="card-head">
-    <span class="rank">4</span>
-    <div class="title-block">
-      <h2>クリーンリバーフィネス東札幌1条イースト</h2>
-      <p class="addr">北海道札幌市白石区東札幌一条２｜地下鉄東西線「東札幌」徒歩6分</p>
-    </div>
-    <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">73.8</span></div>
-  </header>
-  <div class="keyrow">
-    <div class="facts">
-      <div><span class="k">価格</span><span class="v">3,680<small>万円</small></span></div>
-      <div><span class="k">広さ・間取り</span><span class="v">96.2<small>㎡</small></span><span class="sub">3LDK</span></div>
-      <div><span class="k">築年</span><span class="v">21<small>年</small></span><span class="sub">2005-10 築・4階・南東向き</span></div>
-    </div>
-    <svg class="radar" viewBox="0 0 120 120" role="img" aria-label="コスパ 38%・管理 78%・駅徒歩 96%・間取り 100%・広さ 100%・通勤 88%・駐車場 100%・学区 27%"><title>コスパ 38%・管理 78%・駅徒歩 96%・間取り 100%・広さ 100%・通勤 88%・駐車場 100%・学区 27%</title><polygon points="60.0,38.0 75.6,44.4 82.0,60.0 75.6,75.6 60.0,82.0 44.4,75.6 38.0,60.0 44.4,44.4" class="ring"/><polygon points="60.0,16.0 91.1,28.9 104.0,60.0 91.1,91.1 60.0,104.0 28.9,91.1 16.0,60.0 28.9,28.9" class="ring"/><line x1="60" y1="60" x2="60.0" y2="16.0" class="ring"/><line x1="60" y1="60" x2="91.1" y2="28.9" class="ring"/><line x1="60" y1="60" x2="104.0" y2="60.0" class="ring"/><line x1="60" y1="60" x2="91.1" y2="91.1" class="ring"/><line x1="60" y1="60" x2="60.0" y2="104.0" class="ring"/><line x1="60" y1="60" x2="28.9" y2="91.1" class="ring"/><line x1="60" y1="60" x2="16.0" y2="60.0" class="ring"/><line x1="60" y1="60" x2="28.9" y2="28.9" class="ring"/><polygon points="60.0,43.5 84.2,35.8 102.2,60.0 91.1,91.1 60.0,104.0 32.8,87.2 16.0,60.0 51.6,51.6" class="area"/><text x="60.0" y="8.5" text-anchor="middle">コスパ</text><text x="98.9" y="24.6" text-anchor="middle">管理</text><text x="115.0" y="63.5" text-anchor="middle">駅徒歩</text><text x="98.9" y="102.4" text-anchor="middle">間取り</text><text x="60.0" y="118.5" text-anchor="middle">広さ</text><text x="21.1" y="102.4" text-anchor="middle">通勤</text><text x="5.0" y="63.5" text-anchor="middle">駐車場</text><text x="21.1" y="24.6" text-anchor="middle">学区</text></svg>
-  </div>
-  <span class="more">くわしく見る</span>
-  </summary>
-  <div class="grid">
-    <section>
-      <h3>住まい</h3>
-      <dl>
-        <dt><button type="button" class="term" data-key="LDK">LDK</button></dt><dd>24.9 帖（<button type="button" class="term" data-key="キッチン">キッチン</button>: 対面）</dd>
-        <dt>個室</dt><dd>7.8 / 5 / 5 帖</dd>
-        <dt><button type="button" class="term" data-key="WIC">WIC</button></dt><dd>あり</dd>
-        <dt><button type="button" class="term" data-key="総戸数">総戸数</button></dt><dd>— 戸・RC13階建</dd>
-        <dt>リフォーム</dt><dd>記載なし（現状渡しの可能性）</dd>
-      </dl>
-    </section>
-    <section>
-      <h3>場所</h3>
-      <dl>
-        <dt>駅</dt><dd>東札幌 徒歩 6 分</dd>
-        <dt>小学校</dt><dd>東園小 <span class="warn"><button type="button" class="term" data-key="先行減少">先行減少</button></span><br><small>1年生 3→2 学級</small></dd>
-        <dt>中学校</dt><dd>日章中学校</dd>
-        <dt><button type="button" class="term" data-key="災害">災害</button></dt><dd>洪水: 区域外・土砂災害: 区域外・<button type="button" class="term" data-key="大規模盛土">大規模盛土</button>: 区域外</dd>
-        <dt>治安</dt><dd>強盗 0 件・侵入窃盗 0 件・全種 6 件<br><small>半径 400m・2025-09〜2026-08（北海道警察 犯罪発生マップ）。全種は自転車盗を含む</small></dd>
-      </dl>
-    </section>
-    <section>
-      <h3>月々の費用</h3>
-      <dl>
-        <dt><button type="button" class="term" data-key="管理費">管理費</button></dt><dd>7,410 円/月</dd>
-        <dt><button type="button" class="term" data-key="修繕積立">修繕積立</button></dt><dd>25,215 円/月（262 円/㎡）</dd>
-        <dt><button type="button" class="term" data-key="駐車場">駐車場</button></dt><dd>敷地内・確保しやすい<br><small>敷地内（8500円～1万円／月）</small></dd>
-        <dt>15 年実質</dt><dd>1,899 万<br><small>値下がり 1,159 ＋ 管理費・積立・駐車場 15 年分 740・値下がりの幅 1,019〜1,420</small></dd>
-      </dl>
-    </section>
-  </div>
-  <p class="note">96㎡・LDK 25 帖・東札幌 6 分。3,680 万は上限近く、学区の東園小は児童が 10 年で 26% 減。</p>
-  <footer class="links"><a href="https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshishiroishi/nc_21077728/" target="_blank" rel="noopener">SUUMO で見る</a> <a href="https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F010%2FN010000%2Fimg%2F728%2F21077728%2F21077728_0003.jpg&amp;w=1000&amp;h=750" target="_blank" rel="noopener">間取り図</a></footer>
-</details>
-<details class="card">
-  <summary>
-  <header class="card-head">
-    <span class="rank">5</span>
+    <span class="rank">3</span>
     <div class="title-block">
       <h2>ロジェ北１５条サンフィール</h2>
       <p class="addr">北海道札幌市東区北十五条東８｜地下鉄東豊線「東区役所前」徒歩4分</p>
     </div>
-    <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">73.2</span></div>
+    <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">85.1</span></div>
   </header>
   <div class="keyrow">
     <div class="facts">
@@ -316,7 +212,7 @@ dd small { color:var(--muted); }
       <div><span class="k">広さ・間取り</span><span class="v">100.0<small>㎡</small></span><span class="sub">4LDK</span></div>
       <div><span class="k">築年</span><span class="v">22<small>年</small></span><span class="sub">2004-10 築・12階・南向き</span></div>
     </div>
-    <svg class="radar" viewBox="0 0 120 120" role="img" aria-label="コスパ 33%・管理 78%・駅徒歩 100%・間取り 100%・広さ 100%・通勤 88%・駐車場 75%・学区 56%"><title>コスパ 33%・管理 78%・駅徒歩 100%・間取り 100%・広さ 100%・通勤 88%・駐車場 75%・学区 56%</title><polygon points="60.0,38.0 75.6,44.4 82.0,60.0 75.6,75.6 60.0,82.0 44.4,75.6 38.0,60.0 44.4,44.4" class="ring"/><polygon points="60.0,16.0 91.1,28.9 104.0,60.0 91.1,91.1 60.0,104.0 28.9,91.1 16.0,60.0 28.9,28.9" class="ring"/><line x1="60" y1="60" x2="60.0" y2="16.0" class="ring"/><line x1="60" y1="60" x2="91.1" y2="28.9" class="ring"/><line x1="60" y1="60" x2="104.0" y2="60.0" class="ring"/><line x1="60" y1="60" x2="91.1" y2="91.1" class="ring"/><line x1="60" y1="60" x2="60.0" y2="104.0" class="ring"/><line x1="60" y1="60" x2="28.9" y2="91.1" class="ring"/><line x1="60" y1="60" x2="16.0" y2="60.0" class="ring"/><line x1="60" y1="60" x2="28.9" y2="28.9" class="ring"/><polygon points="60.0,45.4 84.2,35.8 104.0,60.0 91.1,91.1 60.0,104.0 32.8,87.2 27.0,60.0 42.7,42.7" class="area"/><text x="60.0" y="8.5" text-anchor="middle">コスパ</text><text x="98.9" y="24.6" text-anchor="middle">管理</text><text x="115.0" y="63.5" text-anchor="middle">駅徒歩</text><text x="98.9" y="102.4" text-anchor="middle">間取り</text><text x="60.0" y="118.5" text-anchor="middle">広さ</text><text x="21.1" y="102.4" text-anchor="middle">通勤</text><text x="5.0" y="63.5" text-anchor="middle">駐車場</text><text x="21.1" y="24.6" text-anchor="middle">学区</text></svg>
+    <svg class="radar" viewBox="0 0 120 120" role="img" aria-label="管理 78%・駅徒歩 100%・間取り 100%・広さ 100%・通勤 88%・駐車場 75%・学区 59%"><title>管理 78%・駅徒歩 100%・間取り 100%・広さ 100%・通勤 88%・駐車場 75%・学区 59%</title><polygon points="60.0,38.0 77.2,46.3 81.4,64.9 69.5,79.8 50.5,79.8 38.6,64.9 42.8,46.3" class="ring"/><polygon points="60.0,16.0 94.4,32.6 102.9,69.8 79.1,99.6 40.9,99.6 17.1,69.8 25.6,32.6" class="ring"/><line x1="60" y1="60" x2="60.0" y2="16.0" class="ring"/><line x1="60" y1="60" x2="94.4" y2="32.6" class="ring"/><line x1="60" y1="60" x2="102.9" y2="69.8" class="ring"/><line x1="60" y1="60" x2="79.1" y2="99.6" class="ring"/><line x1="60" y1="60" x2="40.9" y2="99.6" class="ring"/><line x1="60" y1="60" x2="17.1" y2="69.8" class="ring"/><line x1="60" y1="60" x2="25.6" y2="32.6" class="ring"/><polygon points="60.0,25.8 94.4,32.6 102.9,69.8 79.1,99.6 43.3,94.7 27.8,67.3 39.6,43.8" class="area"/><text x="60.0" y="8.5" text-anchor="middle">管理</text><text x="103.0" y="29.2" text-anchor="middle">駅徒歩</text><text x="113.6" y="75.7" text-anchor="middle">間取り</text><text x="83.9" y="113.1" text-anchor="middle">広さ</text><text x="36.1" y="113.1" text-anchor="middle">通勤</text><text x="6.4" y="75.7" text-anchor="middle">駐車場</text><text x="17.0" y="29.2" text-anchor="middle">学区</text></svg>
   </div>
   <span class="more">くわしく見る</span>
   </summary>
@@ -336,7 +232,7 @@ dd small { color:var(--muted); }
       <dl>
         <dt>駅</dt><dd>東区役所前 徒歩 4 分</dd>
         <dt>小学校</dt><dd>美香保小学校 <span class=""></span><br><small></small></dd>
-        <dt>中学校</dt><dd>明園中学校</dd>
+        <dt>中学校</dt><dd>明園中学校 <span class="rank-badge rank-b">B</span><br><small>文字 5.1 ＋ 口コミ 2.0 ＝ 7.1/12</small><br><small>明るい生徒多いが指導者差、進学先は中位校中心</small><br><small>総合 3.52（25）／保護者 3.58（19）／在校生・卒業生 3.33（6）／2018 年以降入学 3.5（12）</small><br><a href="https://www.minkou.jp/junior/school/review/5756/" target="_blank" rel="noopener">みんなの中学校情報で見る</a></dd>
         <dt><button type="button" class="term" data-key="災害">災害</button></dt><dd>洪水: 区域外・土砂災害: 区域外・<button type="button" class="term" data-key="大規模盛土">大規模盛土</button>: 区域外</dd>
         <dt>治安</dt><dd>強盗 0 件・侵入窃盗 1 件・全種 13 件<br><small>半径 400m・2025-09〜2026-08（北海道警察 犯罪発生マップ）。全種は自転車盗を含む</small></dd>
       </dl>
@@ -357,12 +253,12 @@ dd small { color:var(--muted); }
 <details class="card">
   <summary>
   <header class="card-head">
-    <span class="rank">6</span>
+    <span class="rank">4</span>
     <div class="title-block">
       <h2>ロジェ北１５条サンフィール</h2>
       <p class="addr">北海道札幌市東区北十五条東８｜地下鉄東豊線「東区役所前」徒歩4分</p>
     </div>
-    <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">72.9</span></div>
+    <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">85.1</span></div>
   </header>
   <div class="keyrow">
     <div class="facts">
@@ -370,7 +266,7 @@ dd small { color:var(--muted); }
       <div><span class="k">広さ・間取り</span><span class="v">100.0<small>㎡</small></span><span class="sub">4LDK</span></div>
       <div><span class="k">築年</span><span class="v">22<small>年</small></span><span class="sub">2004-10 築・4階・南向き</span></div>
     </div>
-    <svg class="radar" viewBox="0 0 120 120" role="img" aria-label="コスパ 32%・管理 78%・駅徒歩 100%・間取り 100%・広さ 100%・通勤 88%・駐車場 75%・学区 56%"><title>コスパ 32%・管理 78%・駅徒歩 100%・間取り 100%・広さ 100%・通勤 88%・駐車場 75%・学区 56%</title><polygon points="60.0,38.0 75.6,44.4 82.0,60.0 75.6,75.6 60.0,82.0 44.4,75.6 38.0,60.0 44.4,44.4" class="ring"/><polygon points="60.0,16.0 91.1,28.9 104.0,60.0 91.1,91.1 60.0,104.0 28.9,91.1 16.0,60.0 28.9,28.9" class="ring"/><line x1="60" y1="60" x2="60.0" y2="16.0" class="ring"/><line x1="60" y1="60" x2="91.1" y2="28.9" class="ring"/><line x1="60" y1="60" x2="104.0" y2="60.0" class="ring"/><line x1="60" y1="60" x2="91.1" y2="91.1" class="ring"/><line x1="60" y1="60" x2="60.0" y2="104.0" class="ring"/><line x1="60" y1="60" x2="28.9" y2="91.1" class="ring"/><line x1="60" y1="60" x2="16.0" y2="60.0" class="ring"/><line x1="60" y1="60" x2="28.9" y2="28.9" class="ring"/><polygon points="60.0,45.9 84.2,35.8 104.0,60.0 91.1,91.1 60.0,104.0 32.8,87.2 27.0,60.0 42.7,42.7" class="area"/><text x="60.0" y="8.5" text-anchor="middle">コスパ</text><text x="98.9" y="24.6" text-anchor="middle">管理</text><text x="115.0" y="63.5" text-anchor="middle">駅徒歩</text><text x="98.9" y="102.4" text-anchor="middle">間取り</text><text x="60.0" y="118.5" text-anchor="middle">広さ</text><text x="21.1" y="102.4" text-anchor="middle">通勤</text><text x="5.0" y="63.5" text-anchor="middle">駐車場</text><text x="21.1" y="24.6" text-anchor="middle">学区</text></svg>
+    <svg class="radar" viewBox="0 0 120 120" role="img" aria-label="管理 78%・駅徒歩 100%・間取り 100%・広さ 100%・通勤 88%・駐車場 75%・学区 59%"><title>管理 78%・駅徒歩 100%・間取り 100%・広さ 100%・通勤 88%・駐車場 75%・学区 59%</title><polygon points="60.0,38.0 77.2,46.3 81.4,64.9 69.5,79.8 50.5,79.8 38.6,64.9 42.8,46.3" class="ring"/><polygon points="60.0,16.0 94.4,32.6 102.9,69.8 79.1,99.6 40.9,99.6 17.1,69.8 25.6,32.6" class="ring"/><line x1="60" y1="60" x2="60.0" y2="16.0" class="ring"/><line x1="60" y1="60" x2="94.4" y2="32.6" class="ring"/><line x1="60" y1="60" x2="102.9" y2="69.8" class="ring"/><line x1="60" y1="60" x2="79.1" y2="99.6" class="ring"/><line x1="60" y1="60" x2="40.9" y2="99.6" class="ring"/><line x1="60" y1="60" x2="17.1" y2="69.8" class="ring"/><line x1="60" y1="60" x2="25.6" y2="32.6" class="ring"/><polygon points="60.0,25.8 94.4,32.6 102.9,69.8 79.1,99.6 43.3,94.7 27.8,67.3 39.6,43.8" class="area"/><text x="60.0" y="8.5" text-anchor="middle">管理</text><text x="103.0" y="29.2" text-anchor="middle">駅徒歩</text><text x="113.6" y="75.7" text-anchor="middle">間取り</text><text x="83.9" y="113.1" text-anchor="middle">広さ</text><text x="36.1" y="113.1" text-anchor="middle">通勤</text><text x="6.4" y="75.7" text-anchor="middle">駐車場</text><text x="17.0" y="29.2" text-anchor="middle">学区</text></svg>
   </div>
   <span class="more">くわしく見る</span>
   </summary>
@@ -390,7 +286,7 @@ dd small { color:var(--muted); }
       <dl>
         <dt>駅</dt><dd>東区役所前 徒歩 4 分</dd>
         <dt>小学校</dt><dd>美香保小学校 <span class=""></span><br><small></small></dd>
-        <dt>中学校</dt><dd>明園中学校</dd>
+        <dt>中学校</dt><dd>明園中学校 <span class="rank-badge rank-b">B</span><br><small>文字 5.1 ＋ 口コミ 2.0 ＝ 7.1/12</small><br><small>明るい生徒多いが指導者差、進学先は中位校中心</small><br><small>総合 3.52（25）／保護者 3.58（19）／在校生・卒業生 3.33（6）／2018 年以降入学 3.5（12）</small><br><a href="https://www.minkou.jp/junior/school/review/5756/" target="_blank" rel="noopener">みんなの中学校情報で見る</a></dd>
         <dt><button type="button" class="term" data-key="災害">災害</button></dt><dd>洪水: 区域外・土砂災害: 区域外・<button type="button" class="term" data-key="大規模盛土">大規模盛土</button>: 区域外</dd>
         <dt>治安</dt><dd>強盗 0 件・侵入窃盗 1 件・全種 13 件<br><small>半径 400m・2025-09〜2026-08（北海道警察 犯罪発生マップ）。全種は自転車盗を含む</small></dd>
       </dl>
@@ -411,228 +307,12 @@ dd small { color:var(--muted); }
 <details class="card">
   <summary>
   <header class="card-head">
-    <span class="rank">7</span>
-    <div class="title-block">
-      <h2>ラピス北２４条</h2>
-      <p class="addr">北海道札幌市東区北二十四条東１｜地下鉄南北線「北２４条」徒歩9分</p>
-    </div>
-    <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">71.3</span></div>
-  </header>
-  <div class="keyrow">
-    <div class="facts">
-      <div><span class="k">価格</span><span class="v">2,880<small>万円</small></span></div>
-      <div><span class="k">広さ・間取り</span><span class="v">87.5<small>㎡</small></span><span class="sub">3LDK</span></div>
-      <div><span class="k">築年</span><span class="v">21<small>年</small></span><span class="sub">2005-11 築・10階・南向き</span></div>
-    </div>
-    <svg class="radar" viewBox="0 0 120 120" role="img" aria-label="コスパ 61%・管理 52%・駅徒歩 83%・間取り 83%・広さ 100%・通勤 88%・駐車場 75%・学区 51%"><title>コスパ 61%・管理 52%・駅徒歩 83%・間取り 83%・広さ 100%・通勤 88%・駐車場 75%・学区 51%</title><polygon points="60.0,38.0 75.6,44.4 82.0,60.0 75.6,75.6 60.0,82.0 44.4,75.6 38.0,60.0 44.4,44.4" class="ring"/><polygon points="60.0,16.0 91.1,28.9 104.0,60.0 91.1,91.1 60.0,104.0 28.9,91.1 16.0,60.0 28.9,28.9" class="ring"/><line x1="60" y1="60" x2="60.0" y2="16.0" class="ring"/><line x1="60" y1="60" x2="91.1" y2="28.9" class="ring"/><line x1="60" y1="60" x2="104.0" y2="60.0" class="ring"/><line x1="60" y1="60" x2="91.1" y2="91.1" class="ring"/><line x1="60" y1="60" x2="60.0" y2="104.0" class="ring"/><line x1="60" y1="60" x2="28.9" y2="91.1" class="ring"/><line x1="60" y1="60" x2="16.0" y2="60.0" class="ring"/><line x1="60" y1="60" x2="28.9" y2="28.9" class="ring"/><polygon points="60.0,33.1 76.2,43.8 96.7,60.0 85.9,85.9 60.0,104.0 32.8,87.2 27.0,60.0 44.0,44.0" class="area"/><text x="60.0" y="8.5" text-anchor="middle">コスパ</text><text x="98.9" y="24.6" text-anchor="middle">管理</text><text x="115.0" y="63.5" text-anchor="middle">駅徒歩</text><text x="98.9" y="102.4" text-anchor="middle">間取り</text><text x="60.0" y="118.5" text-anchor="middle">広さ</text><text x="21.1" y="102.4" text-anchor="middle">通勤</text><text x="5.0" y="63.5" text-anchor="middle">駐車場</text><text x="21.1" y="24.6" text-anchor="middle">学区</text></svg>
-  </div>
-  <span class="more">くわしく見る</span>
-  </summary>
-  <div class="grid">
-    <section>
-      <h3>住まい</h3>
-      <dl>
-        <dt><button type="button" class="term" data-key="LDK">LDK</button></dt><dd>19.3 帖（<button type="button" class="term" data-key="キッチン">キッチン</button>: 壁付き一体）</dd>
-        <dt>個室</dt><dd>8.3 / 5 / 6 帖</dd>
-        <dt><button type="button" class="term" data-key="WIC">WIC</button></dt><dd>なし</dd>
-        <dt><button type="button" class="term" data-key="総戸数">総戸数</button></dt><dd>27 戸・RC10階建</dd>
-        <dt>リフォーム</dt><dd>記載なし（現状渡しの可能性）</dd>
-      </dl>
-    </section>
-    <section>
-      <h3>場所</h3>
-      <dl>
-        <dt>駅</dt><dd>北２４条 徒歩 9 分</dd>
-        <dt>小学校</dt><dd>北園小 <span class="warn"><button type="button" class="term" data-key="先行減少">先行減少</button></span><br><small>1年生 3→2 学級</small></dd>
-        <dt>中学校</dt><dd>北栄中学校</dd>
-        <dt><button type="button" class="term" data-key="災害">災害</button></dt><dd>洪水: 区域外・土砂災害: 区域外・<button type="button" class="term" data-key="大規模盛土">大規模盛土</button>: 区域外</dd>
-        <dt>治安</dt><dd>強盗 0 件・侵入窃盗 0 件・全種 3 件<br><small>半径 400m・2025-09〜2026-08（北海道警察 犯罪発生マップ）。全種は自転車盗を含む</small></dd>
-      </dl>
-    </section>
-    <section>
-      <h3>月々の費用</h3>
-      <dl>
-        <dt><button type="button" class="term" data-key="管理費">管理費</button></dt><dd>9,400 円/月</dd>
-        <dt><button type="button" class="term" data-key="修繕積立">修繕積立</button></dt><dd>15,834 円/月（181 円/㎡）</dd>
-        <dt><button type="button" class="term" data-key="駐車場">駐車場</button></dt><dd>敷地内あり<br><small>-</small></dd>
-        <dt>15 年実質</dt><dd>1,523 万<br><small>値下がり 852 ＋ 管理費・積立・駐車場 15 年分 670・駐車場は推定・値下がりの幅 660〜1,063</small></dd>
-      </dl>
-    </section>
-  </div>
-  
-  <footer class="links"><a href="https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshihigashi/nc_21633141/" target="_blank" rel="noopener">SUUMO で見る</a> <a href="https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F010%2FN010000%2Fimg%2F141%2F21633141%2F21633141_0002.jpg&amp;w=1000&amp;h=750" target="_blank" rel="noopener">間取り図</a></footer>
-</details>
-<details class="card">
-  <summary>
-  <header class="card-head">
-    <span class="rank">8</span>
-    <div class="title-block">
-      <h2>グランファーレ札幌山鼻グランフォレスト<span class="role"><button type="button" class="term" data-key="本命">対抗</button></span></h2>
-      <p class="addr">北海道札幌市中央区南十八条西９｜札幌市電「静修学園前」徒歩6分</p>
-    </div>
-    <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">70.6</span></div>
-  </header>
-  <div class="keyrow">
-    <div class="facts">
-      <div><span class="k">価格</span><span class="v">3,590<small>万円</small></span></div>
-      <div><span class="k">広さ・間取り</span><span class="v">75.2<small>㎡</small></span><span class="sub">3LDK</span></div>
-      <div><span class="k">築年</span><span class="v">15<small>年</small></span><span class="sub">2012-02 築・3階・西向き</span></div>
-    </div>
-    <svg class="radar" viewBox="0 0 120 120" role="img" aria-label="コスパ 44%・管理 100%・駅徒歩 89%・間取り 65%・広さ 61%・通勤 56%・駐車場 75%・学区 93%"><title>コスパ 44%・管理 100%・駅徒歩 89%・間取り 65%・広さ 61%・通勤 56%・駐車場 75%・学区 93%</title><polygon points="60.0,38.0 75.6,44.4 82.0,60.0 75.6,75.6 60.0,82.0 44.4,75.6 38.0,60.0 44.4,44.4" class="ring"/><polygon points="60.0,16.0 91.1,28.9 104.0,60.0 91.1,91.1 60.0,104.0 28.9,91.1 16.0,60.0 28.9,28.9" class="ring"/><line x1="60" y1="60" x2="60.0" y2="16.0" class="ring"/><line x1="60" y1="60" x2="91.1" y2="28.9" class="ring"/><line x1="60" y1="60" x2="104.0" y2="60.0" class="ring"/><line x1="60" y1="60" x2="91.1" y2="91.1" class="ring"/><line x1="60" y1="60" x2="60.0" y2="104.0" class="ring"/><line x1="60" y1="60" x2="28.9" y2="91.1" class="ring"/><line x1="60" y1="60" x2="16.0" y2="60.0" class="ring"/><line x1="60" y1="60" x2="28.9" y2="28.9" class="ring"/><polygon points="60.0,40.6 91.1,28.9 99.2,60.0 80.2,80.2 60.0,86.7 42.5,77.5 27.0,60.0 31.1,31.1" class="area"/><text x="60.0" y="8.5" text-anchor="middle">コスパ</text><text x="98.9" y="24.6" text-anchor="middle">管理</text><text x="115.0" y="63.5" text-anchor="middle">駅徒歩</text><text x="98.9" y="102.4" text-anchor="middle">間取り</text><text x="60.0" y="118.5" text-anchor="middle">広さ</text><text x="21.1" y="102.4" text-anchor="middle">通勤</text><text x="5.0" y="63.5" text-anchor="middle">駐車場</text><text x="21.1" y="24.6" text-anchor="middle">学区</text></svg>
-  </div>
-  <span class="more">くわしく見る</span>
-  </summary>
-  <div class="grid">
-    <section>
-      <h3>住まい</h3>
-      <dl>
-        <dt><button type="button" class="term" data-key="LDK">LDK</button></dt><dd>16.6 帖（<button type="button" class="term" data-key="キッチン">キッチン</button>: 対面）</dd>
-        <dt>個室</dt><dd>6.5 / 4.5 / 6.2 帖</dd>
-        <dt><button type="button" class="term" data-key="WIC">WIC</button></dt><dd>なし</dd>
-        <dt><button type="button" class="term" data-key="総戸数">総戸数</button></dt><dd>40 戸・RC11階地下1階建</dd>
-        <dt>リフォーム</dt><dd>記載なし（現状渡しの可能性）</dd>
-      </dl>
-    </section>
-    <section>
-      <h3>場所</h3>
-      <dl>
-        <dt>駅</dt><dd>静修学園前 徒歩 6 分</dd>
-        <dt>小学校</dt><dd>山鼻小 <span class="good"><button type="button" class="term" data-key="安定">安定</button></span><br><small>528→520 人</small></dd>
-        <dt>中学校</dt><dd>柏中学校</dd>
-        <dt><button type="button" class="term" data-key="災害">災害</button></dt><dd>洪水: 区域外・土砂災害: 区域外・<button type="button" class="term" data-key="大規模盛土">大規模盛土</button>: 区域外</dd>
-        <dt>治安</dt><dd>強盗 0 件・侵入窃盗 0 件・全種 1 件<br><small>半径 400m・2025-09〜2026-08（北海道警察 犯罪発生マップ）。全種は自転車盗を含む</small></dd>
-      </dl>
-    </section>
-    <section>
-      <h3>月々の費用</h3>
-      <dl>
-        <dt><button type="button" class="term" data-key="管理費">管理費</button></dt><dd>9,390 円/月</dd>
-        <dt><button type="button" class="term" data-key="修繕積立">修繕積立</button></dt><dd>18,780 円/月（250 円/㎡）</dd>
-        <dt><button type="button" class="term" data-key="駐車場">駐車場</button></dt><dd>敷地内あり<br><small>敷地内（7000円／月）</small></dd>
-        <dt>15 年実質</dt><dd>1,793 万<br><small>値下がり 1,160 ＋ 管理費・積立・駐車場 15 年分 633・値下がりの幅 151〜1,411</small></dd>
-      </dl>
-    </section>
-  </div>
-  <p class="note"><button type="button" class="term" data-key="市電">市電</button>の駅だが地下鉄幌平橋まで 815m で徒歩圏。築 14.6 年で最も新しい。個室が 6.5／6.2／4.5 帖と小さめで、夫婦の部屋 7 帖には届かない。資料 5 点で確認（9/14）: 積立 7,341 万・借入なし・滞納なしと財務は最良クラス。第 1 回<button type="button" class="term" data-key="大規模修繕">大規模修繕</button>を 2026-07〜11 に施工中で、その資金に 700 万の借入予定。2026-06 から管理費と駐車場が値上げ済み。駐車場は 41 区画すべて屋外で空き無し・順番待ち・前の持ち主から引き継げない。ペットは 2 匹まで（大きさ制限あり）。</p>
-  <footer class="links"><a href="https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshichuo/nc_21377362/" target="_blank" rel="noopener">SUUMO で見る</a> <a href="https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F010%2FN010000%2Fimg%2F362%2F21377362%2F21377362_0028.jpg&amp;w=1000&amp;h=750" target="_blank" rel="noopener">間取り図</a></footer>
-</details>
-<details class="card">
-  <summary>
-  <header class="card-head">
-    <span class="rank">9</span>
-    <div class="title-block">
-      <h2>シティハウス澄川天神山</h2>
-      <p class="addr">北海道札幌市南区澄川二条１｜地下鉄南北線「澄川」徒歩9分</p>
-    </div>
-    <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">70.6</span></div>
-  </header>
-  <div class="keyrow">
-    <div class="facts">
-      <div><span class="k">価格</span><span class="v">2,490<small>万円</small></span></div>
-      <div><span class="k">広さ・間取り</span><span class="v">100.9<small>㎡</small></span><span class="sub">4LDK</span></div>
-      <div><span class="k">築年</span><span class="v">23<small>年</small></span><span class="sub">2004-02 築・5階・南東向き</span></div>
-    </div>
-    <svg class="radar" viewBox="0 0 120 120" role="img" aria-label="コスパ 34%・管理 78%・駅徒歩 83%・間取り 100%・広さ 100%・通勤 88%・駐車場 100%・学区 14%"><title>コスパ 34%・管理 78%・駅徒歩 83%・間取り 100%・広さ 100%・通勤 88%・駐車場 100%・学区 14%</title><polygon points="60.0,38.0 75.6,44.4 82.0,60.0 75.6,75.6 60.0,82.0 44.4,75.6 38.0,60.0 44.4,44.4" class="ring"/><polygon points="60.0,16.0 91.1,28.9 104.0,60.0 91.1,91.1 60.0,104.0 28.9,91.1 16.0,60.0 28.9,28.9" class="ring"/><line x1="60" y1="60" x2="60.0" y2="16.0" class="ring"/><line x1="60" y1="60" x2="91.1" y2="28.9" class="ring"/><line x1="60" y1="60" x2="104.0" y2="60.0" class="ring"/><line x1="60" y1="60" x2="91.1" y2="91.1" class="ring"/><line x1="60" y1="60" x2="60.0" y2="104.0" class="ring"/><line x1="60" y1="60" x2="28.9" y2="91.1" class="ring"/><line x1="60" y1="60" x2="16.0" y2="60.0" class="ring"/><line x1="60" y1="60" x2="28.9" y2="28.9" class="ring"/><polygon points="60.0,44.9 84.2,35.8 96.7,60.0 91.1,91.1 60.0,104.0 32.8,87.2 16.0,60.0 55.6,55.6" class="area"/><text x="60.0" y="8.5" text-anchor="middle">コスパ</text><text x="98.9" y="24.6" text-anchor="middle">管理</text><text x="115.0" y="63.5" text-anchor="middle">駅徒歩</text><text x="98.9" y="102.4" text-anchor="middle">間取り</text><text x="60.0" y="118.5" text-anchor="middle">広さ</text><text x="21.1" y="102.4" text-anchor="middle">通勤</text><text x="5.0" y="63.5" text-anchor="middle">駐車場</text><text x="21.1" y="24.6" text-anchor="middle">学区</text></svg>
-  </div>
-  <span class="more">くわしく見る</span>
-  </summary>
-  <div class="grid">
-    <section>
-      <h3>住まい</h3>
-      <dl>
-        <dt><button type="button" class="term" data-key="LDK">LDK</button></dt><dd>20.4 帖（<button type="button" class="term" data-key="キッチン">キッチン</button>: 不明）</dd>
-        <dt>個室</dt><dd>8.5 / 6.1 / 5.7 / 5 帖</dd>
-        <dt><button type="button" class="term" data-key="WIC">WIC</button></dt><dd>あり</dd>
-        <dt><button type="button" class="term" data-key="総戸数">総戸数</button></dt><dd>32 戸・RC10階地下1階建</dd>
-        <dt>リフォーム</dt><dd>記載なし（現状渡しの可能性）</dd>
-      </dl>
-    </section>
-    <section>
-      <h3>場所</h3>
-      <dl>
-        <dt>駅</dt><dd>澄川 徒歩 9 分</dd>
-        <dt>小学校</dt><dd>澄川西小 <span class=""></span><br><small></small></dd>
-        <dt>中学校</dt><dd>澄川中学校</dd>
-        <dt><button type="button" class="term" data-key="災害">災害</button></dt><dd>洪水: 区域外・土砂災害: 区域外・<button type="button" class="term" data-key="大規模盛土">大規模盛土</button>: 区域外</dd>
-        <dt>治安</dt><dd>強盗 0 件・侵入窃盗 0 件・全種 2 件<br><small>半径 400m・2025-09〜2026-08（北海道警察 犯罪発生マップ）。全種は自転車盗を含む</small></dd>
-      </dl>
-    </section>
-    <section>
-      <h3>月々の費用</h3>
-      <dl>
-        <dt><button type="button" class="term" data-key="管理費">管理費</button></dt><dd>18,600 円/月</dd>
-        <dt><button type="button" class="term" data-key="修繕積立">修繕積立</button></dt><dd>26,230 円/月（260 円/㎡）</dd>
-        <dt><button type="button" class="term" data-key="駐車場">駐車場</button></dt><dd>敷地内・確保しやすい<br><small>敷地内（8000円～1万4000円／月）</small></dd>
-        <dt>15 年実質</dt><dd>1,952 万<br><small>値下がり 1,001 ＋ 管理費・積立・駐車場 15 年分 951・値下がりの幅 1,155〜1,526</small></dd>
-      </dl>
-    </section>
-  </div>
-  <p class="note">100㎡・2,490 万と安く広い。南区は将来の値下がりが最も大きく、安さで見る枠。</p>
-  <footer class="links"><a href="https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshiminami/nc_20551782/" target="_blank" rel="noopener">SUUMO で見る</a> <a href="https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F010%2FN010000%2Fimg%2F782%2F20551782%2F20551782_0002.jpg&amp;w=1000&amp;h=750" target="_blank" rel="noopener">間取り図</a></footer>
-</details>
-<details class="card">
-  <summary>
-  <header class="card-head">
-    <span class="rank">10</span>
-    <div class="title-block">
-      <h2>クリーンリバーフィネス山鼻南<span class="role"><button type="button" class="term" data-key="本命">三番手</button></span></h2>
-      <p class="addr">北海道札幌市中央区南十六条西１２-1-20｜札幌市電「西線１６条」徒歩5分</p>
-    </div>
-    <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">70.5</span></div>
-  </header>
-  <div class="keyrow">
-    <div class="facts">
-      <div><span class="k">価格</span><span class="v">3,380<small>万円</small></span></div>
-      <div><span class="k">広さ・間取り</span><span class="v">83.0<small>㎡</small></span><span class="sub">3LDK</span></div>
-      <div><span class="k">築年</span><span class="v">18<small>年</small></span><span class="sub">2008-07 築・6階・南向き</span></div>
-    </div>
-    <svg class="radar" viewBox="0 0 120 120" role="img" aria-label="コスパ 38%・管理 83%・駅徒歩 93%・間取り 83%・広さ 92%・通勤 29%・駐車場 100%・学区 74%"><title>コスパ 38%・管理 83%・駅徒歩 93%・間取り 83%・広さ 92%・通勤 29%・駐車場 100%・学区 74%</title><polygon points="60.0,38.0 75.6,44.4 82.0,60.0 75.6,75.6 60.0,82.0 44.4,75.6 38.0,60.0 44.4,44.4" class="ring"/><polygon points="60.0,16.0 91.1,28.9 104.0,60.0 91.1,91.1 60.0,104.0 28.9,91.1 16.0,60.0 28.9,28.9" class="ring"/><line x1="60" y1="60" x2="60.0" y2="16.0" class="ring"/><line x1="60" y1="60" x2="91.1" y2="28.9" class="ring"/><line x1="60" y1="60" x2="104.0" y2="60.0" class="ring"/><line x1="60" y1="60" x2="91.1" y2="91.1" class="ring"/><line x1="60" y1="60" x2="60.0" y2="104.0" class="ring"/><line x1="60" y1="60" x2="28.9" y2="91.1" class="ring"/><line x1="60" y1="60" x2="16.0" y2="60.0" class="ring"/><line x1="60" y1="60" x2="28.9" y2="28.9" class="ring"/><polygon points="60.0,43.1 85.9,34.1 101.1,60.0 85.9,85.9 60.0,100.5 51.1,68.9 16.0,60.0 36.9,36.9" class="area"/><text x="60.0" y="8.5" text-anchor="middle">コスパ</text><text x="98.9" y="24.6" text-anchor="middle">管理</text><text x="115.0" y="63.5" text-anchor="middle">駅徒歩</text><text x="98.9" y="102.4" text-anchor="middle">間取り</text><text x="60.0" y="118.5" text-anchor="middle">広さ</text><text x="21.1" y="102.4" text-anchor="middle">通勤</text><text x="5.0" y="63.5" text-anchor="middle">駐車場</text><text x="21.1" y="24.6" text-anchor="middle">学区</text></svg>
-  </div>
-  <span class="more">くわしく見る</span>
-  </summary>
-  <div class="grid">
-    <section>
-      <h3>住まい</h3>
-      <dl>
-        <dt><button type="button" class="term" data-key="LDK">LDK</button></dt><dd>19.5 帖（<button type="button" class="term" data-key="キッチン">キッチン</button>: 壁付き一体）</dd>
-        <dt>個室</dt><dd>7 / 5.5 / 5 帖</dd>
-        <dt><button type="button" class="term" data-key="WIC">WIC</button></dt><dd>あり</dd>
-        <dt><button type="button" class="term" data-key="総戸数">総戸数</button></dt><dd>— 戸・RC11階地下1階建</dd>
-        <dt>リフォーム</dt><dd>記載なし（現状渡しの可能性）</dd>
-      </dl>
-    </section>
-    <section>
-      <h3>場所</h3>
-      <dl>
-        <dt>駅</dt><dd>西線１６条 徒歩 5 分</dd>
-        <dt>小学校</dt><dd>山鼻小 <span class="good"><button type="button" class="term" data-key="安定">安定</button></span><br><small>528→520 人</small></dd>
-        <dt>中学校</dt><dd>伏見中学校</dd>
-        <dt><button type="button" class="term" data-key="災害">災害</button></dt><dd>洪水: 区域外・土砂災害: 区域外・<button type="button" class="term" data-key="大規模盛土">大規模盛土</button>: 区域外</dd>
-        <dt>治安</dt><dd>強盗 0 件・侵入窃盗 0 件・全種 2 件<br><small>半径 400m・2025-09〜2026-08（北海道警察 犯罪発生マップ）。全種は自転車盗を含む</small></dd>
-      </dl>
-    </section>
-    <section>
-      <h3>月々の費用</h3>
-      <dl>
-        <dt><button type="button" class="term" data-key="管理費">管理費</button></dt><dd>12,870 円/月</dd>
-        <dt><button type="button" class="term" data-key="修繕積立">修繕積立</button></dt><dd>20,750 円/月（250 円/㎡）</dd>
-        <dt><button type="button" class="term" data-key="駐車場">駐車場</button></dt><dd>敷地内・確保しやすい<br><small>敷地内（1万1400円／月）</small></dd>
-        <dt>15 年実質</dt><dd>1,885 万<br><small>値下がり 1,075 ＋ 管理費・積立・駐車場 15 年分 810・値下がりの幅 115〜1,311</small></dd>
-      </dl>
-    </section>
-  </div>
-  <p class="note"><button type="button" class="term" data-key="市電">市電</button>のみで大通まで 23 分。LDK 19.5 帖は壁付き一体キッチン込み。資料 3 点で確認（9/14）: 第 1 回<button type="button" class="term" data-key="大規模修繕">大規模修繕</button>は 2022-07 に済み、一時金の予定なし。ただし積立 735 万に対して管理組合の借入が 552 万あり、積立 250 円/㎡の一部は返済に回っている。駐車場は屋外 11,400 円に 6 台空き（屋根下は満車・引き継ぎ不可）。ペットは犬猫合わせて 2 匹まで、体長 60cm 程度まで。給湯ボイラーは 2025-04 交換済み。</p><div class="why"><h3>点数 1 位なのに本命ではない理由</h3><ul><li>市電の駅（西線16条）で、地下鉄駅まで 1.2km と歩けない。都心まで市電で 23 分＋徒歩連絡</li><li>キッチンが壁付き一体（LDK 19.5 帖はキッチン込み）</li><li>第 1 回大規模修繕の実施と駐車場の種別が未確認（資料請求中）</li></ul><p>本命の大通南は点数 15 位でも、中央区で唯一の地下鉄駅圏・87.7㎡・独立キッチン・学区が増加中、の 4 点で上回る。点数の差は積立と築年と駅徒歩の刻みで、資料と内見で入れ替わりうる。</p></div>
-  <footer class="links"><a href="https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshichuo/nc_21446070/" target="_blank" rel="noopener">SUUMO で見る</a> <a href="https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F010%2FN010000%2Fimg%2F434%2F21303434%2F21303434_0002.jpg&amp;w=1000&amp;h=750" target="_blank" rel="noopener">間取り図</a></footer>
-</details>
-<details class="card">
-  <summary>
-  <header class="card-head">
-    <span class="rank">11</span>
+    <span class="rank">5</span>
     <div class="title-block">
       <h2>グランファーレ円山公園南</h2>
       <p class="addr">北海道札幌市中央区南七条西２５｜地下鉄東西線「円山公園」徒歩11分</p>
     </div>
-    <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">70.4</span></div>
+    <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">83.8</span></div>
   </header>
   <div class="keyrow">
     <div class="facts">
@@ -640,7 +320,7 @@ dd small { color:var(--muted); }
       <div><span class="k">広さ・間取り</span><span class="v">98.3<small>㎡</small></span><span class="sub">3LDK</span></div>
       <div><span class="k">築年</span><span class="v">21<small>年</small></span><span class="sub">2005-07 築・2階・南西向き</span></div>
     </div>
-    <svg class="radar" viewBox="0 0 120 120" role="img" aria-label="コスパ 34%・管理 78%・駅徒歩 75%・間取り 83%・広さ 100%・通勤 88%・駐車場 75%・学区 83%"><title>コスパ 34%・管理 78%・駅徒歩 75%・間取り 83%・広さ 100%・通勤 88%・駐車場 75%・学区 83%</title><polygon points="60.0,38.0 75.6,44.4 82.0,60.0 75.6,75.6 60.0,82.0 44.4,75.6 38.0,60.0 44.4,44.4" class="ring"/><polygon points="60.0,16.0 91.1,28.9 104.0,60.0 91.1,91.1 60.0,104.0 28.9,91.1 16.0,60.0 28.9,28.9" class="ring"/><line x1="60" y1="60" x2="60.0" y2="16.0" class="ring"/><line x1="60" y1="60" x2="91.1" y2="28.9" class="ring"/><line x1="60" y1="60" x2="104.0" y2="60.0" class="ring"/><line x1="60" y1="60" x2="91.1" y2="91.1" class="ring"/><line x1="60" y1="60" x2="60.0" y2="104.0" class="ring"/><line x1="60" y1="60" x2="28.9" y2="91.1" class="ring"/><line x1="60" y1="60" x2="16.0" y2="60.0" class="ring"/><line x1="60" y1="60" x2="28.9" y2="28.9" class="ring"/><polygon points="60.0,44.9 84.2,35.8 93.0,60.0 85.9,85.9 60.0,104.0 32.8,87.2 27.0,60.0 34.2,34.2" class="area"/><text x="60.0" y="8.5" text-anchor="middle">コスパ</text><text x="98.9" y="24.6" text-anchor="middle">管理</text><text x="115.0" y="63.5" text-anchor="middle">駅徒歩</text><text x="98.9" y="102.4" text-anchor="middle">間取り</text><text x="60.0" y="118.5" text-anchor="middle">広さ</text><text x="21.1" y="102.4" text-anchor="middle">通勤</text><text x="5.0" y="63.5" text-anchor="middle">駐車場</text><text x="21.1" y="24.6" text-anchor="middle">学区</text></svg>
+    <svg class="radar" viewBox="0 0 120 120" role="img" aria-label="管理 78%・駅徒歩 75%・間取り 83%・広さ 100%・通勤 88%・駐車場 75%・学区 92%"><title>管理 78%・駅徒歩 75%・間取り 83%・広さ 100%・通勤 88%・駐車場 75%・学区 92%</title><polygon points="60.0,38.0 77.2,46.3 81.4,64.9 69.5,79.8 50.5,79.8 38.6,64.9 42.8,46.3" class="ring"/><polygon points="60.0,16.0 94.4,32.6 102.9,69.8 79.1,99.6 40.9,99.6 17.1,69.8 25.6,32.6" class="ring"/><line x1="60" y1="60" x2="60.0" y2="16.0" class="ring"/><line x1="60" y1="60" x2="94.4" y2="32.6" class="ring"/><line x1="60" y1="60" x2="102.9" y2="69.8" class="ring"/><line x1="60" y1="60" x2="79.1" y2="99.6" class="ring"/><line x1="60" y1="60" x2="40.9" y2="99.6" class="ring"/><line x1="60" y1="60" x2="17.1" y2="69.8" class="ring"/><line x1="60" y1="60" x2="25.6" y2="32.6" class="ring"/><polygon points="60.0,25.8 85.8,39.4 95.7,68.2 79.1,99.6 43.3,94.7 27.8,67.3 28.5,34.9" class="area"/><text x="60.0" y="8.5" text-anchor="middle">管理</text><text x="103.0" y="29.2" text-anchor="middle">駅徒歩</text><text x="113.6" y="75.7" text-anchor="middle">間取り</text><text x="83.9" y="113.1" text-anchor="middle">広さ</text><text x="36.1" y="113.1" text-anchor="middle">通勤</text><text x="6.4" y="75.7" text-anchor="middle">駐車場</text><text x="17.0" y="29.2" text-anchor="middle">学区</text></svg>
   </div>
   <span class="more">くわしく見る</span>
   </summary>
@@ -660,7 +340,7 @@ dd small { color:var(--muted); }
       <dl>
         <dt>駅</dt><dd>円山公園 徒歩 11 分</dd>
         <dt>小学校</dt><dd>緑丘小 <span class="warn"><button type="button" class="term" data-key="先行減少">先行減少</button></span><br><small>1年生 5→4 学級</small></dd>
-        <dt>中学校</dt><dd>啓明中学校</dd>
+        <dt>中学校</dt><dd>啓明中学校 <span class="rank-badge rank-a">A</span><br><small>文字 8.6 ＋ 口コミ 2.4 ＝ 11.0/12</small><br><small>南北西東へ多数進学（南高 22 人）、和気あいあい</small><br><small>総合 3.8（20）／保護者 4.27（11）／在校生・卒業生 3.22（9）／2018 年以降入学 3.71（17）</small><br><a href="https://www.minkou.jp/junior/school/review/94354/" target="_blank" rel="noopener">みんなの中学校情報で見る</a></dd>
         <dt><button type="button" class="term" data-key="災害">災害</button></dt><dd>洪水: 区域外・土砂災害: 区域外・<button type="button" class="term" data-key="大規模盛土">大規模盛土</button>: 区域外</dd>
         <dt>治安</dt><dd>強盗 0 件・侵入窃盗 0 件・全種 3 件<br><small>半径 400m・2025-09〜2026-08（北海道警察 犯罪発生マップ）。全種は自転車盗を含む</small></dd>
       </dl>
@@ -681,20 +361,20 @@ dd small { color:var(--muted); }
 <details class="card">
   <summary>
   <header class="card-head">
-    <span class="rank">12</span>
+    <span class="rank">6</span>
     <div class="title-block">
-      <h2>エクセルシオールヒルズ平岸</h2>
-      <p class="addr">北海道札幌市豊平区平岸六条１３｜地下鉄南北線「南平岸」徒歩12分</p>
+      <h2>クリーンリバーフィネス山鼻南<span class="role"><button type="button" class="term" data-key="本命">三番手</button></span></h2>
+      <p class="addr">北海道札幌市中央区南十六条西１２-1-20｜札幌市電「西線１６条」徒歩5分</p>
     </div>
-    <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">70.3</span></div>
+    <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">82.8</span></div>
   </header>
   <div class="keyrow">
     <div class="facts">
-      <div><span class="k">価格</span><span class="v">2,380<small>万円</small></span></div>
-      <div><span class="k">広さ・間取り</span><span class="v">88.0<small>㎡</small></span><span class="sub">3LDK</span></div>
-      <div><span class="k">築年</span><span class="v">23<small>年</small></span><span class="sub">2003-10 築・2階・西向き</span></div>
+      <div><span class="k">価格</span><span class="v">3,380<small>万円</small></span></div>
+      <div><span class="k">広さ・間取り</span><span class="v">83.0<small>㎡</small></span><span class="sub">3LDK</span></div>
+      <div><span class="k">築年</span><span class="v">18<small>年</small></span><span class="sub">2008-07 築・6階・南向き</span></div>
     </div>
-    <svg class="radar" viewBox="0 0 120 120" role="img" aria-label="コスパ 51%・管理 78%・駅徒歩 71%・間取り 83%・広さ 100%・通勤 88%・駐車場 75%・学区 29%"><title>コスパ 51%・管理 78%・駅徒歩 71%・間取り 83%・広さ 100%・通勤 88%・駐車場 75%・学区 29%</title><polygon points="60.0,38.0 75.6,44.4 82.0,60.0 75.6,75.6 60.0,82.0 44.4,75.6 38.0,60.0 44.4,44.4" class="ring"/><polygon points="60.0,16.0 91.1,28.9 104.0,60.0 91.1,91.1 60.0,104.0 28.9,91.1 16.0,60.0 28.9,28.9" class="ring"/><line x1="60" y1="60" x2="60.0" y2="16.0" class="ring"/><line x1="60" y1="60" x2="91.1" y2="28.9" class="ring"/><line x1="60" y1="60" x2="104.0" y2="60.0" class="ring"/><line x1="60" y1="60" x2="91.1" y2="91.1" class="ring"/><line x1="60" y1="60" x2="60.0" y2="104.0" class="ring"/><line x1="60" y1="60" x2="28.9" y2="91.1" class="ring"/><line x1="60" y1="60" x2="16.0" y2="60.0" class="ring"/><line x1="60" y1="60" x2="28.9" y2="28.9" class="ring"/><polygon points="60.0,37.5 84.2,35.8 91.2,60.0 85.9,85.9 60.0,104.0 32.8,87.2 27.0,60.0 51.1,51.1" class="area"/><text x="60.0" y="8.5" text-anchor="middle">コスパ</text><text x="98.9" y="24.6" text-anchor="middle">管理</text><text x="115.0" y="63.5" text-anchor="middle">駅徒歩</text><text x="98.9" y="102.4" text-anchor="middle">間取り</text><text x="60.0" y="118.5" text-anchor="middle">広さ</text><text x="21.1" y="102.4" text-anchor="middle">通勤</text><text x="5.0" y="63.5" text-anchor="middle">駐車場</text><text x="21.1" y="24.6" text-anchor="middle">学区</text></svg>
+    <svg class="radar" viewBox="0 0 120 120" role="img" aria-label="管理 83%・駅徒歩 93%・間取り 83%・広さ 92%・通勤 29%・駐車場 100%・学区 88%"><title>管理 83%・駅徒歩 93%・間取り 83%・広さ 92%・通勤 29%・駐車場 100%・学区 88%</title><polygon points="60.0,38.0 77.2,46.3 81.4,64.9 69.5,79.8 50.5,79.8 38.6,64.9 42.8,46.3" class="ring"/><polygon points="60.0,16.0 94.4,32.6 102.9,69.8 79.1,99.6 40.9,99.6 17.1,69.8 25.6,32.6" class="ring"/><line x1="60" y1="60" x2="60.0" y2="16.0" class="ring"/><line x1="60" y1="60" x2="94.4" y2="32.6" class="ring"/><line x1="60" y1="60" x2="102.9" y2="69.8" class="ring"/><line x1="60" y1="60" x2="79.1" y2="99.6" class="ring"/><line x1="60" y1="60" x2="40.9" y2="99.6" class="ring"/><line x1="60" y1="60" x2="17.1" y2="69.8" class="ring"/><line x1="60" y1="60" x2="25.6" y2="32.6" class="ring"/><polygon points="60.0,23.3 92.1,34.4 95.7,68.2 77.6,96.5 54.5,71.4 17.1,69.8 29.9,36.0" class="area"/><text x="60.0" y="8.5" text-anchor="middle">管理</text><text x="103.0" y="29.2" text-anchor="middle">駅徒歩</text><text x="113.6" y="75.7" text-anchor="middle">間取り</text><text x="83.9" y="113.1" text-anchor="middle">広さ</text><text x="36.1" y="113.1" text-anchor="middle">通勤</text><text x="6.4" y="75.7" text-anchor="middle">駐車場</text><text x="17.0" y="29.2" text-anchor="middle">学区</text></svg>
   </div>
   <span class="more">くわしく見る</span>
   </summary>
@@ -702,19 +382,235 @@ dd small { color:var(--muted); }
     <section>
       <h3>住まい</h3>
       <dl>
-        <dt><button type="button" class="term" data-key="LDK">LDK</button></dt><dd>18.4 帖（<button type="button" class="term" data-key="キッチン">キッチン</button>: 壁付き一体）</dd>
-        <dt>個室</dt><dd>9.3 / 5.5 / 6 帖</dd>
-        <dt><button type="button" class="term" data-key="WIC">WIC</button></dt><dd>なし</dd>
-        <dt><button type="button" class="term" data-key="総戸数">総戸数</button></dt><dd>20 戸・RC11階建</dd>
+        <dt><button type="button" class="term" data-key="LDK">LDK</button></dt><dd>19.5 帖（<button type="button" class="term" data-key="キッチン">キッチン</button>: 壁付き一体）</dd>
+        <dt>個室</dt><dd>7 / 5.5 / 5 帖</dd>
+        <dt><button type="button" class="term" data-key="WIC">WIC</button></dt><dd>あり</dd>
+        <dt><button type="button" class="term" data-key="総戸数">総戸数</button></dt><dd>— 戸・RC11階地下1階建</dd>
         <dt>リフォーム</dt><dd>記載なし（現状渡しの可能性）</dd>
       </dl>
     </section>
     <section>
       <h3>場所</h3>
       <dl>
-        <dt>駅</dt><dd>南平岸 徒歩 12 分</dd>
-        <dt>小学校</dt><dd>東山小 <span class=""></span><br><small></small></dd>
-        <dt>中学校</dt><dd>陵陽中学校</dd>
+        <dt>駅</dt><dd>西線１６条 徒歩 5 分</dd>
+        <dt>小学校</dt><dd>山鼻小 <span class="good"><button type="button" class="term" data-key="安定">安定</button></span><br><small>528→520 人</small></dd>
+        <dt>中学校</dt><dd>伏見中学校 <span class="rank-badge rank-a">A</span><br><small>文字 8.6 ＋ 口コミ 1.9 ＝ 10.5/12</small><br><small>学力・進学は良好、いじめ少なさの評価が低い</small><br><small>総合 3.53（58）／保護者 3.88（42）／在校生・卒業生 2.62（16）／2018 年以降入学 3.46（24）</small><br><a href="https://www.minkou.jp/junior/school/review/5731/" target="_blank" rel="noopener">みんなの中学校情報で見る</a></dd>
+        <dt><button type="button" class="term" data-key="災害">災害</button></dt><dd>洪水: 区域外・土砂災害: 区域外・<button type="button" class="term" data-key="大規模盛土">大規模盛土</button>: 区域外</dd>
+        <dt>治安</dt><dd>強盗 0 件・侵入窃盗 0 件・全種 2 件<br><small>半径 400m・2025-09〜2026-08（北海道警察 犯罪発生マップ）。全種は自転車盗を含む</small></dd>
+      </dl>
+    </section>
+    <section>
+      <h3>月々の費用</h3>
+      <dl>
+        <dt><button type="button" class="term" data-key="管理費">管理費</button></dt><dd>12,870 円/月</dd>
+        <dt><button type="button" class="term" data-key="修繕積立">修繕積立</button></dt><dd>20,750 円/月（250 円/㎡）</dd>
+        <dt><button type="button" class="term" data-key="駐車場">駐車場</button></dt><dd>敷地内・確保しやすい<br><small>敷地内（1万1400円／月）</small></dd>
+        <dt>15 年実質</dt><dd>1,885 万<br><small>値下がり 1,075 ＋ 管理費・積立・駐車場 15 年分 810・値下がりの幅 115〜1,311</small></dd>
+      </dl>
+    </section>
+  </div>
+  <p class="note"><button type="button" class="term" data-key="市電">市電</button>のみで大通まで 23 分。LDK 19.5 帖は壁付き一体キッチン込み。資料 3 点で確認（9/14）: 第 1 回<button type="button" class="term" data-key="大規模修繕">大規模修繕</button>は 2022-07 に済み、一時金の予定なし。ただし積立 735 万に対して管理組合の借入が 552 万あり、積立 250 円/㎡の一部は返済に回っている。駐車場は屋外 11,400 円に 6 台空き（屋根下は満車・引き継ぎ不可）。ペットは犬猫合わせて 2 匹まで、体長 60cm 程度まで。給湯ボイラーは 2025-04 交換済み。</p><div class="why"><h3>点数 1 位なのに本命ではない理由</h3><ul><li>市電の駅（西線16条）で、地下鉄駅まで 1.2km と歩けない。都心まで市電で 23 分＋徒歩連絡</li><li>キッチンが壁付き一体（LDK 19.5 帖はキッチン込み）</li><li>第 1 回大規模修繕の実施と駐車場の種別が未確認（資料請求中）</li></ul><p>本命の大通南は点数 15 位でも、中央区で唯一の地下鉄駅圏・87.7㎡・独立キッチン・学区が増加中、の 4 点で上回る。点数の差は積立と築年と駅徒歩の刻みで、資料と内見で入れ替わりうる。</p></div>
+  <footer class="links"><a href="https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshichuo/nc_21446070/" target="_blank" rel="noopener">SUUMO で見る</a> <a href="https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F010%2FN010000%2Fimg%2F434%2F21303434%2F21303434_0002.jpg&amp;w=1000&amp;h=750" target="_blank" rel="noopener">間取り図</a></footer>
+</details>
+<details class="card">
+  <summary>
+  <header class="card-head">
+    <span class="rank">7</span>
+    <div class="title-block">
+      <h2>クリーンリバーフィネス東札幌1条イースト</h2>
+      <p class="addr">北海道札幌市白石区東札幌一条２｜地下鉄東西線「東札幌」徒歩6分</p>
+    </div>
+    <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">82.5</span></div>
+  </header>
+  <div class="keyrow">
+    <div class="facts">
+      <div><span class="k">価格</span><span class="v">3,680<small>万円</small></span></div>
+      <div><span class="k">広さ・間取り</span><span class="v">96.2<small>㎡</small></span><span class="sub">3LDK</span></div>
+      <div><span class="k">築年</span><span class="v">21<small>年</small></span><span class="sub">2005-10 築・4階・南東向き</span></div>
+    </div>
+    <svg class="radar" viewBox="0 0 120 120" role="img" aria-label="管理 78%・駅徒歩 96%・間取り 100%・広さ 100%・通勤 88%・駐車場 100%・学区 29%"><title>管理 78%・駅徒歩 96%・間取り 100%・広さ 100%・通勤 88%・駐車場 100%・学区 29%</title><polygon points="60.0,38.0 77.2,46.3 81.4,64.9 69.5,79.8 50.5,79.8 38.6,64.9 42.8,46.3" class="ring"/><polygon points="60.0,16.0 94.4,32.6 102.9,69.8 79.1,99.6 40.9,99.6 17.1,69.8 25.6,32.6" class="ring"/><line x1="60" y1="60" x2="60.0" y2="16.0" class="ring"/><line x1="60" y1="60" x2="94.4" y2="32.6" class="ring"/><line x1="60" y1="60" x2="102.9" y2="69.8" class="ring"/><line x1="60" y1="60" x2="79.1" y2="99.6" class="ring"/><line x1="60" y1="60" x2="40.9" y2="99.6" class="ring"/><line x1="60" y1="60" x2="17.1" y2="69.8" class="ring"/><line x1="60" y1="60" x2="25.6" y2="32.6" class="ring"/><polygon points="60.0,25.8 93.0,33.7 102.9,69.8 79.1,99.6 43.3,94.7 17.1,69.8 50.0,52.0" class="area"/><text x="60.0" y="8.5" text-anchor="middle">管理</text><text x="103.0" y="29.2" text-anchor="middle">駅徒歩</text><text x="113.6" y="75.7" text-anchor="middle">間取り</text><text x="83.9" y="113.1" text-anchor="middle">広さ</text><text x="36.1" y="113.1" text-anchor="middle">通勤</text><text x="6.4" y="75.7" text-anchor="middle">駐車場</text><text x="17.0" y="29.2" text-anchor="middle">学区</text></svg>
+  </div>
+  <span class="more">くわしく見る</span>
+  </summary>
+  <div class="grid">
+    <section>
+      <h3>住まい</h3>
+      <dl>
+        <dt><button type="button" class="term" data-key="LDK">LDK</button></dt><dd>24.9 帖（<button type="button" class="term" data-key="キッチン">キッチン</button>: 対面）</dd>
+        <dt>個室</dt><dd>7.8 / 5 / 5 帖</dd>
+        <dt><button type="button" class="term" data-key="WIC">WIC</button></dt><dd>あり</dd>
+        <dt><button type="button" class="term" data-key="総戸数">総戸数</button></dt><dd>— 戸・RC13階建</dd>
+        <dt>リフォーム</dt><dd>記載なし（現状渡しの可能性）</dd>
+      </dl>
+    </section>
+    <section>
+      <h3>場所</h3>
+      <dl>
+        <dt>駅</dt><dd>東札幌 徒歩 6 分</dd>
+        <dt>小学校</dt><dd>東園小 <span class="warn"><button type="button" class="term" data-key="先行減少">先行減少</button></span><br><small>1年生 3→2 学級</small></dd>
+        <dt>中学校</dt><dd>日章中学校 <span class="rank-badge rank-c">C</span><br><small>文字 1.7 ＋ 口コミ 1.8 ＝ 3.5/12</small><br><small>不良生徒多い・いじめ黙認が複数ソースで一致</small><br><small>総合 3.44（32）／保護者 3.56（18）／在校生・卒業生 3.29（14）／2018 年以降入学 3.36（11）</small><br><a href="https://www.minkou.jp/junior/school/review/5769/" target="_blank" rel="noopener">みんなの中学校情報で見る</a></dd>
+        <dt><button type="button" class="term" data-key="災害">災害</button></dt><dd>洪水: 区域外・土砂災害: 区域外・<button type="button" class="term" data-key="大規模盛土">大規模盛土</button>: 区域外</dd>
+        <dt>治安</dt><dd>強盗 0 件・侵入窃盗 0 件・全種 6 件<br><small>半径 400m・2025-09〜2026-08（北海道警察 犯罪発生マップ）。全種は自転車盗を含む</small></dd>
+      </dl>
+    </section>
+    <section>
+      <h3>月々の費用</h3>
+      <dl>
+        <dt><button type="button" class="term" data-key="管理費">管理費</button></dt><dd>7,410 円/月</dd>
+        <dt><button type="button" class="term" data-key="修繕積立">修繕積立</button></dt><dd>25,215 円/月（262 円/㎡）</dd>
+        <dt><button type="button" class="term" data-key="駐車場">駐車場</button></dt><dd>敷地内・確保しやすい<br><small>敷地内（8500円～1万円／月）</small></dd>
+        <dt>15 年実質</dt><dd>1,899 万<br><small>値下がり 1,159 ＋ 管理費・積立・駐車場 15 年分 740・値下がりの幅 1,019〜1,420</small></dd>
+      </dl>
+    </section>
+  </div>
+  <p class="note">96㎡・LDK 25 帖・東札幌 6 分。3,680 万は上限近く、学区の東園小は児童が 10 年で 26% 減。</p>
+  <footer class="links"><a href="https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshishiroishi/nc_21077728/" target="_blank" rel="noopener">SUUMO で見る</a> <a href="https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F010%2FN010000%2Fimg%2F728%2F21077728%2F21077728_0003.jpg&amp;w=1000&amp;h=750" target="_blank" rel="noopener">間取り図</a></footer>
+</details>
+<details class="card">
+  <summary>
+  <header class="card-head">
+    <span class="rank">8</span>
+    <div class="title-block">
+      <h2>Ｄ’グランセ真駒内泉町ウエストスクエア</h2>
+      <p class="addr">北海道札幌市南区真駒内泉町２｜地下鉄南北線「真駒内」徒歩7分</p>
+    </div>
+    <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">81.6</span></div>
+  </header>
+  <div class="keyrow">
+    <div class="facts">
+      <div><span class="k">価格</span><span class="v">2,780<small>万円</small></span></div>
+      <div><span class="k">広さ・間取り</span><span class="v">92.0<small>㎡</small></span><span class="sub">4LDK</span></div>
+      <div><span class="k">築年</span><span class="v">24<small>年</small></span><span class="sub">2003-02 築・2階・西向き</span></div>
+    </div>
+    <svg class="radar" viewBox="0 0 120 120" role="img" aria-label="管理 78%・駅徒歩 92%・間取り 62%・広さ 100%・通勤 86%・駐車場 100%・学区 66%"><title>管理 78%・駅徒歩 92%・間取り 62%・広さ 100%・通勤 86%・駐車場 100%・学区 66%</title><polygon points="60.0,38.0 77.2,46.3 81.4,64.9 69.5,79.8 50.5,79.8 38.6,64.9 42.8,46.3" class="ring"/><polygon points="60.0,16.0 94.4,32.6 102.9,69.8 79.1,99.6 40.9,99.6 17.1,69.8 25.6,32.6" class="ring"/><line x1="60" y1="60" x2="60.0" y2="16.0" class="ring"/><line x1="60" y1="60" x2="94.4" y2="32.6" class="ring"/><line x1="60" y1="60" x2="102.9" y2="69.8" class="ring"/><line x1="60" y1="60" x2="79.1" y2="99.6" class="ring"/><line x1="60" y1="60" x2="40.9" y2="99.6" class="ring"/><line x1="60" y1="60" x2="17.1" y2="69.8" class="ring"/><line x1="60" y1="60" x2="25.6" y2="32.6" class="ring"/><polygon points="60.0,25.8 91.5,34.9 86.8,66.1 79.1,99.6 43.5,94.2 17.1,69.8 37.4,41.9" class="area"/><text x="60.0" y="8.5" text-anchor="middle">管理</text><text x="103.0" y="29.2" text-anchor="middle">駅徒歩</text><text x="113.6" y="75.7" text-anchor="middle">間取り</text><text x="83.9" y="113.1" text-anchor="middle">広さ</text><text x="36.1" y="113.1" text-anchor="middle">通勤</text><text x="6.4" y="75.7" text-anchor="middle">駐車場</text><text x="17.0" y="29.2" text-anchor="middle">学区</text></svg>
+  </div>
+  <span class="more">くわしく見る</span>
+  </summary>
+  <div class="grid">
+    <section>
+      <h3>住まい</h3>
+      <dl>
+        <dt><button type="button" class="term" data-key="LDK">LDK</button></dt><dd>16.5 帖（<button type="button" class="term" data-key="キッチン">キッチン</button>: 対面）</dd>
+        <dt>個室</dt><dd>6.1 / 5.4 / 7.4 / 6 帖</dd>
+        <dt><button type="button" class="term" data-key="WIC">WIC</button></dt><dd>なし</dd>
+        <dt><button type="button" class="term" data-key="総戸数">総戸数</button></dt><dd>51 戸・RC10階建</dd>
+        <dt>リフォーム</dt><dd>記載なし（現状渡しの可能性）</dd>
+      </dl>
+    </section>
+    <section>
+      <h3>場所</h3>
+      <dl>
+        <dt>駅</dt><dd>真駒内 徒歩 7 分</dd>
+        <dt>小学校</dt><dd>真駒内桜山小 <span class="warn"><button type="button" class="term" data-key="先行減少">先行減少</button></span><br><small>1年生 4→3 学級</small></dd>
+        <dt>中学校</dt><dd>真駒内中学校 <span class="rank-badge rank-b">B</span><br><small>文字 5.1 ＋ 口コミ 2.8 ＝ 7.9/12</small><br><small>進学実績は良好、いじめ黙認・陰湿の指摘</small><br><small>総合 4.0（24）／保護者 3.93（15）／在校生・卒業生 4.11（9）／2018 年以降入学 3.92（12）</small><br><a href="https://www.minkou.jp/junior/school/review/5788/" target="_blank" rel="noopener">みんなの中学校情報で見る</a></dd>
+        <dt><button type="button" class="term" data-key="災害">災害</button></dt><dd>洪水: 区域外・土砂災害: 区域外・<button type="button" class="term" data-key="大規模盛土">大規模盛土</button>: 区域外</dd>
+        <dt>治安</dt><dd>強盗 0 件・侵入窃盗 0 件・全種 24 件<br><small>半径 400m・2025-09〜2026-08（北海道警察 犯罪発生マップ）。全種は自転車盗を含む</small></dd>
+      </dl>
+    </section>
+    <section>
+      <h3>月々の費用</h3>
+      <dl>
+        <dt><button type="button" class="term" data-key="管理費">管理費</button></dt><dd>11,960 円/月</dd>
+        <dt><button type="button" class="term" data-key="修繕積立">修繕積立</button></dt><dd>29,260 円/月（318 円/㎡）</dd>
+        <dt><button type="button" class="term" data-key="駐車場">駐車場</button></dt><dd>敷地内・確保しやすい<br><small>敷地内（8000円～1万2000円／月）</small></dd>
+        <dt>15 年実質</dt><dd>1,981 万<br><small>値下がり 1,095 ＋ 管理費・積立・駐車場 15 年分 886・値下がりの幅 1,270〜1,690</small></dd>
+      </dl>
+    </section>
+  </div>
+  <p class="note">92㎡・積立 318 円/㎡・真駒内 7 分。学区の真駒内桜山小は児童が 10 年で 27% 減。南区は将来の値下がりが最も大きい。</p>
+  <footer class="links"><a href="https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshiminami/nc_79100598/" target="_blank" rel="noopener">SUUMO で見る</a> <a href="https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F010%2FN010000%2Fimg%2F598%2F79100598%2F79100598_0044.jpg&amp;w=1000&amp;h=750" target="_blank" rel="noopener">間取り図</a></footer>
+</details>
+<details class="card">
+  <summary>
+  <header class="card-head">
+    <span class="rank">9</span>
+    <div class="title-block">
+      <h2>ディーレスティア山鼻南</h2>
+      <p class="addr">北海道札幌市中央区南二十六条西１３｜札幌市電「中央図書館前」徒歩9分</p>
+    </div>
+    <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">81.2</span></div>
+  </header>
+  <div class="keyrow">
+    <div class="facts">
+      <div><span class="k">価格</span><span class="v">3,280<small>万円</small></span></div>
+      <div><span class="k">広さ・間取り</span><span class="v">104.3<small>㎡</small></span><span class="sub">4LDK</span></div>
+      <div><span class="k">築年</span><span class="v">19<small>年</small></span><span class="sub">2008-01 築・5階・南西向き</span></div>
+    </div>
+    <svg class="radar" viewBox="0 0 120 120" role="img" aria-label="管理 78%・駅徒歩 78%・間取り 100%・広さ 100%・通勤 31%・駐車場 75%・学区 93%"><title>管理 78%・駅徒歩 78%・間取り 100%・広さ 100%・通勤 31%・駐車場 75%・学区 93%</title><polygon points="60.0,38.0 77.2,46.3 81.4,64.9 69.5,79.8 50.5,79.8 38.6,64.9 42.8,46.3" class="ring"/><polygon points="60.0,16.0 94.4,32.6 102.9,69.8 79.1,99.6 40.9,99.6 17.1,69.8 25.6,32.6" class="ring"/><line x1="60" y1="60" x2="60.0" y2="16.0" class="ring"/><line x1="60" y1="60" x2="94.4" y2="32.6" class="ring"/><line x1="60" y1="60" x2="102.9" y2="69.8" class="ring"/><line x1="60" y1="60" x2="79.1" y2="99.6" class="ring"/><line x1="60" y1="60" x2="40.9" y2="99.6" class="ring"/><line x1="60" y1="60" x2="17.1" y2="69.8" class="ring"/><line x1="60" y1="60" x2="25.6" y2="32.6" class="ring"/><polygon points="60.0,25.8 86.7,38.7 102.9,69.8 79.1,99.6 54.0,72.4 27.8,67.3 27.9,34.4" class="area"/><text x="60.0" y="8.5" text-anchor="middle">管理</text><text x="103.0" y="29.2" text-anchor="middle">駅徒歩</text><text x="113.6" y="75.7" text-anchor="middle">間取り</text><text x="83.9" y="113.1" text-anchor="middle">広さ</text><text x="36.1" y="113.1" text-anchor="middle">通勤</text><text x="6.4" y="75.7" text-anchor="middle">駐車場</text><text x="17.0" y="29.2" text-anchor="middle">学区</text></svg>
+  </div>
+  <span class="more">くわしく見る</span>
+  </summary>
+  <div class="grid">
+    <section>
+      <h3>住まい</h3>
+      <dl>
+        <dt><button type="button" class="term" data-key="LDK">LDK</button></dt><dd>24.3 帖（<button type="button" class="term" data-key="キッチン">キッチン</button>: 対面）</dd>
+        <dt>個室</dt><dd>8.1 / 5.4 / 6.4 / 4 帖</dd>
+        <dt><button type="button" class="term" data-key="WIC">WIC</button></dt><dd>あり</dd>
+        <dt><button type="button" class="term" data-key="総戸数">総戸数</button></dt><dd>34 戸・RC7階建</dd>
+        <dt>リフォーム</dt><dd>記載なし（現状渡しの可能性）</dd>
+      </dl>
+    </section>
+    <section>
+      <h3>場所</h3>
+      <dl>
+        <dt>駅</dt><dd>中央図書館前 徒歩 9 分</dd>
+        <dt>小学校</dt><dd>山鼻南小 <span class="good"><button type="button" class="term" data-key="安定">安定</button></span><br><small>316→330 人</small></dd>
+        <dt>中学校</dt><dd>山鼻中学校 <span class="rank-badge rank-a">A</span><br><small>文字 8.6 ＋ 口コミ 2.6 ＝ 11.2/12</small><br><small>市内屈指の進学校、教育実践表彰</small><br><small>総合 3.91（34）／保護者 3.77（22）／在校生・卒業生 4.17（12）／2018 年以降入学 4.06（16）</small><br><a href="https://www.minkou.jp/junior/school/review/5733/" target="_blank" rel="noopener">みんなの中学校情報で見る</a></dd>
+        <dt><button type="button" class="term" data-key="災害">災害</button></dt><dd>洪水: 区域外・土砂災害: 区域外・<button type="button" class="term" data-key="大規模盛土">大規模盛土</button>: 区域外</dd>
+        <dt>治安</dt><dd>強盗 0 件・侵入窃盗 0 件・全種 2 件<br><small>半径 400m・2025-09〜2026-08（北海道警察 犯罪発生マップ）。全種は自転車盗を含む</small></dd>
+      </dl>
+    </section>
+    <section>
+      <h3>月々の費用</h3>
+      <dl>
+        <dt><button type="button" class="term" data-key="管理費">管理費</button></dt><dd>19,920 円/月</dd>
+        <dt><button type="button" class="term" data-key="修繕積立">修繕積立</button></dt><dd>27,740 円/月（266 円/㎡）</dd>
+        <dt><button type="button" class="term" data-key="駐車場">駐車場</button></dt><dd>敷地内あり<br><small>-</small></dd>
+        <dt>15 年実質</dt><dd>2,176 万<br><small>値下がり 1,102 ＋ 管理費・積立・駐車場 15 年分 1,074・駐車場は推定・値下がりの幅 197〜1,325</small></dd>
+      </dl>
+    </section>
+  </div>
+  <p class="note">新しく上位に入った建物。3,080 万（90.5㎡・4 室・<button type="button" class="term" data-key="WIC">WIC</button>）と 3,280 万（104.3㎡・LDK 24 帖）の 2 部屋。積立は厚めで敷地内駐車場あり。<button type="button" class="term" data-key="市電">市電</button>のみで地下鉄までは歩けないのが弱点。</p>
+  <footer class="links"><a href="https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshichuo/nc_20925789/" target="_blank" rel="noopener">SUUMO で見る</a> <a href="https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F010%2FN010000%2Fimg%2F789%2F20925789%2F20925789_0002.jpg&amp;w=1000&amp;h=750" target="_blank" rel="noopener">間取り図</a></footer>
+</details>
+<details class="card">
+  <summary>
+  <header class="card-head">
+    <span class="rank">10</span>
+    <div class="title-block">
+      <h2>グランファーレ札幌山鼻グランフォレスト<span class="role"><button type="button" class="term" data-key="本命">対抗</button></span></h2>
+      <p class="addr">北海道札幌市中央区南十八条西９｜札幌市電「静修学園前」徒歩6分</p>
+    </div>
+    <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">80.3</span></div>
+  </header>
+  <div class="keyrow">
+    <div class="facts">
+      <div><span class="k">価格</span><span class="v">3,590<small>万円</small></span></div>
+      <div><span class="k">広さ・間取り</span><span class="v">75.2<small>㎡</small></span><span class="sub">3LDK</span></div>
+      <div><span class="k">築年</span><span class="v">15<small>年</small></span><span class="sub">2012-02 築・3階・西向き</span></div>
+    </div>
+    <svg class="radar" viewBox="0 0 120 120" role="img" aria-label="管理 100%・駅徒歩 89%・間取り 65%・広さ 61%・通勤 56%・駐車場 75%・学区 93%"><title>管理 100%・駅徒歩 89%・間取り 65%・広さ 61%・通勤 56%・駐車場 75%・学区 93%</title><polygon points="60.0,38.0 77.2,46.3 81.4,64.9 69.5,79.8 50.5,79.8 38.6,64.9 42.8,46.3" class="ring"/><polygon points="60.0,16.0 94.4,32.6 102.9,69.8 79.1,99.6 40.9,99.6 17.1,69.8 25.6,32.6" class="ring"/><line x1="60" y1="60" x2="60.0" y2="16.0" class="ring"/><line x1="60" y1="60" x2="94.4" y2="32.6" class="ring"/><line x1="60" y1="60" x2="102.9" y2="69.8" class="ring"/><line x1="60" y1="60" x2="79.1" y2="99.6" class="ring"/><line x1="60" y1="60" x2="40.9" y2="99.6" class="ring"/><line x1="60" y1="60" x2="17.1" y2="69.8" class="ring"/><line x1="60" y1="60" x2="25.6" y2="32.6" class="ring"/><polygon points="60.0,16.0 90.7,35.5 87.9,66.4 71.6,84.0 49.3,82.3 27.8,67.3 27.9,34.4" class="area"/><text x="60.0" y="8.5" text-anchor="middle">管理</text><text x="103.0" y="29.2" text-anchor="middle">駅徒歩</text><text x="113.6" y="75.7" text-anchor="middle">間取り</text><text x="83.9" y="113.1" text-anchor="middle">広さ</text><text x="36.1" y="113.1" text-anchor="middle">通勤</text><text x="6.4" y="75.7" text-anchor="middle">駐車場</text><text x="17.0" y="29.2" text-anchor="middle">学区</text></svg>
+  </div>
+  <span class="more">くわしく見る</span>
+  </summary>
+  <div class="grid">
+    <section>
+      <h3>住まい</h3>
+      <dl>
+        <dt><button type="button" class="term" data-key="LDK">LDK</button></dt><dd>16.6 帖（<button type="button" class="term" data-key="キッチン">キッチン</button>: 対面）</dd>
+        <dt>個室</dt><dd>6.5 / 4.5 / 6.2 帖</dd>
+        <dt><button type="button" class="term" data-key="WIC">WIC</button></dt><dd>なし</dd>
+        <dt><button type="button" class="term" data-key="総戸数">総戸数</button></dt><dd>40 戸・RC11階地下1階建</dd>
+        <dt>リフォーム</dt><dd>記載なし（現状渡しの可能性）</dd>
+      </dl>
+    </section>
+    <section>
+      <h3>場所</h3>
+      <dl>
+        <dt>駅</dt><dd>静修学園前 徒歩 6 分</dd>
+        <dt>小学校</dt><dd>山鼻小 <span class="good"><button type="button" class="term" data-key="安定">安定</button></span><br><small>528→520 人</small></dd>
+        <dt>中学校</dt><dd>柏中学校 <span class="rank-badge rank-a">A</span><br><small>文字 8.6 ＋ 口コミ 2.6 ＝ 11.2/12</small><br><small>市内屈指の学力、真面目で礼儀正しいと一致</small><br><small>総合 3.92（12）／保護者 4.38（8）／在校生・卒業生 3.0（4）／2018 年以降入学 3.33（6）</small><br><a href="https://www.minkou.jp/junior/school/review/94356/" target="_blank" rel="noopener">みんなの中学校情報で見る</a></dd>
         <dt><button type="button" class="term" data-key="災害">災害</button></dt><dd>洪水: 区域外・土砂災害: 区域外・<button type="button" class="term" data-key="大規模盛土">大規模盛土</button>: 区域外</dd>
         <dt>治安</dt><dd>強盗 0 件・侵入窃盗 0 件・全種 1 件<br><small>半径 400m・2025-09〜2026-08（北海道警察 犯罪発生マップ）。全種は自転車盗を含む</small></dd>
       </dl>
@@ -722,15 +618,123 @@ dd small { color:var(--muted); }
     <section>
       <h3>月々の費用</h3>
       <dl>
-        <dt><button type="button" class="term" data-key="管理費">管理費</button></dt><dd>14,200 円/月</dd>
-        <dt><button type="button" class="term" data-key="修繕積立">修繕積立</button></dt><dd>22,877 円/月（260 円/㎡）</dd>
-        <dt><button type="button" class="term" data-key="駐車場">駐車場</button></dt><dd>敷地内あり<br><small>敷地内（9800円／月）</small></dd>
-        <dt>15 年実質</dt><dd>1,682 万<br><small>値下がり 838 ＋ 管理費・積立・駐車場 15 年分 844・値下がりの幅 662〜997</small></dd>
+        <dt><button type="button" class="term" data-key="管理費">管理費</button></dt><dd>9,390 円/月</dd>
+        <dt><button type="button" class="term" data-key="修繕積立">修繕積立</button></dt><dd>18,780 円/月（250 円/㎡）</dd>
+        <dt><button type="button" class="term" data-key="駐車場">駐車場</button></dt><dd>敷地内あり<br><small>敷地内（7000円／月）</small></dd>
+        <dt>15 年実質</dt><dd>1,793 万<br><small>値下がり 1,160 ＋ 管理費・積立・駐車場 15 年分 633・値下がりの幅 151〜1,411</small></dd>
       </dl>
     </section>
   </div>
-  
-  <footer class="links"><a href="https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshitoyohira/nc_21478130/" target="_blank" rel="noopener">SUUMO で見る</a> <a href="https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F010%2FN010000%2Fimg%2F130%2F21478130%2F21478130_0002.jpg&amp;w=1000&amp;h=750" target="_blank" rel="noopener">間取り図</a></footer>
+  <p class="note"><button type="button" class="term" data-key="市電">市電</button>の駅だが地下鉄幌平橋まで 815m で徒歩圏。築 14.6 年で最も新しい。個室が 6.5／6.2／4.5 帖と小さめで、夫婦の部屋 7 帖には届かない。資料 5 点で確認（9/14）: 積立 7,341 万・借入なし・滞納なしと財務は最良クラス。第 1 回<button type="button" class="term" data-key="大規模修繕">大規模修繕</button>を 2026-07〜11 に施工中で、その資金に 700 万の借入予定。2026-06 から管理費と駐車場が値上げ済み。駐車場は 41 区画すべて屋外で空き無し・順番待ち・前の持ち主から引き継げない。ペットは 2 匹まで（大きさ制限あり）。</p>
+  <footer class="links"><a href="https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshichuo/nc_21377362/" target="_blank" rel="noopener">SUUMO で見る</a> <a href="https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F010%2FN010000%2Fimg%2F362%2F21377362%2F21377362_0028.jpg&amp;w=1000&amp;h=750" target="_blank" rel="noopener">間取り図</a></footer>
+</details>
+<details class="card">
+  <summary>
+  <header class="card-head">
+    <span class="rank">11</span>
+    <div class="title-block">
+      <h2>シティハウス澄川天神山</h2>
+      <p class="addr">北海道札幌市南区澄川二条１｜地下鉄南北線「澄川」徒歩9分</p>
+    </div>
+    <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">79.9</span></div>
+  </header>
+  <div class="keyrow">
+    <div class="facts">
+      <div><span class="k">価格</span><span class="v">2,490<small>万円</small></span></div>
+      <div><span class="k">広さ・間取り</span><span class="v">100.9<small>㎡</small></span><span class="sub">4LDK</span></div>
+      <div><span class="k">築年</span><span class="v">23<small>年</small></span><span class="sub">2004-02 築・5階・南東向き</span></div>
+    </div>
+    <svg class="radar" viewBox="0 0 120 120" role="img" aria-label="管理 78%・駅徒歩 83%・間取り 100%・広さ 100%・通勤 88%・駐車場 100%・学区 24%"><title>管理 78%・駅徒歩 83%・間取り 100%・広さ 100%・通勤 88%・駐車場 100%・学区 24%</title><polygon points="60.0,38.0 77.2,46.3 81.4,64.9 69.5,79.8 50.5,79.8 38.6,64.9 42.8,46.3" class="ring"/><polygon points="60.0,16.0 94.4,32.6 102.9,69.8 79.1,99.6 40.9,99.6 17.1,69.8 25.6,32.6" class="ring"/><line x1="60" y1="60" x2="60.0" y2="16.0" class="ring"/><line x1="60" y1="60" x2="94.4" y2="32.6" class="ring"/><line x1="60" y1="60" x2="102.9" y2="69.8" class="ring"/><line x1="60" y1="60" x2="79.1" y2="99.6" class="ring"/><line x1="60" y1="60" x2="40.9" y2="99.6" class="ring"/><line x1="60" y1="60" x2="17.1" y2="69.8" class="ring"/><line x1="60" y1="60" x2="25.6" y2="32.6" class="ring"/><polygon points="60.0,25.8 88.7,37.1 102.9,69.8 79.1,99.6 43.3,94.7 17.1,69.8 51.7,53.4" class="area"/><text x="60.0" y="8.5" text-anchor="middle">管理</text><text x="103.0" y="29.2" text-anchor="middle">駅徒歩</text><text x="113.6" y="75.7" text-anchor="middle">間取り</text><text x="83.9" y="113.1" text-anchor="middle">広さ</text><text x="36.1" y="113.1" text-anchor="middle">通勤</text><text x="6.4" y="75.7" text-anchor="middle">駐車場</text><text x="17.0" y="29.2" text-anchor="middle">学区</text></svg>
+  </div>
+  <span class="more">くわしく見る</span>
+  </summary>
+  <div class="grid">
+    <section>
+      <h3>住まい</h3>
+      <dl>
+        <dt><button type="button" class="term" data-key="LDK">LDK</button></dt><dd>20.4 帖（<button type="button" class="term" data-key="キッチン">キッチン</button>: 不明）</dd>
+        <dt>個室</dt><dd>8.5 / 6.1 / 5.7 / 5 帖</dd>
+        <dt><button type="button" class="term" data-key="WIC">WIC</button></dt><dd>あり</dd>
+        <dt><button type="button" class="term" data-key="総戸数">総戸数</button></dt><dd>32 戸・RC10階地下1階建</dd>
+        <dt>リフォーム</dt><dd>記載なし（現状渡しの可能性）</dd>
+      </dl>
+    </section>
+    <section>
+      <h3>場所</h3>
+      <dl>
+        <dt>駅</dt><dd>澄川 徒歩 9 分</dd>
+        <dt>小学校</dt><dd>澄川西小 <span class=""></span><br><small></small></dd>
+        <dt>中学校</dt><dd>澄川中学校 <span class="rank-badge rank-c">C</span><br><small>文字 1.7 ＋ 口コミ 1.2 ＝ 2.9/12</small><br><small>生徒の質・停学者数の指摘、評価 3.1</small><br><small>総合 3.07（28）／保護者 3.79（14）／在校生・卒業生 2.36（14）／2018 年以降入学 2.93（15）</small><br><a href="https://www.minkou.jp/junior/school/review/5791/" target="_blank" rel="noopener">みんなの中学校情報で見る</a></dd>
+        <dt><button type="button" class="term" data-key="災害">災害</button></dt><dd>洪水: 区域外・土砂災害: 区域外・<button type="button" class="term" data-key="大規模盛土">大規模盛土</button>: 区域外</dd>
+        <dt>治安</dt><dd>強盗 0 件・侵入窃盗 0 件・全種 2 件<br><small>半径 400m・2025-09〜2026-08（北海道警察 犯罪発生マップ）。全種は自転車盗を含む</small></dd>
+      </dl>
+    </section>
+    <section>
+      <h3>月々の費用</h3>
+      <dl>
+        <dt><button type="button" class="term" data-key="管理費">管理費</button></dt><dd>18,600 円/月</dd>
+        <dt><button type="button" class="term" data-key="修繕積立">修繕積立</button></dt><dd>26,230 円/月（260 円/㎡）</dd>
+        <dt><button type="button" class="term" data-key="駐車場">駐車場</button></dt><dd>敷地内・確保しやすい<br><small>敷地内（8000円～1万4000円／月）</small></dd>
+        <dt>15 年実質</dt><dd>1,952 万<br><small>値下がり 1,001 ＋ 管理費・積立・駐車場 15 年分 951・値下がりの幅 1,155〜1,526</small></dd>
+      </dl>
+    </section>
+  </div>
+  <p class="note">100㎡・2,490 万と安く広い。南区は将来の値下がりが最も大きく、安さで見る枠。</p>
+  <footer class="links"><a href="https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshiminami/nc_20551782/" target="_blank" rel="noopener">SUUMO で見る</a> <a href="https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F010%2FN010000%2Fimg%2F782%2F20551782%2F20551782_0002.jpg&amp;w=1000&amp;h=750" target="_blank" rel="noopener">間取り図</a></footer>
+</details>
+<details class="card">
+  <summary>
+  <header class="card-head">
+    <span class="rank">12</span>
+    <div class="title-block">
+      <h2>ロジェ北２６条</h2>
+      <p class="addr">北海道札幌市東区北二十六条東３｜地下鉄南北線「北２４条」徒歩13分</p>
+    </div>
+    <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">79.8</span></div>
+  </header>
+  <div class="keyrow">
+    <div class="facts">
+      <div><span class="k">価格</span><span class="v">2,690<small>万円</small></span></div>
+      <div><span class="k">広さ・間取り</span><span class="v">84.8<small>㎡</small></span><span class="sub">3LDK+S（納戸）</span></div>
+      <div><span class="k">築年</span><span class="v">23<small>年</small></span><span class="sub">2003-12 築・8階・西向き</span></div>
+    </div>
+    <svg class="radar" viewBox="0 0 120 120" role="img" aria-label="管理 78%・駅徒歩 67%・間取り 100%・広さ 99%・通勤 88%・駐車場 75%・学区 58%"><title>管理 78%・駅徒歩 67%・間取り 100%・広さ 99%・通勤 88%・駐車場 75%・学区 58%</title><polygon points="60.0,38.0 77.2,46.3 81.4,64.9 69.5,79.8 50.5,79.8 38.6,64.9 42.8,46.3" class="ring"/><polygon points="60.0,16.0 94.4,32.6 102.9,69.8 79.1,99.6 40.9,99.6 17.1,69.8 25.6,32.6" class="ring"/><line x1="60" y1="60" x2="60.0" y2="16.0" class="ring"/><line x1="60" y1="60" x2="94.4" y2="32.6" class="ring"/><line x1="60" y1="60" x2="102.9" y2="69.8" class="ring"/><line x1="60" y1="60" x2="79.1" y2="99.6" class="ring"/><line x1="60" y1="60" x2="40.9" y2="99.6" class="ring"/><line x1="60" y1="60" x2="17.1" y2="69.8" class="ring"/><line x1="60" y1="60" x2="25.6" y2="32.6" class="ring"/><polygon points="60.0,25.8 82.9,41.7 102.9,69.8 79.0,99.4 43.3,94.7 27.8,67.3 40.2,44.2" class="area"/><text x="60.0" y="8.5" text-anchor="middle">管理</text><text x="103.0" y="29.2" text-anchor="middle">駅徒歩</text><text x="113.6" y="75.7" text-anchor="middle">間取り</text><text x="83.9" y="113.1" text-anchor="middle">広さ</text><text x="36.1" y="113.1" text-anchor="middle">通勤</text><text x="6.4" y="75.7" text-anchor="middle">駐車場</text><text x="17.0" y="29.2" text-anchor="middle">学区</text></svg>
+  </div>
+  <span class="more">くわしく見る</span>
+  </summary>
+  <div class="grid">
+    <section>
+      <h3>住まい</h3>
+      <dl>
+        <dt><button type="button" class="term" data-key="LDK">LDK</button></dt><dd>18 帖（<button type="button" class="term" data-key="キッチン">キッチン</button>: 対面）</dd>
+        <dt>個室</dt><dd>7.8 / 6 / 6 帖</dd>
+        <dt><button type="button" class="term" data-key="WIC">WIC</button></dt><dd>なし</dd>
+        <dt><button type="button" class="term" data-key="総戸数">総戸数</button></dt><dd>51 戸・RC11階建</dd>
+        <dt>リフォーム</dt><dd>記載なし（現状渡しの可能性）</dd>
+      </dl>
+    </section>
+    <section>
+      <h3>場所</h3>
+      <dl>
+        <dt>駅</dt><dd>北２４条 徒歩 13 分</dd>
+        <dt>小学校</dt><dd>北園小 <span class="warn"><button type="button" class="term" data-key="先行減少">先行減少</button></span><br><small>1年生 3→2 学級</small></dd>
+        <dt>中学校</dt><dd>北栄中学校 <span class="rank-badge rank-b">B</span><br><small>文字 5.1 ＋ 口コミ 1.8 ＝ 6.9/12</small><br><small>学力やや低めの指摘、荒れの言及なし</small><br><small>総合 3.42（26）／保護者 3.65（17）／在校生・卒業生 3.0（9）／2018 年以降入学 3.36（11）</small><br><a href="https://www.minkou.jp/junior/school/review/5757/" target="_blank" rel="noopener">みんなの中学校情報で見る</a></dd>
+        <dt><button type="button" class="term" data-key="災害">災害</button></dt><dd>洪水: 区域外・土砂災害: 区域外・<button type="button" class="term" data-key="大規模盛土">大規模盛土</button>: 区域外</dd>
+        <dt>治安</dt><dd>強盗 0 件・侵入窃盗 0 件・全種 4 件<br><small>半径 400m・2025-09〜2026-08（北海道警察 犯罪発生マップ）。全種は自転車盗を含む</small></dd>
+      </dl>
+    </section>
+    <section>
+      <h3>月々の費用</h3>
+      <dl>
+        <dt><button type="button" class="term" data-key="管理費">管理費</button></dt><dd>7,550 円/月</dd>
+        <dt><button type="button" class="term" data-key="修繕積立">修繕積立</button></dt><dd>22,100 円/月（261 円/㎡）</dd>
+        <dt><button type="button" class="term" data-key="駐車場">駐車場</button></dt><dd>敷地内あり<br><small>敷地内（8000円／月）</small></dd>
+        <dt>15 年実質</dt><dd>1,528 万<br><small>値下がり 850 ＋ 管理費・積立・駐車場 15 年分 678・値下がりの幅 675〜1,041</small></dd>
+      </dl>
+    </section>
+  </div>
+  <p class="note">築 22.8 年で 2028 年時点 25 年目前。<button type="button" class="term" data-key="給排水管">給排水管</button>の更新が済んでいるか要確認。学区の北園小は減少中。</p>
+  <footer class="links"><a href="https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshihigashi/nc_21182863/" target="_blank" rel="noopener">SUUMO で見る</a> <a href="https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F010%2FN010000%2Fimg%2F863%2F21182863%2F21182863_0040.jpg&amp;w=1000&amp;h=750" target="_blank" rel="noopener">間取り図</a></footer>
 </details>
 
 <h2 class="wait-head">候補（情報待ち）</h2>
@@ -744,7 +748,7 @@ dd small { color:var(--muted); }
       <h2>ライオンズタワー札幌山鼻</h2>
       <p class="addr">北海道札幌市中央区南十九条西１２｜札幌市電「ロープウェイ入口」徒歩5分</p>
     </div>
-    <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">65.2</span></div>
+    <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">77.3</span></div>
   </header>
   <div class="keyrow">
     <div class="facts">
@@ -752,7 +756,7 @@ dd small { color:var(--muted); }
       <div><span class="k">広さ・間取り</span><span class="v">83.9<small>㎡</small></span><span class="sub">3LDK</span></div>
       <div><span class="k">築年</span><span class="v">24<small>年</small></span><span class="sub">2003-01 築・20階・西向き</span></div>
     </div>
-    <svg class="radar" viewBox="0 0 120 120" role="img" aria-label="コスパ 31%・管理 78%・駅徒歩 93%・間取り 50%・広さ 96%・通勤 24%・駐車場 100%・学区 97%"><title>コスパ 31%・管理 78%・駅徒歩 93%・間取り 50%・広さ 96%・通勤 24%・駐車場 100%・学区 97%</title><polygon points="60.0,38.0 75.6,44.4 82.0,60.0 75.6,75.6 60.0,82.0 44.4,75.6 38.0,60.0 44.4,44.4" class="ring"/><polygon points="60.0,16.0 91.1,28.9 104.0,60.0 91.1,91.1 60.0,104.0 28.9,91.1 16.0,60.0 28.9,28.9" class="ring"/><line x1="60" y1="60" x2="60.0" y2="16.0" class="ring"/><line x1="60" y1="60" x2="91.1" y2="28.9" class="ring"/><line x1="60" y1="60" x2="104.0" y2="60.0" class="ring"/><line x1="60" y1="60" x2="91.1" y2="91.1" class="ring"/><line x1="60" y1="60" x2="60.0" y2="104.0" class="ring"/><line x1="60" y1="60" x2="28.9" y2="91.1" class="ring"/><line x1="60" y1="60" x2="16.0" y2="60.0" class="ring"/><line x1="60" y1="60" x2="28.9" y2="28.9" class="ring"/><polygon points="60.0,46.4 84.2,35.8 101.1,60.0 75.6,75.6 60.0,102.0 52.6,67.4 16.0,60.0 29.8,29.8" class="area"/><text x="60.0" y="8.5" text-anchor="middle">コスパ</text><text x="98.9" y="24.6" text-anchor="middle">管理</text><text x="115.0" y="63.5" text-anchor="middle">駅徒歩</text><text x="98.9" y="102.4" text-anchor="middle">間取り</text><text x="60.0" y="118.5" text-anchor="middle">広さ</text><text x="21.1" y="102.4" text-anchor="middle">通勤</text><text x="5.0" y="63.5" text-anchor="middle">駐車場</text><text x="21.1" y="24.6" text-anchor="middle">学区</text></svg>
+    <svg class="radar" viewBox="0 0 120 120" role="img" aria-label="管理 78%・駅徒歩 93%・間取り 50%・広さ 96%・通勤 24%・駐車場 100%・学区 93%"><title>管理 78%・駅徒歩 93%・間取り 50%・広さ 96%・通勤 24%・駐車場 100%・学区 93%</title><polygon points="60.0,38.0 77.2,46.3 81.4,64.9 69.5,79.8 50.5,79.8 38.6,64.9 42.8,46.3" class="ring"/><polygon points="60.0,16.0 94.4,32.6 102.9,69.8 79.1,99.6 40.9,99.6 17.1,69.8 25.6,32.6" class="ring"/><line x1="60" y1="60" x2="60.0" y2="16.0" class="ring"/><line x1="60" y1="60" x2="94.4" y2="32.6" class="ring"/><line x1="60" y1="60" x2="102.9" y2="69.8" class="ring"/><line x1="60" y1="60" x2="79.1" y2="99.6" class="ring"/><line x1="60" y1="60" x2="40.9" y2="99.6" class="ring"/><line x1="60" y1="60" x2="17.1" y2="69.8" class="ring"/><line x1="60" y1="60" x2="25.6" y2="32.6" class="ring"/><polygon points="60.0,25.8 92.1,34.4 81.4,64.9 78.2,97.9 55.5,69.4 17.1,69.8 27.9,34.4" class="area"/><text x="60.0" y="8.5" text-anchor="middle">管理</text><text x="103.0" y="29.2" text-anchor="middle">駅徒歩</text><text x="113.6" y="75.7" text-anchor="middle">間取り</text><text x="83.9" y="113.1" text-anchor="middle">広さ</text><text x="36.1" y="113.1" text-anchor="middle">通勤</text><text x="6.4" y="75.7" text-anchor="middle">駐車場</text><text x="17.0" y="29.2" text-anchor="middle">学区</text></svg>
   </div>
   <span class="more">くわしく見る</span>
   </summary>
@@ -772,7 +776,7 @@ dd small { color:var(--muted); }
       <dl>
         <dt>駅</dt><dd>ロープウェイ入口 徒歩 5 分</dd>
         <dt>小学校</dt><dd>伏見小 <span class=""></span><br><small>school_boundaries_chuo_toyohira.json 伏見小学校area『南19条西11丁目～16丁目』に一致。中学は伏見中/山鼻中の両JSON候補が南19条で重複したため公式 https://www.city.sapp</small></dd>
-        <dt>中学校</dt><dd>山鼻中学校</dd>
+        <dt>中学校</dt><dd>山鼻中学校 <span class="rank-badge rank-a">A</span><br><small>文字 8.6 ＋ 口コミ 2.6 ＝ 11.2/12</small><br><small>市内屈指の進学校、教育実践表彰</small><br><small>総合 3.91（34）／保護者 3.77（22）／在校生・卒業生 4.17（12）／2018 年以降入学 4.06（16）</small><br><a href="https://www.minkou.jp/junior/school/review/5733/" target="_blank" rel="noopener">みんなの中学校情報で見る</a></dd>
         <dt><button type="button" class="term" data-key="災害">災害</button></dt><dd>洪水: 区域外・土砂災害: 区域外・<button type="button" class="term" data-key="大規模盛土">大規模盛土</button>: 区域外</dd>
         <dt>治安</dt><dd>強盗 0 件・侵入窃盗 0 件・全種 0 件<br><small>半径 400m・2025-09〜2026-08（北海道警察 犯罪発生マップ）。全種は自転車盗を含む</small></dd>
       </dl>
@@ -795,18 +799,18 @@ dd small { color:var(--muted); }
   <header class="card-head">
     <span class="rank">仮</span>
     <div class="title-block">
-      <h2>エクセルシオールリヴィア菊水</h2>
-      <p class="addr">北海道札幌市白石区菊水四条１｜地下鉄東西線「菊水」徒歩4分</p>
+      <h2>ゼファー福住</h2>
+      <p class="addr">北海道札幌市豊平区福住一条２｜地下鉄東豊線「福住」徒歩5分</p>
     </div>
-    <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">62.4</span></div>
+    <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">75.1</span></div>
   </header>
   <div class="keyrow">
     <div class="facts">
       <div><span class="k">価格</span><span class="v">3,980<small>万円</small></span></div>
-      <div><span class="k">広さ・間取り</span><span class="v">84.5<small>㎡</small></span><span class="sub">3LDK</span></div>
-      <div><span class="k">築年</span><span class="v">22<small>年</small></span><span class="sub">2004-06 築・7階・南西向き</span></div>
+      <div><span class="k">広さ・間取り</span><span class="v">104.7<small>㎡</small></span><span class="sub">4LDK</span></div>
+      <div><span class="k">築年</span><span class="v">20<small>年</small></span><span class="sub">2006-03 築・8階・南東向き</span></div>
     </div>
-    <svg class="radar" viewBox="0 0 120 120" role="img" aria-label="コスパ 40%・管理 48%・駅徒歩 100%・間取り 50%・広さ 98%・通勤 88%・駐車場 75%・学区 43%"><title>コスパ 40%・管理 48%・駅徒歩 100%・間取り 50%・広さ 98%・通勤 88%・駐車場 75%・学区 43%</title><polygon points="60.0,38.0 75.6,44.4 82.0,60.0 75.6,75.6 60.0,82.0 44.4,75.6 38.0,60.0 44.4,44.4" class="ring"/><polygon points="60.0,16.0 91.1,28.9 104.0,60.0 91.1,91.1 60.0,104.0 28.9,91.1 16.0,60.0 28.9,28.9" class="ring"/><line x1="60" y1="60" x2="60.0" y2="16.0" class="ring"/><line x1="60" y1="60" x2="91.1" y2="28.9" class="ring"/><line x1="60" y1="60" x2="104.0" y2="60.0" class="ring"/><line x1="60" y1="60" x2="91.1" y2="91.1" class="ring"/><line x1="60" y1="60" x2="60.0" y2="104.0" class="ring"/><line x1="60" y1="60" x2="28.9" y2="91.1" class="ring"/><line x1="60" y1="60" x2="16.0" y2="60.0" class="ring"/><line x1="60" y1="60" x2="28.9" y2="28.9" class="ring"/><polygon points="60.0,42.4 74.9,45.1 104.0,60.0 75.6,75.6 60.0,103.1 32.8,87.2 27.0,60.0 46.7,46.7" class="area"/><text x="60.0" y="8.5" text-anchor="middle">コスパ</text><text x="98.9" y="24.6" text-anchor="middle">管理</text><text x="115.0" y="63.5" text-anchor="middle">駅徒歩</text><text x="98.9" y="102.4" text-anchor="middle">間取り</text><text x="60.0" y="118.5" text-anchor="middle">広さ</text><text x="21.1" y="102.4" text-anchor="middle">通勤</text><text x="5.0" y="63.5" text-anchor="middle">駐車場</text><text x="21.1" y="24.6" text-anchor="middle">学区</text></svg>
+    <svg class="radar" viewBox="0 0 120 120" role="img" aria-label="管理 78%・駅徒歩 100%・間取り 50%・広さ 100%・通勤 88%・駐車場 75%・学区 42%"><title>管理 78%・駅徒歩 100%・間取り 50%・広さ 100%・通勤 88%・駐車場 75%・学区 42%</title><polygon points="60.0,38.0 77.2,46.3 81.4,64.9 69.5,79.8 50.5,79.8 38.6,64.9 42.8,46.3" class="ring"/><polygon points="60.0,16.0 94.4,32.6 102.9,69.8 79.1,99.6 40.9,99.6 17.1,69.8 25.6,32.6" class="ring"/><line x1="60" y1="60" x2="60.0" y2="16.0" class="ring"/><line x1="60" y1="60" x2="94.4" y2="32.6" class="ring"/><line x1="60" y1="60" x2="102.9" y2="69.8" class="ring"/><line x1="60" y1="60" x2="79.1" y2="99.6" class="ring"/><line x1="60" y1="60" x2="40.9" y2="99.6" class="ring"/><line x1="60" y1="60" x2="17.1" y2="69.8" class="ring"/><line x1="60" y1="60" x2="25.6" y2="32.6" class="ring"/><polygon points="60.0,25.8 94.4,32.6 81.4,64.9 79.1,99.6 43.3,94.7 27.8,67.3 45.4,48.3" class="area"/><text x="60.0" y="8.5" text-anchor="middle">管理</text><text x="103.0" y="29.2" text-anchor="middle">駅徒歩</text><text x="113.6" y="75.7" text-anchor="middle">間取り</text><text x="83.9" y="113.1" text-anchor="middle">広さ</text><text x="36.1" y="113.1" text-anchor="middle">通勤</text><text x="6.4" y="75.7" text-anchor="middle">駐車場</text><text x="17.0" y="29.2" text-anchor="middle">学区</text></svg>
   </div>
   <span class="more">くわしく見る</span>
   </summary>
@@ -817,212 +821,50 @@ dd small { color:var(--muted); }
         <dt><button type="button" class="term" data-key="LDK">LDK</button></dt><dd>未読取 帖（<button type="button" class="term" data-key="キッチン">キッチン</button>: —）</dd>
         <dt>個室</dt><dd>未読取 帖</dd>
         <dt><button type="button" class="term" data-key="WIC">WIC</button></dt><dd>—</dd>
-        <dt><button type="button" class="term" data-key="総戸数">総戸数</button></dt><dd>30 戸・RC11階建</dd>
-        <dt>リフォーム</dt><dd>2023-01 水回り: キッチン・浴室・トイレ／内装: 壁・床・全室</dd>
-      </dl>
-    </section>
-    <section>
-      <h3>場所</h3>
-      <dl>
-        <dt>駅</dt><dd>菊水 徒歩 4 分</dd>
-        <dt>小学校</dt><dd>未特定 <span class=""></span><br><small></small></dd>
-        <dt>中学校</dt><dd>未特定</dd>
-        <dt><button type="button" class="term" data-key="災害">災害</button></dt><dd>洪水: 区域外・土砂災害: 区域外・<button type="button" class="term" data-key="大規模盛土">大規模盛土</button>: 区域外</dd>
-        <dt>治安</dt><dd>強盗 0 件・侵入窃盗 1 件・全種 8 件<br><small>半径 400m・2025-09〜2026-08（北海道警察 犯罪発生マップ）。全種は自転車盗を含む</small></dd>
-      </dl>
-    </section>
-    <section>
-      <h3>月々の費用</h3>
-      <dl>
-        <dt><button type="button" class="term" data-key="管理費">管理費</button></dt><dd>11,800 円/月</dd>
-        <dt><button type="button" class="term" data-key="修繕積立">修繕積立</button></dt><dd>14,300 円/月（169 円/㎡）</dd>
-        <dt><button type="button" class="term" data-key="駐車場">駐車場</button></dt><dd>敷地内あり<br><small>敷地内（9500円／月）</small></dd>
-        <dt>15 年実質</dt><dd>1,859 万<br><small>値下がり 1,218 ＋ 管理費・積立・駐車場 15 年分 641・値下がりの幅 1,067〜1,504</small></dd>
-      </dl>
-    </section>
-  </div>
-  <p class="note warn">情報待ち: 間取り・小学校・中学校 が未取得。点数は仮（間取り未読は満点の半分で置いている）。揃ったら上のランキングに入る。</p>
-  <footer class="links"><a href="https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshishiroishi/nc_21433295/" target="_blank" rel="noopener">SUUMO で見る</a></footer>
-</details>
-<details class="card">
-  <summary>
-  <header class="card-head">
-    <span class="rank">仮</span>
-    <div class="title-block">
-      <h2>クリーンリバー新発寒2</h2>
-      <p class="addr">北海道札幌市西区発寒九条１３-1-2｜ＪＲ函館本線「発寒」徒歩2分</p>
-    </div>
-    <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">61.7</span></div>
-  </header>
-  <div class="keyrow">
-    <div class="facts">
-      <div><span class="k">価格</span><span class="v">2,699<small>万円</small></span></div>
-      <div><span class="k">広さ・間取り</span><span class="v">102.5<small>㎡</small></span><span class="sub">3LDK</span></div>
-      <div><span class="k">築年</span><span class="v">21<small>年</small></span><span class="sub">2006-01 築・2階・南西向き</span></div>
-    </div>
-    <svg class="radar" viewBox="0 0 120 120" role="img" aria-label="コスパ 70%・管理 33%・駅徒歩 95%・間取り 100%・広さ 100%・通勤 24%・駐車場 0%・学区 43%"><title>コスパ 70%・管理 33%・駅徒歩 95%・間取り 100%・広さ 100%・通勤 24%・駐車場 0%・学区 43%</title><polygon points="60.0,38.0 75.6,44.4 82.0,60.0 75.6,75.6 60.0,82.0 44.4,75.6 38.0,60.0 44.4,44.4" class="ring"/><polygon points="60.0,16.0 91.1,28.9 104.0,60.0 91.1,91.1 60.0,104.0 28.9,91.1 16.0,60.0 28.9,28.9" class="ring"/><line x1="60" y1="60" x2="60.0" y2="16.0" class="ring"/><line x1="60" y1="60" x2="91.1" y2="28.9" class="ring"/><line x1="60" y1="60" x2="104.0" y2="60.0" class="ring"/><line x1="60" y1="60" x2="91.1" y2="91.1" class="ring"/><line x1="60" y1="60" x2="60.0" y2="104.0" class="ring"/><line x1="60" y1="60" x2="28.9" y2="91.1" class="ring"/><line x1="60" y1="60" x2="16.0" y2="60.0" class="ring"/><line x1="60" y1="60" x2="28.9" y2="28.9" class="ring"/><polygon points="60.0,29.4 70.3,49.7 101.8,60.0 91.1,91.1 60.0,104.0 52.6,67.4 60.0,60.0 46.7,46.7" class="area"/><text x="60.0" y="8.5" text-anchor="middle">コスパ</text><text x="98.9" y="24.6" text-anchor="middle">管理</text><text x="115.0" y="63.5" text-anchor="middle">駅徒歩</text><text x="98.9" y="102.4" text-anchor="middle">間取り</text><text x="60.0" y="118.5" text-anchor="middle">広さ</text><text x="21.1" y="102.4" text-anchor="middle">通勤</text><text x="5.0" y="63.5" text-anchor="middle">駐車場</text><text x="21.1" y="24.6" text-anchor="middle">学区</text></svg>
-  </div>
-  <span class="more">くわしく見る</span>
-  </summary>
-  <div class="grid">
-    <section>
-      <h3>住まい</h3>
-      <dl>
-        <dt><button type="button" class="term" data-key="LDK">LDK</button></dt><dd>24.4 帖（<button type="button" class="term" data-key="キッチン">キッチン</button>: 独立）</dd>
-        <dt>個室</dt><dd>7 / 8.6 / 8.5 帖</dd>
-        <dt><button type="button" class="term" data-key="WIC">WIC</button></dt><dd>なし</dd>
-        <dt><button type="button" class="term" data-key="総戸数">総戸数</button></dt><dd>29 戸・RC7階建</dd>
-        <dt>リフォーム</dt><dd>2025-09 水回り: キッチン・浴室・トイレ／内装: 壁・床・全室</dd>
-      </dl>
-    </section>
-    <section>
-      <h3>場所</h3>
-      <dl>
-        <dt>駅</dt><dd>発寒 徒歩 2 分</dd>
-        <dt>小学校</dt><dd>西小 <span class=""></span><br><small></small></dd>
-        <dt>中学校</dt><dd>未特定</dd>
-        <dt><button type="button" class="term" data-key="災害">災害</button></dt><dd>洪水: 区域外・土砂災害: 区域外・<button type="button" class="term" data-key="大規模盛土">大規模盛土</button>: 区域外</dd>
-        <dt>治安</dt><dd>強盗 0 件・侵入窃盗 0 件・全種 28 件<br><small>半径 400m・2025-09〜2026-08（北海道警察 犯罪発生マップ）。全種は自転車盗を含む</small></dd>
-      </dl>
-    </section>
-    <section>
-      <h3>月々の費用</h3>
-      <dl>
-        <dt><button type="button" class="term" data-key="管理費">管理費</button></dt><dd>6,340 円/月</dd>
-        <dt><button type="button" class="term" data-key="修繕積立">修繕積立</button></dt><dd>13,300 円/月（130 円/㎡）</dd>
-        <dt><button type="button" class="term" data-key="駐車場">駐車場</button></dt><dd>記載なし<br><small>空無</small></dd>
-        <dt>15 年実質</dt><dd>1,387 万<br><small>値下がり 818 ＋ 管理費・積立・駐車場 15 年分 570・駐車場は推定・値下がりの幅 637〜1,012</small></dd>
-      </dl>
-    </section>
-  </div>
-  <p class="note warn">情報待ち: 駐車場・中学校 が未取得。点数は仮（間取り未読は満点の半分で置いている）。揃ったら上のランキングに入る。</p>
-  <footer class="links"><a href="https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshinishi/nc_21131833/" target="_blank" rel="noopener">SUUMO で見る</a> <a href="https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F010%2FN010000%2Fimg%2F833%2F21131833%2F21131833_0003.jpg&amp;w=1000&amp;h=750" target="_blank" rel="noopener">間取り図</a></footer>
-</details>
-<details class="card">
-  <summary>
-  <header class="card-head">
-    <span class="rank">仮</span>
-    <div class="title-block">
-      <h2>パークアベニュー参番館Eコート</h2>
-      <p class="addr">北海道札幌市厚別区大谷地東３-4-7｜地下鉄東西線「大谷地」徒歩5分</p>
-    </div>
-    <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">61.6</span></div>
-  </header>
-  <div class="keyrow">
-    <div class="facts">
-      <div><span class="k">価格</span><span class="v">3,680<small>万円</small></span></div>
-      <div><span class="k">広さ・間取り</span><span class="v">99.8<small>㎡</small></span><span class="sub">3LDK</span></div>
-      <div><span class="k">築年</span><span class="v">37<small>年</small></span><span class="sub">1989-07 築・10階・南西向き</span></div>
-    </div>
-    <svg class="radar" viewBox="0 0 120 120" role="img" aria-label="コスパ 44%・管理 64%・駅徒歩 100%・間取り 50%・広さ 100%・通勤 82%・駐車場 100%・学区 43%"><title>コスパ 44%・管理 64%・駅徒歩 100%・間取り 50%・広さ 100%・通勤 82%・駐車場 100%・学区 43%</title><polygon points="60.0,38.0 75.6,44.4 82.0,60.0 75.6,75.6 60.0,82.0 44.4,75.6 38.0,60.0 44.4,44.4" class="ring"/><polygon points="60.0,16.0 91.1,28.9 104.0,60.0 91.1,91.1 60.0,104.0 28.9,91.1 16.0,60.0 28.9,28.9" class="ring"/><line x1="60" y1="60" x2="60.0" y2="16.0" class="ring"/><line x1="60" y1="60" x2="91.1" y2="28.9" class="ring"/><line x1="60" y1="60" x2="104.0" y2="60.0" class="ring"/><line x1="60" y1="60" x2="91.1" y2="91.1" class="ring"/><line x1="60" y1="60" x2="60.0" y2="104.0" class="ring"/><line x1="60" y1="60" x2="28.9" y2="91.1" class="ring"/><line x1="60" y1="60" x2="16.0" y2="60.0" class="ring"/><line x1="60" y1="60" x2="28.9" y2="28.9" class="ring"/><polygon points="60.0,40.6 80.0,40.0 104.0,60.0 75.6,75.6 60.0,104.0 34.3,85.7 16.0,60.0 46.7,46.7" class="area"/><text x="60.0" y="8.5" text-anchor="middle">コスパ</text><text x="98.9" y="24.6" text-anchor="middle">管理</text><text x="115.0" y="63.5" text-anchor="middle">駅徒歩</text><text x="98.9" y="102.4" text-anchor="middle">間取り</text><text x="60.0" y="118.5" text-anchor="middle">広さ</text><text x="21.1" y="102.4" text-anchor="middle">通勤</text><text x="5.0" y="63.5" text-anchor="middle">駐車場</text><text x="21.1" y="24.6" text-anchor="middle">学区</text></svg>
-  </div>
-  <span class="more">くわしく見る</span>
-  </summary>
-  <div class="grid">
-    <section>
-      <h3>住まい</h3>
-      <dl>
-        <dt><button type="button" class="term" data-key="LDK">LDK</button></dt><dd>未読取 帖（<button type="button" class="term" data-key="キッチン">キッチン</button>: —）</dd>
-        <dt>個室</dt><dd>未読取 帖</dd>
-        <dt><button type="button" class="term" data-key="WIC">WIC</button></dt><dd>—</dd>
-        <dt><button type="button" class="term" data-key="総戸数">総戸数</button></dt><dd>73 戸・SRC13階建</dd>
-        <dt>リフォーム</dt><dd>2023-05 水回り: 浴室／内装: 壁・床／その他: 間取変更等</dd>
-      </dl>
-    </section>
-    <section>
-      <h3>場所</h3>
-      <dl>
-        <dt>駅</dt><dd>大谷地 徒歩 5 分</dd>
-        <dt>小学校</dt><dd>大谷地東小 <span class=""></span><br><small></small></dd>
-        <dt>中学校</dt><dd>未特定</dd>
-        <dt><button type="button" class="term" data-key="災害">災害</button></dt><dd>洪水: 区域外・土砂災害: 区域外・<button type="button" class="term" data-key="大規模盛土">大規模盛土</button>: 区域外</dd>
-        <dt>治安</dt><dd>未取得</dd>
-      </dl>
-    </section>
-    <section>
-      <h3>月々の費用</h3>
-      <dl>
-        <dt><button type="button" class="term" data-key="管理費">管理費</button></dt><dd>15,980 円/月</dd>
-        <dt><button type="button" class="term" data-key="修繕積立">修繕積立</button></dt><dd>21,360 円/月（214 円/㎡）</dd>
-        <dt><button type="button" class="term" data-key="駐車場">駐車場</button></dt><dd>敷地内・確保しやすい<br><small>敷地内（8400円～1万3400円／月）</small></dd>
-        <dt>15 年実質</dt><dd>1,796 万<br><small>値下がり 973 ＋ 管理費・積立・駐車場 15 年分 823・出口は区代替</small></dd>
-      </dl>
-    </section>
-  </div>
-  <p class="note warn">情報待ち: 間取り・中学校 が未取得。点数は仮（間取り未読は満点の半分で置いている）。揃ったら上のランキングに入る。</p>
-  <footer class="links"><a href="https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshiatsubetsu/nc_20361946/" target="_blank" rel="noopener">SUUMO で見る</a></footer>
-</details>
-<details class="card">
-  <summary>
-  <header class="card-head">
-    <span class="rank">仮</span>
-    <div class="title-block">
-      <h2>ダイアパレス白石南パークヒルズ</h2>
-      <p class="addr">北海道札幌市白石区南郷通１６丁目南｜地下鉄東西線「南郷１８丁目」徒歩7分</p>
-    </div>
-    <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">61.3</span></div>
-  </header>
-  <div class="keyrow">
-    <div class="facts">
-      <div><span class="k">価格</span><span class="v">3,580<small>万円</small></span></div>
-      <div><span class="k">広さ・間取り</span><span class="v">82.5<small>㎡</small></span><span class="sub">3LDK</span></div>
-      <div><span class="k">築年</span><span class="v">19<small>年</small></span><span class="sub">2007-09 築・8階・南西向き</span></div>
-    </div>
-    <svg class="radar" viewBox="0 0 120 120" role="img" aria-label="コスパ 37%・管理 59%・駅徒歩 92%・間取り 83%・広さ 90%・通勤 86%・駐車場 0%・学区 66%"><title>コスパ 37%・管理 59%・駅徒歩 92%・間取り 83%・広さ 90%・通勤 86%・駐車場 0%・学区 66%</title><polygon points="60.0,38.0 75.6,44.4 82.0,60.0 75.6,75.6 60.0,82.0 44.4,75.6 38.0,60.0 44.4,44.4" class="ring"/><polygon points="60.0,16.0 91.1,28.9 104.0,60.0 91.1,91.1 60.0,104.0 28.9,91.1 16.0,60.0 28.9,28.9" class="ring"/><line x1="60" y1="60" x2="60.0" y2="16.0" class="ring"/><line x1="60" y1="60" x2="91.1" y2="28.9" class="ring"/><line x1="60" y1="60" x2="104.0" y2="60.0" class="ring"/><line x1="60" y1="60" x2="91.1" y2="91.1" class="ring"/><line x1="60" y1="60" x2="60.0" y2="104.0" class="ring"/><line x1="60" y1="60" x2="28.9" y2="91.1" class="ring"/><line x1="60" y1="60" x2="16.0" y2="60.0" class="ring"/><line x1="60" y1="60" x2="28.9" y2="28.9" class="ring"/><polygon points="60.0,43.8 78.4,41.6 100.3,60.0 85.9,85.9 60.0,99.5 33.2,86.8 60.0,60.0 39.6,39.6" class="area"/><text x="60.0" y="8.5" text-anchor="middle">コスパ</text><text x="98.9" y="24.6" text-anchor="middle">管理</text><text x="115.0" y="63.5" text-anchor="middle">駅徒歩</text><text x="98.9" y="102.4" text-anchor="middle">間取り</text><text x="60.0" y="118.5" text-anchor="middle">広さ</text><text x="21.1" y="102.4" text-anchor="middle">通勤</text><text x="5.0" y="63.5" text-anchor="middle">駐車場</text><text x="21.1" y="24.6" text-anchor="middle">学区</text></svg>
-  </div>
-  <span class="more">くわしく見る</span>
-  </summary>
-  <div class="grid">
-    <section>
-      <h3>住まい</h3>
-      <dl>
-        <dt><button type="button" class="term" data-key="LDK">LDK</button></dt><dd>18.1 帖（<button type="button" class="term" data-key="キッチン">キッチン</button>: 壁付き一体）</dd>
-        <dt>個室</dt><dd>7.8 / 5.7 / 5 帖</dd>
-        <dt><button type="button" class="term" data-key="WIC">WIC</button></dt><dd>あり</dd>
-        <dt><button type="button" class="term" data-key="総戸数">総戸数</button></dt><dd>26 戸・RC10階地下1階建</dd>
+        <dt><button type="button" class="term" data-key="総戸数">総戸数</button></dt><dd>30 戸・RC11階地下1階建</dd>
         <dt>リフォーム</dt><dd>記載なし（現状渡しの可能性）</dd>
       </dl>
     </section>
     <section>
       <h3>場所</h3>
       <dl>
-        <dt>駅</dt><dd>南郷１８丁目 徒歩 7 分</dd>
-        <dt>小学校</dt><dd>東白石小 <span class="warn"><button type="button" class="term" data-key="先行減少">先行減少</button></span><br><small>1年生 3→2 学級</small></dd>
-        <dt>中学校</dt><dd>東白石中学校</dd>
+        <dt>駅</dt><dd>福住 徒歩 5 分</dd>
+        <dt>小学校</dt><dd>福住小学校 <span class=""></span><br><small></small></dd>
+        <dt>中学校</dt><dd>羊丘中学校</dd>
         <dt><button type="button" class="term" data-key="災害">災害</button></dt><dd>洪水: 区域外・土砂災害: 区域外・<button type="button" class="term" data-key="大規模盛土">大規模盛土</button>: 区域外</dd>
-        <dt>治安</dt><dd>強盗 0 件・侵入窃盗 1 件・全種 2 件<br><small>半径 400m・2025-09〜2026-08（北海道警察 犯罪発生マップ）。全種は自転車盗を含む</small></dd>
+        <dt>治安</dt><dd>強盗 0 件・侵入窃盗 1 件・全種 36 件<br><small>半径 400m・2025-09〜2026-08（北海道警察 犯罪発生マップ）。全種は自転車盗を含む</small></dd>
       </dl>
     </section>
     <section>
       <h3>月々の費用</h3>
       <dl>
-        <dt><button type="button" class="term" data-key="管理費">管理費</button></dt><dd>14,000 円/月</dd>
-        <dt><button type="button" class="term" data-key="修繕積立">修繕積立</button></dt><dd>16,490 円/月（200 円/㎡）</dd>
-        <dt><button type="button" class="term" data-key="駐車場">駐車場</button></dt><dd>記載なし<br><small>空無</small></dd>
-        <dt>15 年実質</dt><dd>1,914 万<br><small>値下がり 1,149 ＋ 管理費・積立・駐車場 15 年分 765・駐車場は推定・値下がりの幅 1,013〜1,400</small></dd>
+        <dt><button type="button" class="term" data-key="管理費">管理費</button></dt><dd>16,100 円/月</dd>
+        <dt><button type="button" class="term" data-key="修繕積立">修繕積立</button></dt><dd>33,400 円/月（319 円/㎡）</dd>
+        <dt><button type="button" class="term" data-key="駐車場">駐車場</button></dt><dd>敷地内あり<br><small>敷地内（9900円／月）</small></dd>
+        <dt>15 年実質</dt><dd>2,339 万<br><small>値下がり 1,270 ＋ 管理費・積立・駐車場 15 年分 1,069・値下がりの幅 959〜1,548</small></dd>
       </dl>
     </section>
   </div>
-  <p class="note warn">情報待ち: 駐車場 が未取得。点数は仮（間取り未読は満点の半分で置いている）。揃ったら上のランキングに入る。</p>
-  <footer class="links"><a href="https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshishiroishi/nc_21410269/" target="_blank" rel="noopener">SUUMO で見る</a> <a href="https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F010%2FN010000%2Fimg%2F269%2F21410269%2F21410269_0002.jpg&amp;w=1000&amp;h=750" target="_blank" rel="noopener">間取り図</a></footer>
+  <p class="note warn">情報待ち: 間取り が未取得。点数は仮（間取り未読は満点の半分で置いている）。揃ったら上のランキングに入る。</p>
+  <footer class="links"><a href="https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshitoyohira/nc_20918484/" target="_blank" rel="noopener">SUUMO で見る</a></footer>
 </details>
 <details class="card">
   <summary>
   <header class="card-head">
     <span class="rank">仮</span>
     <div class="title-block">
-      <h2>ラポール南郷の杜一号館</h2>
-      <p class="addr">北海道札幌市白石区南郷通１６丁目南｜地下鉄東西線「南郷１８丁目」徒歩7分</p>
+      <h2>アパガーデンパレス札幌駅西デイジーコート</h2>
+      <p class="addr">北海道札幌市北区北七条西１０-1-1｜ＪＲ函館本線「札幌」徒歩12分</p>
     </div>
-    <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">60.7</span></div>
+    <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">70.2</span></div>
   </header>
   <div class="keyrow">
     <div class="facts">
-      <div><span class="k">価格</span><span class="v">3,699<small>万円</small></span></div>
-      <div><span class="k">広さ・間取り</span><span class="v">86.4<small>㎡</small></span><span class="sub">3LDK</span></div>
-      <div><span class="k">築年</span><span class="v">25<small>年</small></span><span class="sub">2001-08 築・6階・南東向き</span></div>
+      <div><span class="k">価格</span><span class="v">3,980<small>万円</small></span></div>
+      <div><span class="k">広さ・間取り</span><span class="v">95.1<small>㎡</small></span><span class="sub">4LDK</span></div>
+      <div><span class="k">築年</span><span class="v">24<small>年</small></span><span class="sub">2003-01 築・7階・西向き</span></div>
     </div>
-    <svg class="radar" viewBox="0 0 120 120" role="img" aria-label="コスパ 43%・管理 70%・駅徒歩 92%・間取り 50%・広さ 100%・通勤 86%・駐車場 75%・学区 43%"><title>コスパ 43%・管理 70%・駅徒歩 92%・間取り 50%・広さ 100%・通勤 86%・駐車場 75%・学区 43%</title><polygon points="60.0,38.0 75.6,44.4 82.0,60.0 75.6,75.6 60.0,82.0 44.4,75.6 38.0,60.0 44.4,44.4" class="ring"/><polygon points="60.0,16.0 91.1,28.9 104.0,60.0 91.1,91.1 60.0,104.0 28.9,91.1 16.0,60.0 28.9,28.9" class="ring"/><line x1="60" y1="60" x2="60.0" y2="16.0" class="ring"/><line x1="60" y1="60" x2="91.1" y2="28.9" class="ring"/><line x1="60" y1="60" x2="104.0" y2="60.0" class="ring"/><line x1="60" y1="60" x2="91.1" y2="91.1" class="ring"/><line x1="60" y1="60" x2="60.0" y2="104.0" class="ring"/><line x1="60" y1="60" x2="28.9" y2="91.1" class="ring"/><line x1="60" y1="60" x2="16.0" y2="60.0" class="ring"/><line x1="60" y1="60" x2="28.9" y2="28.9" class="ring"/><polygon points="60.0,41.2 81.7,38.3 100.3,60.0 75.6,75.6 60.0,104.0 33.2,86.8 27.0,60.0 46.7,46.7" class="area"/><text x="60.0" y="8.5" text-anchor="middle">コスパ</text><text x="98.9" y="24.6" text-anchor="middle">管理</text><text x="115.0" y="63.5" text-anchor="middle">駅徒歩</text><text x="98.9" y="102.4" text-anchor="middle">間取り</text><text x="60.0" y="118.5" text-anchor="middle">広さ</text><text x="21.1" y="102.4" text-anchor="middle">通勤</text><text x="5.0" y="63.5" text-anchor="middle">駐車場</text><text x="21.1" y="24.6" text-anchor="middle">学区</text></svg>
+    <svg class="radar" viewBox="0 0 120 120" role="img" aria-label="管理 78%・駅徒歩 68%・間取り 50%・広さ 100%・通勤 88%・駐車場 75%・学区 42%"><title>管理 78%・駅徒歩 68%・間取り 50%・広さ 100%・通勤 88%・駐車場 75%・学区 42%</title><polygon points="60.0,38.0 77.2,46.3 81.4,64.9 69.5,79.8 50.5,79.8 38.6,64.9 42.8,46.3" class="ring"/><polygon points="60.0,16.0 94.4,32.6 102.9,69.8 79.1,99.6 40.9,99.6 17.1,69.8 25.6,32.6" class="ring"/><line x1="60" y1="60" x2="60.0" y2="16.0" class="ring"/><line x1="60" y1="60" x2="94.4" y2="32.6" class="ring"/><line x1="60" y1="60" x2="102.9" y2="69.8" class="ring"/><line x1="60" y1="60" x2="79.1" y2="99.6" class="ring"/><line x1="60" y1="60" x2="40.9" y2="99.6" class="ring"/><line x1="60" y1="60" x2="17.1" y2="69.8" class="ring"/><line x1="60" y1="60" x2="25.6" y2="32.6" class="ring"/><polygon points="60.0,25.8 83.2,41.5 81.4,64.9 79.1,99.6 43.3,94.7 27.8,67.3 45.4,48.3" class="area"/><text x="60.0" y="8.5" text-anchor="middle">管理</text><text x="103.0" y="29.2" text-anchor="middle">駅徒歩</text><text x="113.6" y="75.7" text-anchor="middle">間取り</text><text x="83.9" y="113.1" text-anchor="middle">広さ</text><text x="36.1" y="113.1" text-anchor="middle">通勤</text><text x="6.4" y="75.7" text-anchor="middle">駐車場</text><text x="17.0" y="29.2" text-anchor="middle">学区</text></svg>
   </div>
   <span class="more">くわしく見る</span>
   </summary>
@@ -1033,44 +875,98 @@ dd small { color:var(--muted); }
         <dt><button type="button" class="term" data-key="LDK">LDK</button></dt><dd>未読取 帖（<button type="button" class="term" data-key="キッチン">キッチン</button>: —）</dd>
         <dt>個室</dt><dd>未読取 帖</dd>
         <dt><button type="button" class="term" data-key="WIC">WIC</button></dt><dd>—</dd>
-        <dt><button type="button" class="term" data-key="総戸数">総戸数</button></dt><dd>118 戸・RC14階建</dd>
-        <dt>リフォーム</dt><dd>2026-05 水回り: キッチン・浴室・トイレ／内装: 壁・床／その他: 洗面台新規交換 他</dd>
+        <dt><button type="button" class="term" data-key="総戸数">総戸数</button></dt><dd>— 戸・SRC12階建</dd>
+        <dt>リフォーム</dt><dd>2026-10予定 水回り: キッチン・浴室・トイレ／内装: 壁・床</dd>
       </dl>
     </section>
     <section>
       <h3>場所</h3>
       <dl>
-        <dt>駅</dt><dd>南郷１８丁目 徒歩 7 分</dd>
-        <dt>小学校</dt><dd>東白石小 <span class="warn"><button type="button" class="term" data-key="先行減少">先行減少</button></span><br><small>1年生 3→2 学級</small></dd>
+        <dt>駅</dt><dd>札幌 徒歩 12 分</dd>
+        <dt>小学校</dt><dd>未特定 <span class=""></span><br><small></small></dd>
         <dt>中学校</dt><dd>未特定</dd>
         <dt><button type="button" class="term" data-key="災害">災害</button></dt><dd>洪水: 区域外・土砂災害: 区域外・<button type="button" class="term" data-key="大規模盛土">大規模盛土</button>: 区域外</dd>
-        <dt>治安</dt><dd>未取得</dd>
+        <dt>治安</dt><dd>強盗 0 件・侵入窃盗 0 件・全種 25 件<br><small>半径 400m・2025-09〜2026-08（北海道警察 犯罪発生マップ）。全種は自転車盗を含む</small></dd>
       </dl>
     </section>
     <section>
       <h3>月々の費用</h3>
       <dl>
-        <dt><button type="button" class="term" data-key="管理費">管理費</button></dt><dd>5,960 円/月</dd>
-        <dt><button type="button" class="term" data-key="修繕積立">修繕積立</button></dt><dd>19,700 円/月（228 円/㎡）</dd>
-        <dt><button type="button" class="term" data-key="駐車場">駐車場</button></dt><dd>敷地内あり<br><small>敷地内（1万円／月）</small></dd>
-        <dt>15 年実質</dt><dd>1,815 万<br><small>値下がり 1,173 ＋ 管理費・積立・駐車場 15 年分 642・出口は区代替</small></dd>
+        <dt><button type="button" class="term" data-key="管理費">管理費</button></dt><dd>18,545 円/月</dd>
+        <dt><button type="button" class="term" data-key="修繕積立">修繕積立</button></dt><dd>25,107 円/月（264 円/㎡）</dd>
+        <dt><button type="button" class="term" data-key="駐車場">駐車場</button></dt><dd>敷地内あり<br><small>敷地内（1万2500円／月）</small></dd>
+        <dt>15 年実質</dt><dd>2,304 万<br><small>値下がり 1,293 ＋ 管理費・積立・駐車場 15 年分 1,011・値下がりの幅 1,357〜1,572</small></dd>
       </dl>
     </section>
   </div>
-  <p class="note warn">情報待ち: 間取り・中学校 が未取得。点数は仮（間取り未読は満点の半分で置いている）。揃ったら上のランキングに入る。</p>
-  <footer class="links"><a href="https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshishiroishi/nc_20706352/" target="_blank" rel="noopener">SUUMO で見る</a></footer>
+  <p class="note warn">情報待ち: 間取り・小学校・中学校 が未取得。点数は仮（間取り未読は満点の半分で置いている）。揃ったら上のランキングに入る。</p>
+  <footer class="links"><a href="https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshikita/nc_21472559/" target="_blank" rel="noopener">SUUMO で見る</a></footer>
+</details>
+<details class="card">
+  <summary>
+  <header class="card-head">
+    <span class="rank">仮</span>
+    <div class="title-block">
+      <h2>アパガーデンパレス札幌駅西チェリーコート</h2>
+      <p class="addr">北海道札幌市北区北七条西１０｜ＪＲ函館本線「札幌」徒歩12分</p>
+    </div>
+    <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">70.2</span></div>
+  </header>
+  <div class="keyrow">
+    <div class="facts">
+      <div><span class="k">価格</span><span class="v">3,880<small>万円</small></span></div>
+      <div><span class="k">広さ・間取り</span><span class="v">96.2<small>㎡</small></span><span class="sub">3LDK</span></div>
+      <div><span class="k">築年</span><span class="v">24<small>年</small></span><span class="sub">2003-01 築・7階・南向き</span></div>
+    </div>
+    <svg class="radar" viewBox="0 0 120 120" role="img" aria-label="管理 78%・駅徒歩 68%・間取り 50%・広さ 100%・通勤 88%・駐車場 75%・学区 42%"><title>管理 78%・駅徒歩 68%・間取り 50%・広さ 100%・通勤 88%・駐車場 75%・学区 42%</title><polygon points="60.0,38.0 77.2,46.3 81.4,64.9 69.5,79.8 50.5,79.8 38.6,64.9 42.8,46.3" class="ring"/><polygon points="60.0,16.0 94.4,32.6 102.9,69.8 79.1,99.6 40.9,99.6 17.1,69.8 25.6,32.6" class="ring"/><line x1="60" y1="60" x2="60.0" y2="16.0" class="ring"/><line x1="60" y1="60" x2="94.4" y2="32.6" class="ring"/><line x1="60" y1="60" x2="102.9" y2="69.8" class="ring"/><line x1="60" y1="60" x2="79.1" y2="99.6" class="ring"/><line x1="60" y1="60" x2="40.9" y2="99.6" class="ring"/><line x1="60" y1="60" x2="17.1" y2="69.8" class="ring"/><line x1="60" y1="60" x2="25.6" y2="32.6" class="ring"/><polygon points="60.0,25.8 83.2,41.5 81.4,64.9 79.1,99.6 43.3,94.7 27.8,67.3 45.4,48.3" class="area"/><text x="60.0" y="8.5" text-anchor="middle">管理</text><text x="103.0" y="29.2" text-anchor="middle">駅徒歩</text><text x="113.6" y="75.7" text-anchor="middle">間取り</text><text x="83.9" y="113.1" text-anchor="middle">広さ</text><text x="36.1" y="113.1" text-anchor="middle">通勤</text><text x="6.4" y="75.7" text-anchor="middle">駐車場</text><text x="17.0" y="29.2" text-anchor="middle">学区</text></svg>
+  </div>
+  <span class="more">くわしく見る</span>
+  </summary>
+  <div class="grid">
+    <section>
+      <h3>住まい</h3>
+      <dl>
+        <dt><button type="button" class="term" data-key="LDK">LDK</button></dt><dd>未読取 帖（<button type="button" class="term" data-key="キッチン">キッチン</button>: —）</dd>
+        <dt>個室</dt><dd>未読取 帖</dd>
+        <dt><button type="button" class="term" data-key="WIC">WIC</button></dt><dd>—</dd>
+        <dt><button type="button" class="term" data-key="総戸数">総戸数</button></dt><dd>188 戸・SRC14階建</dd>
+        <dt>リフォーム</dt><dd>2022-01 水回り: キッチン・トイレ／その他: ＬＤＫ天井クロス張替</dd>
+      </dl>
+    </section>
+    <section>
+      <h3>場所</h3>
+      <dl>
+        <dt>駅</dt><dd>札幌 徒歩 12 分</dd>
+        <dt>小学校</dt><dd>未特定 <span class=""></span><br><small></small></dd>
+        <dt>中学校</dt><dd>未特定</dd>
+        <dt><button type="button" class="term" data-key="災害">災害</button></dt><dd>洪水: 区域外・土砂災害: 区域外・<button type="button" class="term" data-key="大規模盛土">大規模盛土</button>: 区域外</dd>
+        <dt>治安</dt><dd>強盗 0 件・侵入窃盗 0 件・全種 25 件<br><small>半径 400m・2025-09〜2026-08（北海道警察 犯罪発生マップ）。全種は自転車盗を含む</small></dd>
+      </dl>
+    </section>
+    <section>
+      <h3>月々の費用</h3>
+      <dl>
+        <dt><button type="button" class="term" data-key="管理費">管理費</button></dt><dd>18,754 円/月</dd>
+        <dt><button type="button" class="term" data-key="修繕積立">修繕積立</button></dt><dd>25,389 円/月（264 円/㎡）</dd>
+        <dt><button type="button" class="term" data-key="駐車場">駐車場</button></dt><dd>敷地内あり<br><small>敷地内（1万2500円／月）</small></dd>
+        <dt>15 年実質</dt><dd>2,281 万<br><small>値下がり 1,261 ＋ 管理費・積立・駐車場 15 年分 1,020・値下がりの幅 1,323〜1,533</small></dd>
+      </dl>
+    </section>
+  </div>
+  <p class="note warn">情報待ち: 間取り・小学校・中学校 が未取得。点数は仮（間取り未読は満点の半分で置いている）。揃ったら上のランキングに入る。</p>
+  <footer class="links"><a href="https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshikita/nc_20465577/" target="_blank" rel="noopener">SUUMO で見る</a></footer>
 </details>
 <p class="lead">新着（詳細未取得・仮の点数は一覧データだけの部分点）</p><ul class="pend"><li>ダイアパレスザ・ワンハンドレッドシティ旭ヶ丘｜3,199 万・76.5㎡｜西線１４条 徒歩 17 分｜仮 56.4｜初出 2026-09-10</li><li>グランファーレ伏見グランシャリオ｜3,180 万・65.0㎡｜西線１６条 徒歩 8 分｜仮 53.4｜初出 2026-09-10</li><li>クリーンリバーフィネス菊水｜3,680 万・95.8㎡｜苗穂 徒歩 19 分｜仮 45.1｜初出 2026-09-13</li><li>パークホームズ真駒内泉町｜3,480 万・100.6㎡｜真駒内 徒歩 7 分｜仮 40.9｜初出 2026-09-13</li><li>フェーデ手稲本町｜2,980 万・82.3㎡｜手稲 徒歩 8 分｜仮 40.7｜初出 2026-09-13</li><li>ル・ケレステラスドハウス美しが丘ヒルズ｜2,799 万・109.9㎡｜福住 徒歩 4 分｜仮 38.8｜初出 2026-09-10</li></ul>
 <section class="gloss" id="glossary">
 <h2>用語集</h2>
 <p class="lead">カードの点線つきの言葉をタップしても同じ説明が出ます。</p>
 <dl>
-<dt>総合点</dt><dd>12 件を並べるための点数（100 点満点）。コスパ 25・管理 18・駅徒歩 12・間取り 12・広さ 10・通勤 8・駐車場 8・学区 7 の重みで足したもの。コスパは「15 年住んだら実質いくら払うか」（値下がり＋管理費・積立・駐車場）で、安いほど高得点。管理は積立の厚さに加えて、資料で確認した借入・滞納・修繕の実績。築年は点数に入れず（値下がりに含まれるため）、2003 年以降だけを対象にしている。</dd><dt>本命・対抗・三番手</dt><dd>現時点での順位づけ。本命＝いちばん有力、対抗＝本命に問題があれば繰り上がる候補、三番手＝その次。まだ資料請求も内見もしていないので、見に行ったら入れ替わることがある。</dd><dt>先行減少</dt><dd>その小学校で 1 年生の学級数が減り始めていること。全校の児童数より先に動くので「数年後に学校が小さくなる・統廃合の話が出る」早めのサイン。娘の通学と、将来売るときの人気に関わる。</dd><dt>増加</dt><dd>その小学校の児童数が 2015→2025 年で増えていること。子育て世帯が入ってきている地域で、学校が小さくなる心配は少ない。</dd><dt>安定</dt><dd>その小学校の児童数がほぼ横ばい。学校が小さくなる心配は今のところ少ない。</dd><dt>LDK の帖数</dt><dd>リビング・ダイニング・キッチンを合わせた広さ。物件によって「LD だけ」を書いたり「キッチン込み」で書いたりするので、ここではキッチン込みに揃えてある。1 帖＝畳 1 枚（約 1.62㎡）。</dd><dt>キッチンの型</dt><dd>独立＝壁と扉でリビングと仕切られている（においや音が広がらない）。対面＝カウンター越しにリビングと一室（家族を見ながら料理できる）。壁付き一体＝仕切りなしでリビングの壁沿いにある（広く使えるが生活感が出る）。</dd><dt>WIC</dt><dd>ウォークインクローゼット。人が入れる広さの衣装部屋。</dd><dt>総戸数</dt><dd>そのマンション全体の部屋数。多いほど管理費・修繕費を分け合う人が多く、1 戸あたりの負担が軽くなりやすい。少ないと住民同士の顔が見えやすい反面、大きな修繕のとき 1 戸の負担が重くなる。</dd><dt>修繕積立金</dt><dd>外壁や配管など建物を将来直すために、毎月みんなで貯めるお金。円/㎡ は広さあたりの金額で、200 円/㎡ 以上が目安。安すぎると将来まとまった追加徴収が来やすい。</dd><dt>管理費</dt><dd>掃除・管理人・エレベーター点検など、日々の維持に使うお金。修繕積立金とは別。</dd><dt>駐車場の取りやすさ</dt><dd>敷地内・確保しやすい＝敷地内に空きがある。敷地内あり＝敷地内にあるが空き状況は要確認。近隣の月極で確保＝敷地内は無理だが徒歩圏に借りられる場所がある。空き待ちのみ＝今は借りられない。記載なし＝情報がない。</dd><dt>災害の区域</dt><dd>札幌市と国のハザードマップで、その場所が「洪水で浸水するおそれ」「土砂災害のおそれ」「大規模に土を盛って造った土地（地震で沈みやすい）」の区域に入っているか。区域外＝入っていない。</dd><dt>大規模盛土造成地</dt><dd>谷や斜面に土を盛って平らにした土地のうち、規模が大きいもの。2018 年の地震で清田区里塚が液状化した場所がこれに当たる。区域内だから危険と決まるわけではなく、市の安定性の確認結果を見てから判断する。</dd><dt>市電</dt><dd>札幌の路面電車。地下鉄より遅く、大通まで 20 分以上かかる駅が多い。冬も走るが遅れは出る。地下鉄駅まで歩ける物件かどうかを見ている。</dd><dt>給排水管の更新</dt><dd>築 20 年を過ぎたマンションで、水道と排水の管を新しくする工事が済んでいるか。済んでいないと入居後に大きな出費や漏水の心配がある。</dd><dt>大規模修繕</dt><dd>外壁・屋上・配管などを 12〜15 年ごとにまとめて直す工事。1 回目が済んでいるかで管理のまじめさが分かる。</dd><dt>学級数</dt><dd>その学年のクラスの数。児童が減るとクラスが減るので、学校の縮小が早めに分かる。</dd>
+<dt>総合点</dt><dd>12 件を並べるための点数（100 点満点）。管理 18・駅徒歩 12・間取り 12・学区 12・広さ 10・通勤 8・駐車場 8（合計 80 点）の重みで足し、100 点満点に換算したもの（2026-09-17 以降、コスパは総合点に入れず別軸の表示にした）。管理は積立の厚さに加えて、資料で確認した借入・滞納・修繕の実績。築年は点数に入れず（値下がりに含まれるため）、2003 年以降だけを対象にしている。「15 年実質」は別欄で、コスパ（値下がり＋管理費・積立・駐車場を 15 年分足した実質コスト）を並べ替えに使う。</dd><dt>本命・対抗・三番手</dt><dd>現時点での順位づけ。本命＝いちばん有力、対抗＝本命に問題があれば繰り上がる候補、三番手＝その次。まだ資料請求も内見もしていないので、見に行ったら入れ替わることがある。</dd><dt>先行減少</dt><dd>その小学校で 1 年生の学級数が減り始めていること。全校の児童数より先に動くので「数年後に学校が小さくなる・統廃合の話が出る」早めのサイン。娘の通学と、将来売るときの人気に関わる。</dd><dt>増加</dt><dd>その小学校の児童数が 2015→2025 年で増えていること。子育て世帯が入ってきている地域で、学校が小さくなる心配は少ない。</dd><dt>安定</dt><dd>その小学校の児童数がほぼ横ばい。学校が小さくなる心配は今のところ少ない。</dd><dt>LDK の帖数</dt><dd>リビング・ダイニング・キッチンを合わせた広さ。物件によって「LD だけ」を書いたり「キッチン込み」で書いたりするので、ここではキッチン込みに揃えてある。1 帖＝畳 1 枚（約 1.62㎡）。</dd><dt>キッチンの型</dt><dd>独立＝壁と扉でリビングと仕切られている（においや音が広がらない）。対面＝カウンター越しにリビングと一室（家族を見ながら料理できる）。壁付き一体＝仕切りなしでリビングの壁沿いにある（広く使えるが生活感が出る）。</dd><dt>WIC</dt><dd>ウォークインクローゼット。人が入れる広さの衣装部屋。</dd><dt>総戸数</dt><dd>そのマンション全体の部屋数。多いほど管理費・修繕費を分け合う人が多く、1 戸あたりの負担が軽くなりやすい。少ないと住民同士の顔が見えやすい反面、大きな修繕のとき 1 戸の負担が重くなる。</dd><dt>修繕積立金</dt><dd>外壁や配管など建物を将来直すために、毎月みんなで貯めるお金。円/㎡ は広さあたりの金額で、200 円/㎡ 以上が目安。安すぎると将来まとまった追加徴収が来やすい。</dd><dt>管理費</dt><dd>掃除・管理人・エレベーター点検など、日々の維持に使うお金。修繕積立金とは別。</dd><dt>駐車場の取りやすさ</dt><dd>敷地内・確保しやすい＝敷地内に空きがある。敷地内あり＝敷地内にあるが空き状況は要確認。近隣の月極で確保＝敷地内は無理だが徒歩圏に借りられる場所がある。空き待ちのみ＝今は借りられない。記載なし＝情報がない。</dd><dt>災害の区域</dt><dd>札幌市と国のハザードマップで、その場所が「洪水で浸水するおそれ」「土砂災害のおそれ」「大規模に土を盛って造った土地（地震で沈みやすい）」の区域に入っているか。区域外＝入っていない。</dd><dt>大規模盛土造成地</dt><dd>谷や斜面に土を盛って平らにした土地のうち、規模が大きいもの。2018 年の地震で清田区里塚が液状化した場所がこれに当たる。区域内だから危険と決まるわけではなく、市の安定性の確認結果を見てから判断する。</dd><dt>市電</dt><dd>札幌の路面電車。地下鉄より遅く、大通まで 20 分以上かかる駅が多い。冬も走るが遅れは出る。地下鉄駅まで歩ける物件かどうかを見ている。</dd><dt>給排水管の更新</dt><dd>築 20 年を過ぎたマンションで、水道と排水の管を新しくする工事が済んでいるか。済んでいないと入居後に大きな出費や漏水の心配がある。</dd><dt>大規模修繕</dt><dd>外壁・屋上・配管などを 12〜15 年ごとにまとめて直す工事。1 回目が済んでいるかで管理のまじめさが分かる。</dd><dt>学級数</dt><dd>その学年のクラスの数。児童が減るとクラスが減るので、学校の縮小が早めに分かる。</dd>
 </dl>
 </section>
 <div id="pop" hidden role="dialog"></div>
 <script>
-const G = {"総合点": ["総合点", "12 件を並べるための点数（100 点満点）。コスパ 25・管理 18・駅徒歩 12・間取り 12・広さ 10・通勤 8・駐車場 8・学区 7 の重みで足したもの。コスパは「15 年住んだら実質いくら払うか」（値下がり＋管理費・積立・駐車場）で、安いほど高得点。管理は積立の厚さに加えて、資料で確認した借入・滞納・修繕の実績。築年は点数に入れず（値下がりに含まれるため）、2003 年以降だけを対象にしている。"], "本命": ["本命・対抗・三番手", "現時点での順位づけ。本命＝いちばん有力、対抗＝本命に問題があれば繰り上がる候補、三番手＝その次。まだ資料請求も内見もしていないので、見に行ったら入れ替わることがある。"], "先行減少": ["先行減少", "その小学校で 1 年生の学級数が減り始めていること。全校の児童数より先に動くので「数年後に学校が小さくなる・統廃合の話が出る」早めのサイン。娘の通学と、将来売るときの人気に関わる。"], "増加": ["増加", "その小学校の児童数が 2015→2025 年で増えていること。子育て世帯が入ってきている地域で、学校が小さくなる心配は少ない。"], "安定": ["安定", "その小学校の児童数がほぼ横ばい。学校が小さくなる心配は今のところ少ない。"], "LDK": ["LDK の帖数", "リビング・ダイニング・キッチンを合わせた広さ。物件によって「LD だけ」を書いたり「キッチン込み」で書いたりするので、ここではキッチン込みに揃えてある。1 帖＝畳 1 枚（約 1.62㎡）。"], "キッチン": ["キッチンの型", "独立＝壁と扉でリビングと仕切られている（においや音が広がらない）。対面＝カウンター越しにリビングと一室（家族を見ながら料理できる）。壁付き一体＝仕切りなしでリビングの壁沿いにある（広く使えるが生活感が出る）。"], "WIC": ["WIC", "ウォークインクローゼット。人が入れる広さの衣装部屋。"], "総戸数": ["総戸数", "そのマンション全体の部屋数。多いほど管理費・修繕費を分け合う人が多く、1 戸あたりの負担が軽くなりやすい。少ないと住民同士の顔が見えやすい反面、大きな修繕のとき 1 戸の負担が重くなる。"], "修繕積立": ["修繕積立金", "外壁や配管など建物を将来直すために、毎月みんなで貯めるお金。円/㎡ は広さあたりの金額で、200 円/㎡ 以上が目安。安すぎると将来まとまった追加徴収が来やすい。"], "管理費": ["管理費", "掃除・管理人・エレベーター点検など、日々の維持に使うお金。修繕積立金とは別。"], "駐車場": ["駐車場の取りやすさ", "敷地内・確保しやすい＝敷地内に空きがある。敷地内あり＝敷地内にあるが空き状況は要確認。近隣の月極で確保＝敷地内は無理だが徒歩圏に借りられる場所がある。空き待ちのみ＝今は借りられない。記載なし＝情報がない。"], "災害": ["災害の区域", "札幌市と国のハザードマップで、その場所が「洪水で浸水するおそれ」「土砂災害のおそれ」「大規模に土を盛って造った土地（地震で沈みやすい）」の区域に入っているか。区域外＝入っていない。"], "大規模盛土": ["大規模盛土造成地", "谷や斜面に土を盛って平らにした土地のうち、規模が大きいもの。2018 年の地震で清田区里塚が液状化した場所がこれに当たる。区域内だから危険と決まるわけではなく、市の安定性の確認結果を見てから判断する。"], "市電": ["市電", "札幌の路面電車。地下鉄より遅く、大通まで 20 分以上かかる駅が多い。冬も走るが遅れは出る。地下鉄駅まで歩ける物件かどうかを見ている。"], "給排水管": ["給排水管の更新", "築 20 年を過ぎたマンションで、水道と排水の管を新しくする工事が済んでいるか。済んでいないと入居後に大きな出費や漏水の心配がある。"], "大規模修繕": ["大規模修繕", "外壁・屋上・配管などを 12〜15 年ごとにまとめて直す工事。1 回目が済んでいるかで管理のまじめさが分かる。"], "学級数": ["学級数", "その学年のクラスの数。児童が減るとクラスが減るので、学校の縮小が早めに分かる。"]};
+const G = {"総合点": ["総合点", "12 件を並べるための点数（100 点満点）。管理 18・駅徒歩 12・間取り 12・学区 12・広さ 10・通勤 8・駐車場 8（合計 80 点）の重みで足し、100 点満点に換算したもの（2026-09-17 以降、コスパは総合点に入れず別軸の表示にした）。管理は積立の厚さに加えて、資料で確認した借入・滞納・修繕の実績。築年は点数に入れず（値下がりに含まれるため）、2003 年以降だけを対象にしている。「15 年実質」は別欄で、コスパ（値下がり＋管理費・積立・駐車場を 15 年分足した実質コスト）を並べ替えに使う。"], "本命": ["本命・対抗・三番手", "現時点での順位づけ。本命＝いちばん有力、対抗＝本命に問題があれば繰り上がる候補、三番手＝その次。まだ資料請求も内見もしていないので、見に行ったら入れ替わることがある。"], "先行減少": ["先行減少", "その小学校で 1 年生の学級数が減り始めていること。全校の児童数より先に動くので「数年後に学校が小さくなる・統廃合の話が出る」早めのサイン。娘の通学と、将来売るときの人気に関わる。"], "増加": ["増加", "その小学校の児童数が 2015→2025 年で増えていること。子育て世帯が入ってきている地域で、学校が小さくなる心配は少ない。"], "安定": ["安定", "その小学校の児童数がほぼ横ばい。学校が小さくなる心配は今のところ少ない。"], "LDK": ["LDK の帖数", "リビング・ダイニング・キッチンを合わせた広さ。物件によって「LD だけ」を書いたり「キッチン込み」で書いたりするので、ここではキッチン込みに揃えてある。1 帖＝畳 1 枚（約 1.62㎡）。"], "キッチン": ["キッチンの型", "独立＝壁と扉でリビングと仕切られている（においや音が広がらない）。対面＝カウンター越しにリビングと一室（家族を見ながら料理できる）。壁付き一体＝仕切りなしでリビングの壁沿いにある（広く使えるが生活感が出る）。"], "WIC": ["WIC", "ウォークインクローゼット。人が入れる広さの衣装部屋。"], "総戸数": ["総戸数", "そのマンション全体の部屋数。多いほど管理費・修繕費を分け合う人が多く、1 戸あたりの負担が軽くなりやすい。少ないと住民同士の顔が見えやすい反面、大きな修繕のとき 1 戸の負担が重くなる。"], "修繕積立": ["修繕積立金", "外壁や配管など建物を将来直すために、毎月みんなで貯めるお金。円/㎡ は広さあたりの金額で、200 円/㎡ 以上が目安。安すぎると将来まとまった追加徴収が来やすい。"], "管理費": ["管理費", "掃除・管理人・エレベーター点検など、日々の維持に使うお金。修繕積立金とは別。"], "駐車場": ["駐車場の取りやすさ", "敷地内・確保しやすい＝敷地内に空きがある。敷地内あり＝敷地内にあるが空き状況は要確認。近隣の月極で確保＝敷地内は無理だが徒歩圏に借りられる場所がある。空き待ちのみ＝今は借りられない。記載なし＝情報がない。"], "災害": ["災害の区域", "札幌市と国のハザードマップで、その場所が「洪水で浸水するおそれ」「土砂災害のおそれ」「大規模に土を盛って造った土地（地震で沈みやすい）」の区域に入っているか。区域外＝入っていない。"], "大規模盛土": ["大規模盛土造成地", "谷や斜面に土を盛って平らにした土地のうち、規模が大きいもの。2018 年の地震で清田区里塚が液状化した場所がこれに当たる。区域内だから危険と決まるわけではなく、市の安定性の確認結果を見てから判断する。"], "市電": ["市電", "札幌の路面電車。地下鉄より遅く、大通まで 20 分以上かかる駅が多い。冬も走るが遅れは出る。地下鉄駅まで歩ける物件かどうかを見ている。"], "給排水管": ["給排水管の更新", "築 20 年を過ぎたマンションで、水道と排水の管を新しくする工事が済んでいるか。済んでいないと入居後に大きな出費や漏水の心配がある。"], "大規模修繕": ["大規模修繕", "外壁・屋上・配管などを 12〜15 年ごとにまとめて直す工事。1 回目が済んでいるかで管理のまじめさが分かる。"], "学級数": ["学級数", "その学年のクラスの数。児童が減るとクラスが減るので、学校の縮小が早めに分かる。"]};
 const pop = document.getElementById('pop');
 let open = null;
 function closePop() { pop.hidden = true; if (open) open.setAttribute('aria-expanded','false'); open = null; }
