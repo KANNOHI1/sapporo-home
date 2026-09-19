@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>売却→札幌→引越し 全体日程</title>
+<style>
+:root{
+  --bg:#08090a;--panel:#0f1011;--card:#191a1b;--card2:#28282c;
+  --ink:#f7f8f8;--ink2:#d0d6e0;--ink3:#8a8f98;--ink4:#62666d;
+  --acc:#7170ff;--acc2:#828fff;--brand:#5e6ad2;--ok:#27a644;--warn:#e0a03a;--bad:#c2563f;
+  --bd:rgba(255,255,255,.08);--bd2:rgba(255,255,255,.05);
+  --lane1:#5e6ad2;--lane2:#3f8fa0;--lane3:#2e7d5b;--lane4:#7a54a8;--lane5:#b4762a;--lane6:#c2563f;
+}
+@media (prefers-color-scheme:light){:root{
+  --bg:#f7f8f8;--panel:#ffffff;--card:#ffffff;--card2:#f3f4f5;
+  --ink:#0f1011;--ink2:#28282c;--ink3:#62666d;--ink4:#8a8f98;
+  --bd:#d0d6e0;--bd2:#e6e6e6;
+}}
+*{box-sizing:border-box}
+html{color-scheme:dark light}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 15px/1.5 "Inter Variable",Inter,"SF Pro Display",-apple-system,system-ui,"Segoe UI","Hiragino Sans","Noto Sans JP",sans-serif;-webkit-font-smoothing:antialiased}
+main{max-width:960px;margin:0 auto;padding:16px 14px 64px}
+h1{font-size:20px;font-weight:510;letter-spacing:-.4px;margin:6px 0 2px}
+.sub{color:var(--ink3);font-size:12.5px;margin:0 0 14px}
+.seg{display:inline-flex;border:1px solid var(--bd);border-radius:8px;overflow:hidden;margin-bottom:14px}
+.seg button{background:rgba(255,255,255,.02);color:var(--ink2);border:0;padding:8px 16px;font:inherit;font-size:13px;font-weight:510;cursor:pointer}
+.seg button[aria-pressed=true]{background:var(--brand);color:#fff}
+.note{font-size:12.5px;color:var(--ink3);margin:0 0 16px}
+.axis{display:grid;font-size:10.5px;color:var(--ink4);margin-left:150px;border-bottom:1px solid var(--bd2);padding-bottom:4px;margin-bottom:6px}
+.lane{display:flex;align-items:center;margin-bottom:10px}
+.lane .lbl{width:150px;flex:0 0 150px;font-size:12.5px;color:var(--ink2);font-weight:510;padding-right:8px}
+.track{position:relative;flex:1;height:26px;background:var(--card2);border-radius:6px}
+.bar{position:absolute;top:2px;bottom:2px;border-radius:4px;font-size:11px;color:#fff;display:flex;align-items:center;padding:0 6px;white-space:nowrap;overflow:hidden;cursor:default}
+.point{position:absolute;top:50%;transform:translate(-50%,-50%);width:10px;height:10px;border-radius:50%;border:2px solid var(--bg);cursor:default}
+.moneyTrack{position:relative;flex:1;height:34px}
+.warn-badge{display:inline-block;font-size:10.5px;color:#fff;background:var(--bad);border-radius:4px;padding:0 6px;margin-left:6px}
+.foot{font-size:12.5px;color:var(--ink3);line-height:1.7;margin-top:20px;border-top:1px solid var(--bd2);padding-top:14px}
+.foot b{color:var(--ink2);font-weight:510}
+.foot code{font-family:ui-monospace,"SF Mono",Menlo,monospace;font-size:11.5px;background:var(--card2);padding:1px 5px;border-radius:4px}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:11px;color:var(--ink3);margin:16px 0}
+.legend i{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:5px;vertical-align:middle}
+@media (max-width:600px){.axis{margin-left:90px}.lane .lbl{width:90px;flex:0 0 90px;font-size:11px}}
+</style>
+</head>
+<body>
+<main>
+<h1>売却 → 札幌購入 → 引越し 全体日程</h1>
+<p class="sub">北電（転職）の回答が出た時にどのパターンに乗るかを判断するための日程表。数字の正は <code>docs/sale-requirements.md</code> §4・<code>docs/cash-timeline-2027.md</code>・<code>docs/relocation-timeline-2027.md</code> §0-A・<code>analysis/timing.py</code></p>
+
+<div class="seg" role="group" aria-label="パターン">
+ <button type="button" data-pat="A" aria-pressed="true">A: 移住先行</button>
+ <button type="button" data-pat="B" aria-pressed="false">B: 内定連動</button>
+</div>
+<p class="note" id="patNote"></p>
+
+<div class="axis" id="axis"></div>
+<div id="lanes"></div>
+
+<div class="legend">
+ <span><i style="background:var(--lane1)"></i>業者選定</span>
+ <span><i style="background:var(--lane2)"></i>2109（売出・契約・決済・引渡し）</span>
+ <span><i style="background:var(--lane3)"></i>札幌（契約・決済・工事）</span>
+ <span><i style="background:var(--lane4)"></i>大規模修繕の窓（共通）</span>
+ <span><i style="background:var(--lane5)"></i>金の流れ</span>
+</div>
+
+<div class="foot">
+ <p><b>データの正</b>: A/Bの月次日程は <code>docs/sale-requirements.md</code> §4 の表をそのまま転記。大規模修繕・駐車場改修の窓は <code>analysis/timing.py</code> の <code>WORKS</code>（第13期総会第5号・理事会資料）。工事期間の内訳は <code>docs/relocation-timeline-2027.md</code> §0-A。金の流れの金額は <code>docs/cash-timeline-2027.md</code>（B 中心ケース・2027-05決済を軸にした仮置き）。バーにカーソルを合わせると根拠を表示</p>
+ <p><b>未対応（監督へ返す判断点）</b>: sale-requirements.md §4 は「Bは cash-timeline の基本線の範囲内、Aだけ約3か月前倒しでcash-timeline・timing.pyの更新が要る」としているが未対応。<b>この表のA列の金額はB中心ケースの値をそのまま表示した概算</b>（月だけA本来の日程）。「札幌契約」の月はどの資料にも明記が無く、2109決済月の1か月前と推定した</p>
+ <p>大規模修繕の窓（2027-10〜2028-09）と引越し・引渡しが重なる場合は <span class="warn-badge">要注意</span> を表示（現状 A/B とも「前に売り抜け」・重ならない）</p>
+</div>
+</main>
+<script>
+const D = {"months": ["2026-09", "2026-10", "2026-11", "2026-12", "2027-01", "2027-02", "2027-03", "2027-04", "2027-05", "2027-06", "2027-07", "2027-08", "2027-09", "2027-10", "2027-11", "2027-12", "2028-01", "2028-02", "2028-03"], "n": 19, "broker_start": 0, "works": {"駐車場改修": [-2, 4], "大規模修繕": [13, 24]}, "patterns": {"A": {"label": "移住先行", "note": "職の確定を待たず春に移住", "list_on": [1, 2], "contract_2109": [3, 4], "settle_2109": [4, 5], "settle_sapporo_works": [5, 6], "move": [6, 6], "handover_2109": [7, 7], "works_warn": "前に売り抜け", "job": "北電応募前・職未定のまま移住（HK 9/19）", "money": [{"m": 3, "label": "2109契約: 買主手付 560〜1,100万", "src": "cash-timeline-2027.md 2027-02〜03節"}, {"m": 3, "label": "札幌契約: 手付 170〜340万（2109の手付から）", "src": "cash-timeline-2027.md 2027-03〜04節・月は推定"}, {"m": 4, "label": "2109決済: 残代金入金・ローン完済・手取り確定", "src": "cash-timeline-2027.md 2027-05節"}, {"m": 5, "label": "札幌決済: 頭金1,763万+諸費用237万・ローン実行", "src": "cash-timeline-2027.md 2027-05〜06節"}, {"m": 6, "label": "工事: 給湯器30〜40万・水回り200〜350万（内見次第）", "src": "cash-timeline-2027.md 2027-06節"}, {"m": 6, "label": "引越し: 40〜70万", "src": "cash-timeline-2027.md 2027-07節"}, {"m": 12, "label": "車ローン残価 246万（移住と無関係・既存債務）", "src": "cash-timeline-2027.md 2027-09節・market.json costs.car_loan.balloon"}]}, "B": {"label": "内定連動", "note": "北電の内定（応募10月→早くて12〜1月）を待つ", "list_on": [3, 4], "contract_2109": [5, 6], "settle_2109": [7, 8], "settle_sapporo_works": [8, 9], "move": [9, 10], "handover_2109": [10, 11], "works_warn": "前に売り抜け", "job": "北電 応募 2026-10 → 内定 早くて 2026-12〜2027-01", "money": [{"m": 5, "label": "2109契約: 買主手付 560〜1,100万", "src": "cash-timeline-2027.md 2027-02〜03節"}, {"m": 6, "label": "札幌契約: 手付 170〜340万（2109の手付から）", "src": "cash-timeline-2027.md 2027-03〜04節・月は推定"}, {"m": 7, "label": "2109決済: 残代金入金・ローン完済・手取り確定", "src": "cash-timeline-2027.md 2027-05節"}, {"m": 8, "label": "札幌決済: 頭金1,763万+諸費用237万・ローン実行", "src": "cash-timeline-2027.md 2027-05〜06節"}, {"m": 9, "label": "工事: 給湯器30〜40万・水回り200〜350万（内見次第）", "src": "cash-timeline-2027.md 2027-06節"}, {"m": 9, "label": "引越し: 40〜70万", "src": "cash-timeline-2027.md 2027-07節"}, {"m": 12, "label": "車ローン残価 246万（移住と無関係・既存債務）", "src": "cash-timeline-2027.md 2027-09節・market.json costs.car_loan.balloon"}]}}};
+const N = D.n;
+function pct(i){ return (100*i/N).toFixed(2)+'%'; }
+function widthPct(a,b){ return (100*(b-a+1)/N).toFixed(2)+'%'; }
+function monthLabel(i){
+  const total = 2026*12 + 8 + i;
+  const y = Math.floor(total/12), m = (total%12)+1;
+  return `${y}-${String(m).padStart(2,'0')}`;
+}
+
+const axis = document.getElementById('axis');
+axis.style.gridTemplateColumns = `repeat(${N},1fr)`;
+D.months.forEach((m,i)=>{
+  const s = document.createElement('span');
+  s.textContent = (i%2===0)? m : '';
+  axis.appendChild(s);
+});
+
+function laneRow(label, cls){
+  const lane = document.createElement('div'); lane.className='lane';
+  const lbl = document.createElement('div'); lbl.className='lbl'; lbl.textContent=label;
+  const track = document.createElement('div'); track.className = cls==='money' ? 'moneyTrack' : 'track';
+  lane.appendChild(lbl); lane.appendChild(track);
+  document.getElementById('lanes').appendChild(lane);
+  return track;
+}
+
+function bar(track, a, b, color, text, title){
+  const clipped = b > N-1;
+  const bEff = Math.min(b, N-1);
+  const el = document.createElement('div'); el.className='bar';
+  el.style.left = pct(a); el.style.width = widthPct(a,bEff);
+  el.style.background = color;
+  el.textContent = text + (clipped ? ' ▶' : '');
+  el.title = clipped ? title + `（軸の範囲外まで続く。実際の終了: ${monthLabel(b)}）` : (title || text);
+  if (clipped) el.style.borderRight = '3px dashed #fff';
+  track.appendChild(el);
+}
+function point(track, i, color, title){
+  const el = document.createElement('div'); el.className='point';
+  el.style.left = pct(i+0.5); el.style.background = color; el.title = title;
+  track.appendChild(el);
+}
+
+function render(pat){
+  document.getElementById('lanes').innerHTML = '';
+  const p = D.patterns[pat];
+  document.getElementById('patNote').textContent = `${p.label}: ${p.note} ／ 転職: ${p.job}`;
+
+  bar(laneRow('① 業者選定','biz'), D.broker_start, p.list_on[0], 'var(--lane1)', '相見積り→専任1社', 'docs/sale-requirements.md §3・broker-log.md 2026-09-06〜');
+
+  const t2109 = laneRow('② 2109','sale');
+  bar(t2109, p.list_on[0], p.list_on[1], 'var(--lane2)', '売出', 'sale-requirements.md §4');
+  bar(t2109, p.contract_2109[0], p.contract_2109[1], 'var(--lane2)', '契約', 'sale-requirements.md §4');
+  bar(t2109, p.settle_2109[0], p.settle_2109[1], 'var(--lane2)', '決済(入金)', 'sale-requirements.md §4');
+  bar(t2109, p.handover_2109[0], p.handover_2109[1], 'var(--lane2)', '引渡し', 'sale-requirements.md §4');
+
+  const tSap = laneRow('③ 札幌','sapporo');
+  bar(tSap, p.settle_sapporo_works[0], p.settle_sapporo_works[1], 'var(--lane3)', '決済→工事', 'sale-requirements.md §4・relocation-timeline-2027.md §0-A');
+
+  const tMove = laneRow('④ 引越し','move');
+  bar(tMove, p.move[0], p.move[1], 'var(--lane3)', '引越し', 'sale-requirements.md §4');
+
+  const tWorks = laneRow('⑤ 大規模修繕の窓','works');
+  const w = D.works;
+  bar(tWorks, w['駐車場改修'][0], w['駐車場改修'][1], 'var(--lane4)', '駐車場改修', 'analysis/timing.py WORKS（第13期総会第5号）');
+  const overlap = (p.move[0] <= w['大規模修繕'][1] && w['大規模修繕'][0] <= p.handover_2109[1]);
+  bar(tWorks, w['大規模修繕'][0], w['大規模修繕'][1], 'var(--lane4)', '大規模修繕' + (overlap? ' ⚠':''), 'analysis/timing.py WORKS（推定・理事会資料で要確認）。' + p.works_warn);
+
+  const tMoney = laneRow('⑥ 金の流れ','money');
+  p.money.forEach(ev=> point(tMoney, ev.m, 'var(--lane5)', ev.label + '｜出所: ' + ev.src));
+}
+
+document.querySelectorAll('[data-pat]').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    document.querySelectorAll('[data-pat]').forEach(b=>b.setAttribute('aria-pressed', b===btn));
+    render(btn.dataset.pat);
+  });
+});
+render('A');
+</script>
+</body>
+</html>
