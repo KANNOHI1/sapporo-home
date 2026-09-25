@@ -105,7 +105,8 @@ details.more[open] summary::before{content:"▾ ";}
   </label>
  </div>
  <div class="seg" role="group" aria-label="仲介手数料" style="margin-top:10px">
-  <button type="button" data-fee="full" aria-pressed="true">満額</button>
+  <button type="button" data-fee="full" aria-pressed="false">満額</button>
+  <button type="button" data-fee="tokyu1pct" aria-pressed="true">東急 1%</button>
   <button type="button" data-fee="tokyu165" aria-pressed="false">東急 固定165万</button>
   <button type="button" data-fee="sumitomo2" aria-pressed="false">住友 案②</button>
  </div>
@@ -231,7 +232,7 @@ $("ratenote").textContent=M.rate_note; $("ratenote2").textContent="変動 "+M.ra
 // 「2109 の出口」パネル（analysis/proceeds_grid.py・仕様 docs/me-proceeds-panel-spec.md）
 if(M.grid){
   const G=M.grid;
-  let EXFEE="full";
+  let EXFEE="tokyu1pct";
   const cellKey=(price,month,fee)=>price+"|"+month+"|"+fee;
   const cellByKey=new Map(G.cells.map(c=>[cellKey(c.price,c.month,c.fee_key),c]));
   const feeLabel=new Map(G.fees.map(f=>[f.key,f.label]));
@@ -256,7 +257,7 @@ if(M.grid){
       $("exMargin").textContent="この価格は東急の階段6段にないので未算出（自由入力は階段の値のみ対応）";
     }
     $("exFloor").textContent = floor!=null ? `この決済月・この手数料の床（入金 ${G.floor_target.toLocaleString("ja-JP")} 万に必要な成約価格）: ¥${fmt(floor)} 万` : "";
-    $("exNote").textContent=`この値は仲介手数料「${feeLabel.get(EXFEE)}」で計算。媒介契約で割引が確定するまでは満額が正（CLAUDE.md §8）`;
+    $("exNote").textContent=`提示ベースの手数料で計算（東急 1% は税別と読んだ値・金額は媒介契約書の報酬欄で確定）。満額では 3,000 万に届かない（CLAUDE.md §0「チームの目標」）。この値は仲介手数料「${feeLabel.get(EXFEE)}」で計算`;
   }
   $("exPrice").addEventListener("change",exRender);
   $("exPriceCustom").addEventListener("input",exRender);
