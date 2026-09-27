@@ -52,7 +52,7 @@ details[open] .more { border-bottom:1px solid var(--line); padding-bottom:10px; 
 .seg button[aria-pressed="true"] { background:var(--accent); color:#fff; }
 .wardf { display:flex; align-items:center; gap:6px; }
 .wardf select { background:var(--panel); color:var(--ink); border:1px solid var(--line); border-radius:6px; padding:5px 8px; font-family:inherit; font-size:13px; }
-.rank-all { font-size:11px; color:var(--muted); font-weight:400; margin-left:2px; }
+.rank-col { display:flex; flex-direction:column; align-items:center; flex:0 0 auto; } .rank-all { font-size:11px; color:var(--muted); font-weight:400; white-space:nowrap; }
 #cardPool { display:none; }
 .move { color:var(--muted); font-size:12.5px; margin:4px 0 0; }
 .move b { color:var(--ink); }
@@ -126,10 +126,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="南区" data-rank="1">
   <summary>
   <header class="card-head">
-    <span class="rank">1</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">1</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>リブウェル真駒内緑町ウエストビュー<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市南区真駒内緑町２｜地下鉄南北線「真駒内」徒歩6分</p>
+      <p class="addr">南区真駒内緑町２｜地下鉄南北線「真駒内」徒歩6分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">89.0</span></div>
   </header>
@@ -180,10 +180,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="南区" data-rank="2">
   <summary>
   <header class="card-head">
-    <span class="rank">2</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">2</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>リブウェル真駒内緑町 ウエストヴュー<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市南区真駒内緑町２｜地下鉄南北線「真駒内」徒歩6分</p>
+      <p class="addr">南区真駒内緑町２｜地下鉄南北線「真駒内」徒歩6分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">89.0</span></div>
   </header>
@@ -234,10 +234,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="東区" data-rank="3">
   <summary>
   <header class="card-head">
-    <span class="rank">3</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">3</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>クリオ元町壱番館<span class="role"><button type="button" class="term" data-key="気になる">気になる</button></span><span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市東区北二十四条東１４｜地下鉄東豊線「元町」徒歩2分</p>
+      <p class="addr">東区北二十四条東１４｜地下鉄東豊線「元町」徒歩2分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">88.9</span></div>
   </header>
@@ -288,10 +288,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="白石区" data-rank="4">
   <summary>
   <header class="card-head">
-    <span class="rank">4</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">4</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>エクセルシオールスカイランドマーク<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市白石区本通１９丁目南｜地下鉄東西線「南郷１８丁目」徒歩3分</p>
+      <p class="addr">白石区本通１９丁目南｜地下鉄東西線「南郷１８丁目」徒歩3分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">88.9</span></div>
   </header>
@@ -342,10 +342,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="out" data-ward="中央区" data-rank="5">
   <summary>
   <header class="card-head">
-    <span class="rank">5</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">5</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>パークハウス円山邸苑 ウエストレジデンス<span class="tag budl-tag warn" style="color:var(--warn);border-color:var(--warn)">予算外</span></h2>
-      <p class="addr">北海道札幌市中央区南六条西２０｜地下鉄東西線「西１８丁目」徒歩9分</p>
+      <p class="addr">中央区南六条西２０｜地下鉄東西線「西１８丁目」徒歩9分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">88.8</span></div>
   </header>
@@ -396,10 +396,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="白石区" data-rank="6">
   <summary>
   <header class="card-head">
-    <span class="rank">6</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">6</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ラ・クレスト菊水<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市白石区菊水一条２｜地下鉄東西線「菊水」徒歩3分</p>
+      <p class="addr">白石区菊水一条２｜地下鉄東西線「菊水」徒歩3分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">87.9</span></div>
   </header>
@@ -450,10 +450,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="豊平区" data-rank="7">
   <summary>
   <header class="card-head">
-    <span class="rank">7</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">7</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ラピスタワー南平岸リバーサイド<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市豊平区平岸二条１４｜地下鉄南北線「南平岸」徒歩6分</p>
+      <p class="addr">豊平区平岸二条１４｜地下鉄南北線「南平岸」徒歩6分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">87.6</span></div>
   </header>
@@ -504,10 +504,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="北区" data-rank="8">
   <summary>
   <header class="card-head">
-    <span class="rank">8</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">8</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>アパガーデンパレス札幌駅西チェリーコート<span class="role"><button type="button" class="term" data-key="気になる">気になる</button></span><span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市北区北七条西１０｜ＪＲ函館本線「札幌」徒歩12分</p>
+      <p class="addr">北区北七条西１０｜ＪＲ函館本線「札幌」徒歩12分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">87.0</span></div>
   </header>
@@ -558,10 +558,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="厚別区" data-rank="9">
   <summary>
   <header class="card-head">
-    <span class="rank">9</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">9</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ロイヤルコート大谷地アネックス<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span><span class="tag" style="color:var(--warn);border-color:var(--warn)">△ 要確認</span></h2>
-      <p class="addr">北海道札幌市厚別区大谷地東５｜地下鉄東西線「大谷地」徒歩5分</p>
+      <p class="addr">厚別区大谷地東５｜地下鉄東西線「大谷地」徒歩5分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">86.8</span></div>
   </header>
@@ -612,10 +612,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="中央区" data-rank="10">
   <summary>
   <header class="card-head">
-    <span class="rank">10</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">10</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ダイアパレス大通南アトリウムガーデン<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市中央区南五条西１３｜地下鉄東西線「西１１丁目」徒歩10分</p>
+      <p class="addr">中央区南五条西１３｜地下鉄東西線「西１１丁目」徒歩10分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">86.5</span></div>
   </header>
@@ -666,10 +666,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="東区" data-rank="11">
   <summary>
   <header class="card-head">
-    <span class="rank">11</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">11</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ロジェ北１５条サンフィール<span class="role"><button type="button" class="term" data-key="気になる">気になる</button></span><span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市東区北十五条東８｜地下鉄東豊線「東区役所前」徒歩4分</p>
+      <p class="addr">東区北十五条東８｜地下鉄東豊線「東区役所前」徒歩4分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">86.4</span></div>
   </header>
@@ -720,10 +720,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="東区" data-rank="12">
   <summary>
   <header class="card-head">
-    <span class="rank">12</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">12</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ロジェ北１５条サンフィール<span class="role"><button type="button" class="term" data-key="気になる">気になる</button></span><span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市東区北十五条東８｜地下鉄東豊線「東区役所前」徒歩4分</p>
+      <p class="addr">東区北十五条東８｜地下鉄東豊線「東区役所前」徒歩4分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">86.4</span></div>
   </header>
@@ -774,10 +774,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="中央区" data-rank="13">
   <summary>
   <header class="card-head">
-    <span class="rank">13</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">13</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ゼファー静修学園前<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市中央区南十五条西６｜地下鉄南北線「幌平橋」徒歩7分</p>
+      <p class="addr">中央区南十五条西６｜地下鉄南北線「幌平橋」徒歩7分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">86.0</span></div>
   </header>
@@ -828,10 +828,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="豊平区" data-rank="14">
   <summary>
   <header class="card-head">
-    <span class="rank">14</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">14</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ラピスタワー南平岸ステーションサイド<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市豊平区平岸二条１４-1番5｜地下鉄南北線「南平岸」徒歩6分</p>
+      <p class="addr">豊平区平岸二条１４-1番5｜地下鉄南北線「南平岸」徒歩6分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">85.1</span></div>
   </header>
@@ -882,10 +882,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="中央区" data-rank="15">
   <summary>
   <header class="card-head">
-    <span class="rank">15</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">15</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ディーレスティア山鼻南<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市中央区南二十六条西１３｜札幌市電「中央図書館前」徒歩9分</p>
+      <p class="addr">中央区南二十六条西１３｜札幌市電「中央図書館前」徒歩9分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">84.2</span></div>
   </header>
@@ -936,10 +936,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="厚別区" data-rank="16">
   <summary>
   <header class="card-head">
-    <span class="rank">16</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">16</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>クリオ新札幌壱番館<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span><span class="tag" style="color:var(--warn);border-color:var(--warn)">△ 要確認</span></h2>
-      <p class="addr">北海道札幌市厚別区厚別中央二条５｜地下鉄東西線「新さっぽろ」徒歩2分</p>
+      <p class="addr">厚別区厚別中央二条５｜地下鉄東西線「新さっぽろ」徒歩2分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">84.2</span></div>
   </header>
@@ -990,10 +990,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="南区" data-rank="17">
   <summary>
   <header class="card-head">
-    <span class="rank">17</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">17</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>澄川公園シティハウス<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市南区澄川四条７｜地下鉄南北線「自衛隊前」徒歩3分</p>
+      <p class="addr">南区澄川四条７｜地下鉄南北線「自衛隊前」徒歩3分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">83.6</span></div>
   </header>
@@ -1044,10 +1044,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="中央区" data-rank="18">
   <summary>
   <header class="card-head">
-    <span class="rank">18</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">18</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>クリーンリバーフィネス山鼻南<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市中央区南十六条西１２-1-20｜札幌市電「西線１６条」徒歩5分</p>
+      <p class="addr">中央区南十六条西１２-1-20｜札幌市電「西線１６条」徒歩5分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">83.4</span></div>
   </header>
@@ -1098,10 +1098,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="豊平区" data-rank="19">
   <summary>
   <header class="card-head">
-    <span class="rank">19</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">19</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ゼファー福住<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市豊平区福住一条２｜地下鉄東豊線「福住」徒歩5分</p>
+      <p class="addr">豊平区福住一条２｜地下鉄東豊線「福住」徒歩5分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">83.2</span></div>
   </header>
@@ -1152,10 +1152,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="豊平区" data-rank="20">
   <summary>
   <header class="card-head">
-    <span class="rank">20</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">20</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>じょうてつアイム平岸通り<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市豊平区平岸二条４-4-8｜地下鉄南北線「平岸」徒歩7分</p>
+      <p class="addr">豊平区平岸二条４-4-8｜地下鉄南北線「平岸」徒歩7分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">81.5</span></div>
   </header>
@@ -1206,10 +1206,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="白石区" data-rank="21">
   <summary>
   <header class="card-head">
-    <span class="rank">21</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">21</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ミリオン菊水駅前<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市白石区菊水三条２｜地下鉄東西線「菊水」徒歩2分</p>
+      <p class="addr">白石区菊水三条２｜地下鉄東西線「菊水」徒歩2分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">81.2</span></div>
   </header>
@@ -1260,10 +1260,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="南区" data-rank="22">
   <summary>
   <header class="card-head">
-    <span class="rank">22</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">22</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>シティハウス澄川天神山<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市南区澄川二条１｜地下鉄南北線「澄川」徒歩8分</p>
+      <p class="addr">南区澄川二条１｜地下鉄南北線「澄川」徒歩8分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">81.0</span></div>
   </header>
@@ -1314,10 +1314,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="豊平区" data-rank="23">
   <summary>
   <header class="card-head">
-    <span class="rank">23</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">23</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ラピスタワー南平岸ステーションサイド<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市豊平区平岸二条１４-1-5｜地下鉄南北線「南平岸」徒歩7分</p>
+      <p class="addr">豊平区平岸二条１４-1-5｜地下鉄南北線「南平岸」徒歩7分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">80.4</span></div>
   </header>
@@ -1368,10 +1368,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="白石区" data-rank="24">
   <summary>
   <header class="card-head">
-    <span class="rank">24</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">24</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>エクセルシオール札幌東<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span><span class="tag" style="color:var(--warn);border-color:var(--warn)">△ 要確認</span></h2>
-      <p class="addr">北海道札幌市白石区東札幌五条３-1-5｜地下鉄東西線「東札幌」徒歩8分</p>
+      <p class="addr">白石区東札幌五条３-1-5｜地下鉄東西線「東札幌」徒歩8分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">79.8</span></div>
   </header>
@@ -1422,10 +1422,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="厚別区" data-rank="25">
   <summary>
   <header class="card-head">
-    <span class="rank">25</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">25</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ライオンズひばりが丘フォレストフォート<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市厚別区厚別南１｜地下鉄東西線「ひばりが丘」徒歩5分</p>
+      <p class="addr">厚別区厚別南１｜地下鉄東西線「ひばりが丘」徒歩5分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">79.6</span></div>
   </header>
@@ -1476,10 +1476,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="out" data-ward="豊平区" data-rank="26">
   <summary>
   <header class="card-head">
-    <span class="rank">26</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">26</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>グランファーレ札幌菊水グランシェール<span class="tag budl-tag warn" style="color:var(--warn);border-color:var(--warn)">予算外</span></h2>
-      <p class="addr">北海道札幌市豊平区豊平一条２｜地下鉄東西線「菊水」徒歩6分</p>
+      <p class="addr">豊平区豊平一条２｜地下鉄東西線「菊水」徒歩6分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">79.1</span></div>
   </header>
@@ -1530,10 +1530,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="東区" data-rank="27">
   <summary>
   <header class="card-head">
-    <span class="rank">27</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">27</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ロジェ北２６条<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市東区北二十六条東３｜地下鉄南北線「北２４条」徒歩13分</p>
+      <p class="addr">東区北二十六条東３｜地下鉄南北線「北２４条」徒歩13分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">78.8</span></div>
   </header>
@@ -1584,10 +1584,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="中央区" data-rank="28">
   <summary>
   <header class="card-head">
-    <span class="rank">28</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">28</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>カルム宮の森ハウス<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市中央区宮の森二条１１｜地下鉄東西線「西２８丁目」徒歩18分</p>
+      <p class="addr">中央区宮の森二条１１｜地下鉄東西線「西２８丁目」徒歩18分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">78.4</span></div>
   </header>
@@ -1638,10 +1638,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="中央区" data-rank="29">
   <summary>
   <header class="card-head">
-    <span class="rank">29</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">29</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ディーレスティア山鼻南<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市中央区南二十六条西１３｜札幌市電「中央図書館前」徒歩9分</p>
+      <p class="addr">中央区南二十六条西１３｜札幌市電「中央図書館前」徒歩9分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">78.3</span></div>
   </header>
@@ -1692,10 +1692,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="out" data-ward="中央区" data-rank="30">
   <summary>
   <header class="card-head">
-    <span class="rank">30</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">30</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ル・ケレス南円山<span class="tag budl-tag warn" style="color:var(--warn);border-color:var(--warn)">予算外</span></h2>
-      <p class="addr">北海道札幌市中央区南七条西２２｜地下鉄東西線「円山公園」徒歩12分</p>
+      <p class="addr">中央区南七条西２２｜地下鉄東西線「円山公園」徒歩12分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">78.3</span></div>
   </header>
@@ -1746,10 +1746,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="厚別区" data-rank="31">
   <summary>
   <header class="card-head">
-    <span class="rank">31</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">31</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>クリーンリバーフィネスひばりが丘南<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市厚別区大谷地東７｜地下鉄東西線「ひばりが丘」徒歩7分</p>
+      <p class="addr">厚別区大谷地東７｜地下鉄東西線「ひばりが丘」徒歩7分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">78.1</span></div>
   </header>
@@ -1800,10 +1800,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="中央区" data-rank="32">
   <summary>
   <header class="card-head">
-    <span class="rank">32</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">32</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>グランファーレ札幌山鼻グランフォレスト<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市中央区南十八条西９｜札幌市電「静修学園前」徒歩6分</p>
+      <p class="addr">中央区南十八条西９｜札幌市電「静修学園前」徒歩6分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">77.9</span></div>
   </header>
@@ -1854,10 +1854,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="中央区" data-rank="33">
   <summary>
   <header class="card-head">
-    <span class="rank">33</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">33</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ダイアパレスガレリアシティ<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span><span class="tag" style="color:var(--warn);border-color:var(--warn)">△ 要確認</span></h2>
-      <p class="addr">北海道札幌市中央区南七条西２３｜地下鉄東西線「円山公園」徒歩13分</p>
+      <p class="addr">中央区南七条西２３｜地下鉄東西線「円山公園」徒歩13分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">77.5</span></div>
   </header>
@@ -1908,10 +1908,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="白石区" data-rank="34">
   <summary>
   <header class="card-head">
-    <span class="rank">34</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">34</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>パークハウス菊水若葉公園前<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市白石区菊水七条２-8-25｜地下鉄東西線「菊水」徒歩8分</p>
+      <p class="addr">白石区菊水七条２-8-25｜地下鉄東西線「菊水」徒歩8分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">76.6</span></div>
   </header>
@@ -1962,10 +1962,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="中央区" data-rank="35">
   <summary>
   <header class="card-head">
-    <span class="rank">35</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">35</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ゼファー静修学園前<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市中央区南十五条西６｜札幌市電「静修学園前」徒歩3分</p>
+      <p class="addr">中央区南十五条西６｜札幌市電「静修学園前」徒歩3分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">76.0</span></div>
   </header>
@@ -2016,10 +2016,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="豊平区" data-rank="36">
   <summary>
   <header class="card-head">
-    <span class="rank">36</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">36</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>エクセルシオール豊平橋ステア<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市豊平区豊平四条２｜地下鉄東西線「菊水」徒歩9分</p>
+      <p class="addr">豊平区豊平四条２｜地下鉄東西線「菊水」徒歩9分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">75.9</span></div>
   </header>
@@ -2070,10 +2070,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="南区" data-rank="37">
   <summary>
   <header class="card-head">
-    <span class="rank">37</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">37</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>Ｂｒｉｌｌｉａ真駒内公園<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市南区真駒内上町１｜地下鉄南北線「真駒内」徒歩16分</p>
+      <p class="addr">南区真駒内上町１｜地下鉄南北線「真駒内」徒歩16分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">75.8</span></div>
   </header>
@@ -2124,10 +2124,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="厚別区" data-rank="38">
   <summary>
   <header class="card-head">
-    <span class="rank">38</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">38</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ブランズひばりが丘<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市厚別区大谷地東７｜地下鉄東西線「ひばりが丘」徒歩8分</p>
+      <p class="addr">厚別区大谷地東７｜地下鉄東西線「ひばりが丘」徒歩8分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">75.8</span></div>
   </header>
@@ -2178,10 +2178,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="豊平区" data-rank="39">
   <summary>
   <header class="card-head">
-    <span class="rank">39</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">39</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ラピスタワー南平岸リバーサイド<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市豊平区平岸二条１４｜地下鉄南北線「南平岸」徒歩7分</p>
+      <p class="addr">豊平区平岸二条１４｜地下鉄南北線「南平岸」徒歩7分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">75.7</span></div>
   </header>
@@ -2232,10 +2232,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="北区" data-rank="40">
   <summary>
   <header class="card-head">
-    <span class="rank">40</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">40</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>アパガーデンパレス札幌駅西デイジーコート<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市北区北七条西１０-1-1｜ＪＲ函館本線「札幌」徒歩12分</p>
+      <p class="addr">北区北七条西１０-1-1｜ＪＲ函館本線「札幌」徒歩12分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">75.4</span></div>
   </header>
@@ -2286,10 +2286,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="東区" data-rank="41">
   <summary>
   <header class="card-head">
-    <span class="rank">41</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">41</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ロジェ北26条<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市東区北二十六条東３｜地下鉄南北線「北２４条」徒歩14分</p>
+      <p class="addr">東区北二十六条東３｜地下鉄南北線「北２４条」徒歩14分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">75.2</span></div>
   </header>
@@ -2340,10 +2340,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="南区" data-rank="42">
   <summary>
   <header class="card-head">
-    <span class="rank">42</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">42</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>シティハウス澄川天神山<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市南区澄川二条１｜地下鉄南北線「澄川」徒歩9分</p>
+      <p class="addr">南区澄川二条１｜地下鉄南北線「澄川」徒歩9分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">75.1</span></div>
   </header>
@@ -2394,10 +2394,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="out" data-ward="中央区" data-rank="43">
   <summary>
   <header class="card-head">
-    <span class="rank">43</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">43</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>シティハウス山鼻南17条<span class="tag budl-tag warn" style="color:var(--warn);border-color:var(--warn)">予算外</span></h2>
-      <p class="addr">北海道札幌市中央区南十七条西７-2-15｜地下鉄南北線「幌平橋」徒歩7分</p>
+      <p class="addr">中央区南十七条西７-2-15｜地下鉄南北線「幌平橋」徒歩7分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">74.7</span></div>
   </header>
@@ -2448,10 +2448,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="東区" data-rank="44">
   <summary>
   <header class="card-head">
-    <span class="rank">44</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">44</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ラピス北２４条<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市東区北二十四条東１｜地下鉄南北線「北２４条」徒歩9分</p>
+      <p class="addr">東区北二十四条東１｜地下鉄南北線「北２４条」徒歩9分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">74.3</span></div>
   </header>
@@ -2502,10 +2502,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="北区" data-rank="45">
   <summary>
   <header class="card-head">
-    <span class="rank">45</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">45</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>アパガーデンパレス札幌駅西バーチコート<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市北区北七条西１０｜ＪＲ函館本線「札幌」徒歩12分</p>
+      <p class="addr">北区北七条西１０｜ＪＲ函館本線「札幌」徒歩12分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">74.1</span></div>
   </header>
@@ -2556,10 +2556,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="東区" data-rank="46">
   <summary>
   <header class="card-head">
-    <span class="rank">46</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">46</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ル・ケレス新道東<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市東区北三十四条東２１-2-1｜地下鉄東豊線「新道東」徒歩9分</p>
+      <p class="addr">東区北三十四条東２１-2-1｜地下鉄東豊線「新道東」徒歩9分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">73.8</span></div>
   </header>
@@ -2610,10 +2610,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="out" data-ward="中央区" data-rank="47">
   <summary>
   <header class="card-head">
-    <span class="rank">47</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">47</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>グランファーレ札幌山鼻ロワイヤル<span class="tag budl-tag warn" style="color:var(--warn);border-color:var(--warn)">予算外</span></h2>
-      <p class="addr">北海道札幌市中央区南十六条西９｜札幌市電「静修学園前」徒歩5分</p>
+      <p class="addr">中央区南十六条西９｜札幌市電「静修学園前」徒歩5分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">73.6</span></div>
   </header>
@@ -2664,10 +2664,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="中央区" data-rank="48">
   <summary>
   <header class="card-head">
-    <span class="rank">48</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">48</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ル・ケレス南円山<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市中央区南七条西２２-1番22号｜地下鉄東西線「円山公園」徒歩13分</p>
+      <p class="addr">中央区南七条西２２-1番22号｜地下鉄東西線「円山公園」徒歩13分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">73.5</span></div>
   </header>
@@ -2718,10 +2718,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="豊平区" data-rank="49">
   <summary>
   <header class="card-head">
-    <span class="rank">49</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">49</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>グランファーレ平岸アクアウェルネスウエストウイング<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市豊平区平岸一条９｜地下鉄南北線「平岸」徒歩7分</p>
+      <p class="addr">豊平区平岸一条９｜地下鉄南北線「平岸」徒歩7分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">73.4</span></div>
   </header>
@@ -2772,10 +2772,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="豊平区" data-rank="50">
   <summary>
   <header class="card-head">
-    <span class="rank">50</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">50</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>じょうてつアイム月寒 Ａステージ<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市豊平区月寒西三条１０｜地下鉄東豊線「月寒中央」徒歩13分</p>
+      <p class="addr">豊平区月寒西三条１０｜地下鉄東豊線「月寒中央」徒歩13分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">73.2</span></div>
   </header>
@@ -2826,10 +2826,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="中央区" data-rank="51">
   <summary>
   <header class="card-head">
-    <span class="rank">51</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">51</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>クレアホームズ旭ヶ丘ハイライズ<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市中央区南十三条西２１-1-16｜札幌市電「西線１４条」徒歩8分</p>
+      <p class="addr">中央区南十三条西２１-1-16｜札幌市電「西線１４条」徒歩8分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">73.0</span></div>
   </header>
@@ -2880,10 +2880,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="out" data-ward="中央区" data-rank="52">
   <summary>
   <header class="card-head">
-    <span class="rank">52</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">52</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ザ・タワー中島公園ラピス ライオンズスクエア<span class="tag budl-tag warn" style="color:var(--warn);border-color:var(--warn)">予算外</span><span class="tag" style="color:var(--warn);border-color:var(--warn)">△ 要確認</span></h2>
-      <p class="addr">北海道札幌市中央区南十二条西１｜地下鉄南北線「中島公園」徒歩6分</p>
+      <p class="addr">中央区南十二条西１｜地下鉄南北線「中島公園」徒歩6分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">72.6</span></div>
   </header>
@@ -2934,10 +2934,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="豊平区" data-rank="53">
   <summary>
   <header class="card-head">
-    <span class="rank">53</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">53</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>じょうてつアイム月寒Aステージ<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市豊平区月寒西三条１０｜地下鉄東豊線「月寒中央」徒歩13分</p>
+      <p class="addr">豊平区月寒西三条１０｜地下鉄東豊線「月寒中央」徒歩13分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">72.4</span></div>
   </header>
@@ -2988,10 +2988,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="中央区" data-rank="54">
   <summary>
   <header class="card-head">
-    <span class="rank">54</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">54</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>クリーンリバーフィネス山鼻中央<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市中央区南十四条西１１｜札幌市電「西線１４条」徒歩7分</p>
+      <p class="addr">中央区南十四条西１１｜札幌市電「西線１４条」徒歩7分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">71.8</span></div>
   </header>
@@ -3042,10 +3042,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="北区" data-rank="55">
   <summary>
   <header class="card-head">
-    <span class="rank">55</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">55</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>アパガーデンパレス札幌駅西バーチコート<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市北区北七条西１０｜ＪＲ函館本線「札幌」徒歩12分</p>
+      <p class="addr">北区北七条西１０｜ＪＲ函館本線「札幌」徒歩12分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">71.6</span></div>
   </header>
@@ -3096,10 +3096,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="out" data-ward="白石区" data-rank="56">
   <summary>
   <header class="card-head">
-    <span class="rank">56</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">56</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>クリーンリバーフィネス東札幌駅前 ウエスト<span class="tag budl-tag warn" style="color:var(--warn);border-color:var(--warn)">予算外</span></h2>
-      <p class="addr">北海道札幌市白石区東札幌三条３｜地下鉄東西線「東札幌」徒歩3分</p>
+      <p class="addr">白石区東札幌三条３｜地下鉄東西線「東札幌」徒歩3分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">71.5</span></div>
   </header>
@@ -3150,10 +3150,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="中央区" data-rank="57">
   <summary>
   <header class="card-head">
-    <span class="rank">57</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">57</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>クレアホームズ旭ヶ丘ハイライズ<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市中央区南十三条西２１｜札幌市電「西線１４条」徒歩10分</p>
+      <p class="addr">中央区南十三条西２１｜札幌市電「西線１４条」徒歩10分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">71.3</span></div>
   </header>
@@ -3204,10 +3204,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="豊平区" data-rank="58">
   <summary>
   <header class="card-head">
-    <span class="rank">58</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">58</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>クリーンリバーフィネス福住ガーデンシティセンターコート<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市豊平区月寒東一条１５｜地下鉄東豊線「福住」徒歩5分</p>
+      <p class="addr">豊平区月寒東一条１５｜地下鉄東豊線「福住」徒歩5分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">71.3</span></div>
   </header>
@@ -3258,10 +3258,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="out" data-ward="中央区" data-rank="59">
   <summary>
   <header class="card-head">
-    <span class="rank">59</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">59</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>グレートヒルアクアフロント<span class="role"><button type="button" class="term" data-key="気になる">気になる</button></span><span class="tag budl-tag warn" style="color:var(--warn);border-color:var(--warn)">予算外</span></h2>
-      <p class="addr">北海道札幌市中央区南七条西１｜地下鉄東豊線「豊水すすきの」徒歩4分</p>
+      <p class="addr">中央区南七条西１｜地下鉄東豊線「豊水すすきの」徒歩4分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">71.2</span></div>
   </header>
@@ -3312,10 +3312,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="中央区" data-rank="60">
   <summary>
   <header class="card-head">
-    <span class="rank">60</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">60</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>グレートヒルアクアフロント<span class="role"><button type="button" class="term" data-key="気になる">気になる</button></span><span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市中央区南七条西１｜地下鉄東豊線「豊水すすきの」徒歩3分</p>
+      <p class="addr">中央区南七条西１｜地下鉄東豊線「豊水すすきの」徒歩3分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">71.2</span></div>
   </header>
@@ -3366,10 +3366,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="白石区" data-rank="61">
   <summary>
   <header class="card-head">
-    <span class="rank">61</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">61</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ミリオン菊水駅前<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市白石区菊水三条２｜地下鉄東西線「菊水」徒歩2分</p>
+      <p class="addr">白石区菊水三条２｜地下鉄東西線「菊水」徒歩2分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">71.2</span></div>
   </header>
@@ -3420,10 +3420,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="out" data-ward="白石区" data-rank="62">
   <summary>
   <header class="card-head">
-    <span class="rank">62</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">62</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ブランズ東札幌<span class="tag budl-tag warn" style="color:var(--warn);border-color:var(--warn)">予算外</span></h2>
-      <p class="addr">北海道札幌市白石区東札幌二条１｜地下鉄東西線「東札幌」徒歩6分</p>
+      <p class="addr">白石区東札幌二条１｜地下鉄東西線「東札幌」徒歩6分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">71.0</span></div>
   </header>
@@ -3474,10 +3474,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="中央区" data-rank="63">
   <summary>
   <header class="card-head">
-    <span class="rank">63</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">63</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>クリーンリバーフィネス山鼻中央1203<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市中央区南十四条西１１-3-23｜札幌市電「西線１４条」徒歩7分</p>
+      <p class="addr">中央区南十四条西１１-3-23｜札幌市電「西線１４条」徒歩7分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">70.6</span></div>
   </header>
@@ -3528,10 +3528,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="豊平区" data-rank="64">
   <summary>
   <header class="card-head">
-    <span class="rank">64</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">64</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>天神山レジデンス<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市豊平区平岸一条１９｜地下鉄南北線「澄川」徒歩10分</p>
+      <p class="addr">豊平区平岸一条１９｜地下鉄南北線「澄川」徒歩10分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">70.4</span></div>
   </header>
@@ -3582,10 +3582,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="白石区" data-rank="65">
   <summary>
   <header class="card-head">
-    <span class="rank">65</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">65</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>じょうてつアイム東札幌スカイコートＤ<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市白石区東札幌一条１｜地下鉄東西線「東札幌」徒歩7分</p>
+      <p class="addr">白石区東札幌一条１｜地下鉄東西線「東札幌」徒歩7分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">70.3</span></div>
   </header>
@@ -3636,10 +3636,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="東区" data-rank="66">
   <summary>
   <header class="card-head">
-    <span class="rank">66</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">66</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>クリーンリバーフィネス元町グランスクエアサウスコート<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市東区北二十六条東１６-1-50｜地下鉄東豊線「元町」徒歩4分</p>
+      <p class="addr">東区北二十六条東１６-1-50｜地下鉄東豊線「元町」徒歩4分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">70.3</span></div>
   </header>
@@ -3690,10 +3690,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="out" data-ward="北区" data-rank="67">
   <summary>
   <header class="card-head">
-    <span class="rank">67</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">67</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>クリーンリバーフィネス北大前<span class="tag budl-tag warn" style="color:var(--warn);border-color:var(--warn)">予算外</span></h2>
-      <p class="addr">北海道札幌市北区北十三条西３｜地下鉄南北線「北１２条」徒歩3分</p>
+      <p class="addr">北区北十三条西３｜地下鉄南北線「北１２条」徒歩3分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">70.1</span></div>
   </header>
@@ -3744,10 +3744,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="out" data-ward="白石区" data-rank="68">
   <summary>
   <header class="card-head">
-    <span class="rank">68</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">68</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ブランズ東札幌<span class="tag budl-tag warn" style="color:var(--warn);border-color:var(--warn)">予算外</span></h2>
-      <p class="addr">北海道札幌市白石区東札幌二条１｜地下鉄東西線「東札幌」徒歩6分</p>
+      <p class="addr">白石区東札幌二条１｜地下鉄東西線「東札幌」徒歩6分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">70.1</span></div>
   </header>
@@ -3798,10 +3798,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="南区" data-rank="69">
   <summary>
   <header class="card-head">
-    <span class="rank">69</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">69</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>真駒内中央公園シティハウス<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span><span class="tag" style="color:var(--warn);border-color:var(--warn)">△ 要確認</span></h2>
-      <p class="addr">北海道札幌市南区真駒内泉町１｜地下鉄南北線「真駒内」徒歩10分</p>
+      <p class="addr">南区真駒内泉町１｜地下鉄南北線「真駒内」徒歩10分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">69.3</span></div>
   </header>
@@ -3852,10 +3852,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="北区" data-rank="70">
   <summary>
   <header class="card-head">
-    <span class="rank">70</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">70</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>アパガーデンパレス札幌駅西エルムコート<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市北区北七条西１０｜ＪＲ函館本線「札幌」徒歩13分</p>
+      <p class="addr">北区北七条西１０｜ＪＲ函館本線「札幌」徒歩13分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">69.2</span></div>
   </header>
@@ -3906,10 +3906,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="白石区" data-rank="71">
   <summary>
   <header class="card-head">
-    <span class="rank">71</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">71</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ダイアパレス白石南パークヒルズ<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市白石区南郷通１６丁目南｜地下鉄東西線「南郷１８丁目」徒歩7分</p>
+      <p class="addr">白石区南郷通１６丁目南｜地下鉄東西線「南郷１８丁目」徒歩7分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">69.1</span></div>
   </header>
@@ -3960,10 +3960,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="中央区" data-rank="72">
   <summary>
   <header class="card-head">
-    <span class="rank">72</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">72</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>クルーザーバレータワーＳ２<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市中央区南二条西８｜地下鉄東西線「西１１丁目」徒歩7分</p>
+      <p class="addr">中央区南二条西８｜地下鉄東西線「西１１丁目」徒歩7分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">68.9</span></div>
   </header>
@@ -4014,10 +4014,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="白石区" data-rank="73">
   <summary>
   <header class="card-head">
-    <span class="rank">73</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">73</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>クリーンリバーフィネス白石グランパークス<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市白石区本通１４丁目南｜地下鉄東西線「南郷１３丁目」徒歩14分</p>
+      <p class="addr">白石区本通１４丁目南｜地下鉄東西線「南郷１３丁目」徒歩14分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">68.6</span></div>
   </header>
@@ -4068,10 +4068,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="中央区" data-rank="74">
   <summary>
   <header class="card-head">
-    <span class="rank">74</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">74</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ベルネージュ旭ヶ丘<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span><span class="tag" style="color:var(--warn);border-color:var(--warn)">△ 要確認</span></h2>
-      <p class="addr">北海道札幌市中央区南十二条西２３｜札幌市電「西線１４条」徒歩15分</p>
+      <p class="addr">中央区南十二条西２３｜札幌市電「西線１４条」徒歩15分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">67.9</span></div>
   </header>
@@ -4122,10 +4122,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="out" data-ward="中央区" data-rank="75">
   <summary>
   <header class="card-head">
-    <span class="rank">75</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">75</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ライオンズ札幌クロスタウン<span class="tag budl-tag warn" style="color:var(--warn);border-color:var(--warn)">予算外</span></h2>
-      <p class="addr">北海道札幌市中央区北五条東３｜ＪＲ函館本線「札幌」徒歩10分</p>
+      <p class="addr">中央区北五条東３｜ＪＲ函館本線「札幌」徒歩10分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">67.7</span></div>
   </header>
@@ -4176,10 +4176,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="中央区" data-rank="76">
   <summary>
   <header class="card-head">
-    <span class="rank">76</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">76</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>じょうてつアイム山鼻市電通リベルテ<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市中央区南二十二条西７｜札幌市電「東屯田通」徒歩3分</p>
+      <p class="addr">中央区南二十二条西７｜札幌市電「東屯田通」徒歩3分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">67.6</span></div>
   </header>
@@ -4230,10 +4230,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="中央区" data-rank="77">
   <summary>
   <header class="card-head">
-    <span class="rank">77</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">77</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ミリオン山鼻中央<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市中央区南十四条西１２｜札幌市電「西線１４条」徒歩5分</p>
+      <p class="addr">中央区南十四条西１２｜札幌市電「西線１４条」徒歩5分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">67.0</span></div>
   </header>
@@ -4284,10 +4284,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="手稲区" data-rank="78">
   <summary>
   <header class="card-head">
-    <span class="rank">78</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">78</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>フェーデ手稲本町<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市手稲区手稲本町二条１｜ＪＲ函館本線「手稲」徒歩8分</p>
+      <p class="addr">手稲区手稲本町二条１｜ＪＲ函館本線「手稲」徒歩8分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">65.4</span></div>
   </header>
@@ -4338,10 +4338,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="中央区" data-rank="79">
   <summary>
   <header class="card-head">
-    <span class="rank">79</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">79</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ダイアパレスザ・ワンハンドレッドシティ旭ヶ丘<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市中央区南十二条西２３｜札幌市電「西線１４条」徒歩17分</p>
+      <p class="addr">中央区南十二条西２３｜札幌市電「西線１４条」徒歩17分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">64.8</span></div>
   </header>
@@ -4392,10 +4392,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="中央区" data-rank="80">
   <summary>
   <header class="card-head">
-    <span class="rank">80</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">80</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ダイアパレスザ・ワンハンドレッドシティ旭ヶ丘<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市中央区南十二条西２３｜札幌市電「西線１４条」徒歩17分</p>
+      <p class="addr">中央区南十二条西２３｜札幌市電「西線１４条」徒歩17分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">64.8</span></div>
   </header>
@@ -4446,10 +4446,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="北区" data-rank="81">
   <summary>
   <header class="card-head">
-    <span class="rank">81</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">81</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>アパガーデンパレス札幌駅西エルムコート<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市北区北七条西１０｜ＪＲ函館本線「札幌」徒歩13分</p>
+      <p class="addr">北区北七条西１０｜ＪＲ函館本線「札幌」徒歩13分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">64.7</span></div>
   </header>
@@ -4500,10 +4500,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="東区" data-rank="82">
   <summary>
   <header class="card-head">
-    <span class="rank">82</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">82</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ル・ケレス栄町ツインレジデンス イーストサイド<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市東区北四十六条東１７-2-17｜地下鉄東豊線「栄町」徒歩9分</p>
+      <p class="addr">東区北四十六条東１７-2-17｜地下鉄東豊線「栄町」徒歩9分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">64.7</span></div>
   </header>
@@ -4554,10 +4554,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="中央区" data-rank="83">
   <summary>
   <header class="card-head">
-    <span class="rank">83</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">83</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ダイアパレスザ・ワンハンドレッドシティ旭ヶ丘<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市中央区南十二条西２３-1-43｜札幌市電「西線１１条」徒歩17分</p>
+      <p class="addr">中央区南十二条西２３-1-43｜札幌市電「西線１１条」徒歩17分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">63.5</span></div>
   </header>
@@ -4608,10 +4608,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="中央区" data-rank="84">
   <summary>
   <header class="card-head">
-    <span class="rank">84</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">84</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>クリオ山鼻壱番館<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span><span class="tag" style="color:var(--warn);border-color:var(--warn)">△ 要確認</span></h2>
-      <p class="addr">北海道札幌市中央区南十一条西１１｜札幌市電「西線１１条」徒歩7分</p>
+      <p class="addr">中央区南十一条西１１｜札幌市電「西線１１条」徒歩7分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">63.5</span></div>
   </header>
@@ -4662,10 +4662,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="豊平区" data-rank="85">
   <summary>
   <header class="card-head">
-    <span class="rank">85</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">85</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ル・サンク学園前アクアサイト<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市豊平区水車町４｜地下鉄東豊線「学園前」徒歩12分</p>
+      <p class="addr">豊平区水車町４｜地下鉄東豊線「学園前」徒歩12分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">62.6</span></div>
   </header>
@@ -4716,10 +4716,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="中央区" data-rank="86">
   <summary>
   <header class="card-head">
-    <span class="rank">86</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">86</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>アパタワーズ札幌大通公園<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市中央区南三条西９｜地下鉄東西線「西１１丁目」徒歩9分</p>
+      <p class="addr">中央区南三条西９｜地下鉄東西線「西１１丁目」徒歩9分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">62.5</span></div>
   </header>
@@ -4770,10 +4770,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="中央区" data-rank="87">
   <summary>
   <header class="card-head">
-    <span class="rank">87</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">87</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ラ・クラッセ中島公園通りⅡ<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市中央区南十一条西１｜地下鉄南北線「中島公園」徒歩6分</p>
+      <p class="addr">中央区南十一条西１｜地下鉄南北線「中島公園」徒歩6分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">61.5</span></div>
   </header>
@@ -4824,10 +4824,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="中央区" data-rank="88">
   <summary>
   <header class="card-head">
-    <span class="rank">88</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">88</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>アパタワーズ札幌大通公園<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市中央区南三条西９｜札幌市電「資生館小学校前」徒歩6分</p>
+      <p class="addr">中央区南三条西９｜札幌市電「資生館小学校前」徒歩6分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">61.2</span></div>
   </header>
@@ -4878,10 +4878,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="中央区" data-rank="89">
   <summary>
   <header class="card-head">
-    <span class="rank">89</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">89</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ラピスコートヒルズ旭ヶ丘一丁目<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span><span class="tag" style="color:var(--warn);border-color:var(--warn)">△ 要確認</span></h2>
-      <p class="addr">北海道札幌市中央区旭ケ丘１｜地下鉄東西線「円山公園」バス10分停歩1分</p>
+      <p class="addr">中央区旭ケ丘１｜地下鉄東西線「円山公園」バス10分停歩1分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">60.4</span></div>
   </header>
@@ -4932,10 +4932,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="豊平区" data-rank="90">
   <summary>
   <header class="card-head">
-    <span class="rank">90</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">90</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>クリオ平岸マスタープレイス<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市豊平区平岸二条５-1-17｜地下鉄南北線「平岸」徒歩5分</p>
+      <p class="addr">豊平区平岸二条５-1-17｜地下鉄南北線「平岸」徒歩5分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">58.4</span></div>
   </header>
@@ -4986,10 +4986,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="東区" data-rank="91">
   <summary>
   <header class="card-head">
-    <span class="rank">91</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">91</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>エスポアシティ札幌<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市東区北六条東６｜ＪＲ函館本線「札幌」徒歩11分</p>
+      <p class="addr">東区北六条東６｜ＪＲ函館本線「札幌」徒歩11分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">58.3</span></div>
   </header>
@@ -5040,10 +5040,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="東区" data-rank="92">
   <summary>
   <header class="card-head">
-    <span class="rank">92</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">92</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>エスポアシティ札幌<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市東区北六条東６｜地下鉄南北線「さっぽろ」徒歩11分</p>
+      <p class="addr">東区北六条東６｜地下鉄南北線「さっぽろ」徒歩11分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">58.3</span></div>
   </header>
@@ -5094,10 +5094,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="東区" data-rank="93">
   <summary>
   <header class="card-head">
-    <span class="rank">93</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">93</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>レーベン環状通東ＴＨＥ ＲＥＳＩＤＥＮＣＥ<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市東区北十四条東１５｜地下鉄東豊線「環状通東」徒歩1分</p>
+      <p class="addr">東区北十四条東１５｜地下鉄東豊線「環状通東」徒歩1分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">58.0</span></div>
   </header>
@@ -5148,10 +5148,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="豊平区" data-rank="94">
   <summary>
   <header class="card-head">
-    <span class="rank">94</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">94</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ハイムスイート平岸ブランシエラウエスト<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市豊平区平岸一条１１｜地下鉄南北線「平岸」徒歩11分</p>
+      <p class="addr">豊平区平岸一条１１｜地下鉄南北線「平岸」徒歩11分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">57.4</span></div>
   </header>
@@ -5202,10 +5202,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="out" data-ward="東区" data-rank="95">
   <summary>
   <header class="card-head">
-    <span class="rank">95</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">95</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>レーベン環状通東ＴＨＥ ＲＥＳＩＤＥＮＣＥ<span class="tag budl-tag warn" style="color:var(--warn);border-color:var(--warn)">予算外</span></h2>
-      <p class="addr">北海道札幌市東区北十四条東１５｜地下鉄東豊線「環状通東」徒歩1分</p>
+      <p class="addr">東区北十四条東１５｜地下鉄東豊線「環状通東」徒歩1分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">57.0</span></div>
   </header>
@@ -5256,10 +5256,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="豊平区" data-rank="96">
   <summary>
   <header class="card-head">
-    <span class="rank">96</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">96</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>レーベン学園前Ａｉｒ Ｒｅｓｉｄｅｎｃｅ<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市豊平区水車町３｜地下鉄東豊線「学園前」徒歩7分</p>
+      <p class="addr">豊平区水車町３｜地下鉄東豊線「学園前」徒歩7分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">56.8</span></div>
   </header>
@@ -5310,10 +5310,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="中央区" data-rank="97">
   <summary>
   <header class="card-head">
-    <span class="rank">97</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">97</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ダイアパレス永山公園通<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市中央区北二条東９｜ＪＲ函館本線「苗穂」徒歩6分</p>
+      <p class="addr">中央区北二条東９｜ＪＲ函館本線「苗穂」徒歩6分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">56.4</span></div>
   </header>
@@ -5364,10 +5364,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="中央区" data-rank="98">
   <summary>
   <header class="card-head">
-    <span class="rank">98</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">98</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>クルーザーバレー札幌プレミアム<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市中央区南七条東２｜地下鉄東豊線「豊水すすきの」徒歩4分</p>
+      <p class="addr">中央区南七条東２｜地下鉄東豊線「豊水すすきの」徒歩4分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">54.3</span></div>
   </header>
@@ -5418,10 +5418,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="東区" data-rank="99">
   <summary>
   <header class="card-head">
-    <span class="rank">99</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">99</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ファインシティ札幌北１９条<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市東区北十九条東１｜地下鉄南北線「北１８条」徒歩7分</p>
+      <p class="addr">東区北十九条東１｜地下鉄南北線「北１８条」徒歩7分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">53.2</span></div>
   </header>
@@ -5472,10 +5472,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="中央区" data-rank="100">
   <summary>
   <header class="card-head">
-    <span class="rank">100</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">100</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>クリーンリバーフィネス山鼻２１条<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市中央区南二十一条西７｜札幌市電「東屯田通」徒歩3分</p>
+      <p class="addr">中央区南二十一条西７｜札幌市電「東屯田通」徒歩3分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">51.8</span></div>
   </header>
@@ -5526,10 +5526,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="白石区" data-rank="101">
   <summary>
   <header class="card-head">
-    <span class="rank">101</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">101</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>クリーンリバーフィネス菊水<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市白石区菊水上町一条２｜ＪＲ函館本線「苗穂」徒歩19分</p>
+      <p class="addr">白石区菊水上町一条２｜ＪＲ函館本線「苗穂」徒歩19分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">51.7</span></div>
   </header>
@@ -5580,10 +5580,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="東区" data-rank="102">
   <summary>
   <header class="card-head">
-    <span class="rank">102</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">102</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ブランズ環状通東駅前<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市東区北十四条東１５｜地下鉄東豊線「環状通東」徒歩1分</p>
+      <p class="addr">東区北十四条東１５｜地下鉄東豊線「環状通東」徒歩1分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">51.3</span></div>
   </header>
@@ -5634,10 +5634,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="中央区" data-rank="103">
   <summary>
   <header class="card-head">
-    <span class="rank">103</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">103</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>じょうてつアイム山鼻市電通フィエルテ<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市中央区南二十二条西７｜札幌市電「東屯田通」徒歩3分</p>
+      <p class="addr">中央区南二十二条西７｜札幌市電「東屯田通」徒歩3分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">50.8</span></div>
   </header>
@@ -5688,10 +5688,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="中央区" data-rank="104">
   <summary>
   <header class="card-head">
-    <span class="rank">104</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">104</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>デュオヒルズ札幌Ｍｉｄ<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市中央区南四条東２｜地下鉄東豊線「豊水すすきの」徒歩4分</p>
+      <p class="addr">中央区南四条東２｜地下鉄東豊線「豊水すすきの」徒歩4分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">49.6</span></div>
   </header>
@@ -5742,10 +5742,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="中央区" data-rank="105">
   <summary>
   <header class="card-head">
-    <span class="rank">105</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">105</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>シティハウス永山公園<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市中央区北三条東６｜地下鉄東西線「バスセンター前」徒歩9分</p>
+      <p class="addr">中央区北三条東６｜地下鉄東西線「バスセンター前」徒歩9分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">49.3</span></div>
   </header>
@@ -5796,10 +5796,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="白石区" data-rank="106">
   <summary>
   <header class="card-head">
-    <span class="rank">106</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">106</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>クリオ白石駅前<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市白石区東札幌二条６｜地下鉄東西線「白石」徒歩2分</p>
+      <p class="addr">白石区東札幌二条６｜地下鉄東西線「白石」徒歩2分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">48.5</span></div>
   </header>
@@ -5850,10 +5850,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="中央区" data-rank="107">
   <summary>
   <header class="card-head">
-    <span class="rank">107</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">107</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>デュオヒルズ札幌MID<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市中央区南四条東２｜地下鉄東豊線「豊水すすきの」徒歩4分</p>
+      <p class="addr">中央区南四条東２｜地下鉄東豊線「豊水すすきの」徒歩4分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">48.2</span></div>
   </header>
@@ -5904,10 +5904,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="東区" data-rank="108">
   <summary>
   <header class="card-head">
-    <span class="rank">108</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">108</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>レ・ジェイド元町<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市東区北二十四条東１７｜地下鉄東豊線「元町」徒歩5分</p>
+      <p class="addr">東区北二十四条東１７｜地下鉄東豊線「元町」徒歩5分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">47.7</span></div>
   </header>
@@ -5958,10 +5958,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="南区" data-rank="109">
   <summary>
   <header class="card-head">
-    <span class="rank">109</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">109</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>クリーンリバーフィネス澄川ステーションコート<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市南区澄川二条２-2番17号｜地下鉄南北線「澄川」徒歩5分</p>
+      <p class="addr">南区澄川二条２-2番17号｜地下鉄南北線「澄川」徒歩5分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">47.1</span></div>
   </header>
@@ -6012,10 +6012,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="out" data-ward="中央区" data-rank="110">
   <summary>
   <header class="card-head">
-    <span class="rank">110</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">110</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>リビオ札幌大通<span class="tag budl-tag warn" style="color:var(--warn);border-color:var(--warn)">予算外</span></h2>
-      <p class="addr">北海道札幌市中央区南三条東３-20-1｜地下鉄東西線「バスセンター前」徒歩4分</p>
+      <p class="addr">中央区南三条東３-20-1｜地下鉄東西線「バスセンター前」徒歩4分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">44.3</span></div>
   </header>
@@ -6066,10 +6066,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="東区" data-rank="111">
   <summary>
   <header class="card-head">
-    <span class="rank">111</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">111</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ブランズ環状通東駅前<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市東区北十四条東１５｜地下鉄東豊線「環状通東」徒歩1分</p>
+      <p class="addr">東区北十四条東１５｜地下鉄東豊線「環状通東」徒歩1分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">44.3</span></div>
   </header>
@@ -6120,10 +6120,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="東区" data-rank="112">
   <summary>
   <header class="card-head">
-    <span class="rank">112</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">112</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ブランシエラ札幌東区役所前<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市東区北十五条東１２｜地下鉄東豊線「環状通東」徒歩6分</p>
+      <p class="addr">東区北十五条東１２｜地下鉄東豊線「環状通東」徒歩6分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">43.9</span></div>
   </header>
@@ -6174,10 +6174,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="中央区" data-rank="113">
   <summary>
   <header class="card-head">
-    <span class="rank">113</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">113</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>グランファーレ伏見グランシャリオ<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市中央区南十六条西１９｜札幌市電「西線１６条」徒歩8分</p>
+      <p class="addr">中央区南十六条西１９｜札幌市電「西線１６条」徒歩8分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">42.8</span></div>
   </header>
@@ -6228,10 +6228,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="中央区" data-rank="114">
   <summary>
   <header class="card-head">
-    <span class="rank">114</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">114</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>グランファーレ伏見グランシャリオ<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市中央区南十六条西１９｜札幌市電「西線１６条」徒歩8分</p>
+      <p class="addr">中央区南十六条西１９｜札幌市電「西線１６条」徒歩8分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">42.8</span></div>
   </header>
@@ -6282,10 +6282,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="東区" data-rank="115">
   <summary>
   <header class="card-head">
-    <span class="rank">115</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">115</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ブランズ環状通東駅前<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市東区北十四条東１５｜地下鉄東豊線「環状通東」徒歩1分</p>
+      <p class="addr">東区北十四条東１５｜地下鉄東豊線「環状通東」徒歩1分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">42.7</span></div>
   </header>
@@ -6336,10 +6336,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="中央区" data-rank="116">
   <summary>
   <header class="card-head">
-    <span class="rank">116</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">116</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>クリーンリバーフィネス山鼻２１条<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市中央区南二十一条西７｜札幌市電「幌南小学校前」徒歩3分</p>
+      <p class="addr">中央区南二十一条西７｜札幌市電「幌南小学校前」徒歩3分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">41.8</span></div>
   </header>
@@ -6390,10 +6390,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="豊平区" data-rank="117">
   <summary>
   <header class="card-head">
-    <span class="rank">117</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">117</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ファインシティ札幌ＵＲＢＡＮ ＦＯＲＷＡＲＤブライト<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市豊平区中の島一条３｜地下鉄南北線「中の島」徒歩5分</p>
+      <p class="addr">豊平区中の島一条３｜地下鉄南北線「中の島」徒歩5分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">41.8</span></div>
   </header>
@@ -6444,10 +6444,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="豊平区" data-rank="118">
   <summary>
   <header class="card-head">
-    <span class="rank">118</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">118</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ハイムスイート平岸ブランシエライースト<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市豊平区平岸一条１１｜地下鉄南北線「南平岸」徒歩11分</p>
+      <p class="addr">豊平区平岸一条１１｜地下鉄南北線「南平岸」徒歩11分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">40.7</span></div>
   </header>
@@ -6498,10 +6498,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="豊平区" data-rank="119">
   <summary>
   <header class="card-head">
-    <span class="rank">119</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">119</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>レーベン学園前AirResidence<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市豊平区水車町３｜地下鉄東豊線「学園前」徒歩7分</p>
+      <p class="addr">豊平区水車町３｜地下鉄東豊線「学園前」徒歩7分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">40.0</span></div>
   </header>
@@ -6552,10 +6552,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="out" data-ward="中央区" data-rank="120">
   <summary>
   <header class="card-head">
-    <span class="rank">120</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">120</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>クリーンリバーフィネス北1条イースト<span class="tag budl-tag warn" style="color:var(--warn);border-color:var(--warn)">予算外</span></h2>
-      <p class="addr">北海道札幌市中央区北一条東９-99-17｜地下鉄東西線「バスセンター前」徒歩9分</p>
+      <p class="addr">中央区北一条東９-99-17｜地下鉄東西線「バスセンター前」徒歩9分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">30.4</span></div>
   </header>
@@ -6606,10 +6606,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="中央区" data-rank="121">
   <summary>
   <header class="card-head">
-    <span class="rank">121</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">121</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>クリオレジダンス札幌大通イースト<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市中央区大通東９-99‐1｜地下鉄東西線「バスセンター前」徒歩10分</p>
+      <p class="addr">中央区大通東９-99‐1｜地下鉄東西線「バスセンター前」徒歩10分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">13.3</span></div>
   </header>
@@ -6666,10 +6666,10 @@ dd small { color:var(--muted); }
 <details class="card" data-budl="in" data-ward="中央区">
   <summary>
   <header class="card-head">
-    <span class="rank">仮</span><span class="rank-all" hidden></span>
+    <div class="rank-col"><span class="rank">仮</span><span class="rank-all" hidden></span></div>
     <div class="title-block">
       <h2>ライオンズタワー札幌山鼻<span class="tag budl-tag good" style="color:var(--good);border-color:var(--good)">予算内</span></h2>
-      <p class="addr">北海道札幌市中央区南十九条西１２｜札幌市電「ロープウェイ入口」徒歩5分</p>
+      <p class="addr">中央区南十九条西１２｜札幌市電「ロープウェイ入口」徒歩5分</p>
     </div>
     <div class="q"><span class="q-label"><button type="button" class="term" data-key="総合点">総合点</button></span><span class="q-val">80.7</span></div>
   </header>
@@ -6772,7 +6772,7 @@ function applyFilter() {
     const rankInView = idx + 1;
     c.querySelector('.rank').textContent = rankInView;
     const allSpan = c.querySelector('.rank-all');
-    if (WARD) { allSpan.hidden = false; allSpan.textContent = `（全体 ${c.dataset.rank} 位）`; }
+    if (WARD) { allSpan.hidden = false; allSpan.textContent = `全体 ${c.dataset.rank} 位`; }
     else { allSpan.hidden = true; }
     const tierIdx = rankInView <= 10 ? 0 : rankInView <= 20 ? 1 : 2;
     bodies[tierIdx].appendChild(c);
