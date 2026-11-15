@@ -28,6 +28,9 @@ h1{font-size:20px;font-weight:510;letter-spacing:-.4px;margin:6px 0 2px}
 .seg button{background:rgba(255,255,255,.02);color:var(--ink2);border:0;padding:8px 16px;font:inherit;font-size:13px;font-weight:510;cursor:pointer}
 .seg button[aria-pressed=true]{background:var(--brand);color:#fff}
 .note{font-size:12.5px;color:var(--ink3);margin:0 0 16px}
+.stale{border:1px solid var(--warn);border-radius:8px;padding:10px 12px;margin:0 0 14px;font-size:12.5px;line-height:1.7;color:var(--ink2)}
+.stale b{color:var(--warn);font-weight:510;display:block;margin-bottom:4px}
+.stale a{color:var(--acc2)}
 .axis{display:grid;font-size:10.5px;color:var(--ink4);margin-left:150px;border-bottom:1px solid var(--bd2);padding-bottom:4px;margin-bottom:6px}
 .lane{display:flex;align-items:center;margin-bottom:10px}
 .lane .lbl{width:150px;flex:0 0 150px;font-size:12.5px;color:var(--ink2);font-weight:510;padding-right:8px}
@@ -48,6 +51,10 @@ h1{font-size:20px;font-weight:510;letter-spacing:-.4px;margin:6px 0 2px}
 <main>
 <h1>売却 → 札幌購入 → 引越し 全体日程</h1>
 <p class="sub">北電（転職）の回答が出た時にどのパターンに乗るかを判断するための日程表。数字の正は <code>docs/sale-requirements.md</code> §4・<code>docs/cash-timeline-2027.md</code>・<code>docs/relocation-timeline-2027.md</code> §0-A・<code>analysis/timing.py</code></p>
+
+<div class="stale"><b>この日程表は 2026-09-20 の版で、その後は更新していない（2026-11-15 確認）。判断には使わない。</b>
+作成後に変わった点: ①媒介は東急リバブルに決まり、10/4 に売り出した ②東急は決済後の引渡し猶予が不可（長くて 2 週間）。下の「決済 → 約 2 か月後に引渡し」の帯は成り立たず、決済と引渡しはほぼ同時になる ③A／B の二択は 9/24 に廃止した。残る制約は「札幌のローン実行を北電の入社日より前に置く」の 1 本 ④「金の流れ」の金額は 9/16 の前提（成約 11,020 万・満額の仲介手数料・2027-05 決済）。入金額の正は <a href="./">試算ページ</a>の「2109 の出口」と <code>analysis/FLOOR.md</code> §0。
+いまの期日は <code>docs/STATUS.md</code> の「現在地」。</div>
 
 <div class="seg" role="group" aria-label="パターン">
  <button type="button" data-pat="A" aria-pressed="true">A: 移住先行</button>
