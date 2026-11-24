@@ -25,7 +25,7 @@ td.s{width:24%;color:var(--ink3);font-size:11px}
 </style></head>
 <body><main>
 <h1>Q の外 比較表</h1>
-<p class="sub">Q は点数に潰した値、ここは点数抜きの生値。並び順: Q 順位（無い行は末尾）｜生成 2026-11-24 18:44｜データ 2026-11-24 05:36（毎朝の自動更新）</p>
+<p class="sub">Q は点数に潰した値、ここは点数抜きの生値。並び順: Q 順位（無い行は末尾）｜生成 2026-11-24 20:57｜データ 2026-11-24 05:36（毎朝の自動更新）</p>
 
 <div class="card">
  <div class="hd"><div><span class="grp">資料請求</span><h2>ダイアパレス大通南アトリウムガーデン</h2></div>
@@ -195,4 +195,16 @@ td.s{width:24%;color:var(--ink3);font-size:11px}
  <table><tr><td class="k">① 学区 小中＋通学距離</td><td class="v">小学校 旭小（増減未調査）・直線 486m／中学校 八条中学校（B）・直線 1428m</td><td class="s">school_by_property.json、school_coords.json</td></tr><tr><td class="k">② 夜間治安</td><td class="v">強盗 0件・侵入窃盗 2件・全種 12件（半径400m・2025-09〜2026-08 の発生分・2026-09-15 取得）／うち自転車盗 9件</td><td class="s">dash.json crb/crt/crk/crn</td></tr><tr><td class="k">③ 出口</td><td class="v">価格 3,990万 → 15年後 2,676万（残存率 67%）／同区・築24±5年帯の中央値残存率 67%（n=45）</td><td class="s">dash.json p/v15、exit_value.json</td></tr><tr><td class="k">④ 駅種別／所要</td><td class="v">地下鉄 学園前 徒歩8分（×1.0・本数高） ＋逃げ道 バス→地下鉄 旭町1丁目 徒歩1.5分 環56（×0.6）／都心まで学園前・さっぽろまで乗車約6分・乗換0回・本数高</td><td class="s">sapporo_score.score_transit/score_access</td></tr><tr><td class="k">⑤ LDK／K型／個室</td><td class="v">LDK 15.1 帖（壁付き一体）・個室 6.4 / 5.5 / 5.3 帖・WIC あり</td><td class="s">dash.json ldk/kt/rm/wic</td></tr><tr><td class="k">⑥ 積立／管理費 実額</td><td class="v">管理費 6,690円/月・積立 13,280円/月（171円/㎡）・合計 19,970円/月</td><td class="s">suumo_rows 修繕積立・管理費（掲載に積立が無ければ dash.json f）、BUKKEN_*.md</td></tr><tr><td class="k">⑦ 駐車場 実態</td><td class="v">推定（掲載に記載なし）・SUUMO掲載額: -・業者回答: 未回答</td><td class="s">parking_tier.json、BUKKEN_*.md、buy-log.md</td></tr><tr><td class="k">⑧ バス本数</td><td class="v">旭町1丁目 徒歩1.5分・117m・環56・都心直行なし・平日日中 0.0本/h</td><td class="s">bus_by_property.json</td></tr><tr><td class="k">⑨ 月々</td><td class="v">12.9万/月（ローン9.7＋管理費0.7＋積立1.3＋駐車場1.2・駐車場は見積もり（駐車場: 推定・同じ建物の実額の平均（2 件））。固都税は別途）・頭金1360万・借入2630万・諸費用140万・現金の枠1500万（入金3000万のうち）・金利2.7%・35年（月額の札と同じ条件。条件を変えるのは me ページ側） ／ 予算判定: 予算内（月12.9万）</td><td class="s">market.json sapporo の計画の条件・dash.json の見積もり（月額の札と同じ式）</td></tr></table>
  <a class="lnk" href="https://suumo.jp/ms/chuko/hokkaido_/sc_sapporoshitoyohira/nc_21330279/" target="_blank" rel="noopener">SUUMO で見る ↗</a>
 </div>
-</main></body></html>
+</main>
+<script>
+(function(){let seen=null;
+  function check(reload){fetch("../version.json",{cache:"no-store"}).then(r=>r.json()).then(v=>{
+    if(seen===null){seen=v.generated_at;} else if(reload && v.generated_at!==seen){location.reload();}
+  }).catch(()=>{});}
+  check(false);
+  document.addEventListener("visibilitychange",()=>{if(!document.hidden) check(true);});
+  window.addEventListener("pageshow",()=>check(true));
+  setInterval(()=>check(false),30*60*1000);
+})();
+</script>
+</body></html>
